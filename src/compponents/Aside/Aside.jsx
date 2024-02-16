@@ -6,6 +6,8 @@ export const Aside = () => {
       <nav>
         <p>Home</p>
         <p>Author</p>
+        <p>Interesting facts</p>
+
         <p>Contacts</p>
       </nav>
     </MainBox>
