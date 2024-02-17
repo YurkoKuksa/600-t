@@ -5,7 +5,7 @@ import Aside from "../Aside/Aside";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 
-export const SharedLayout = () => {
+const SharedLayout = () => {
   return (
     <>
       <Box>
@@ -24,3 +24,4 @@ export const SharedLayout = () => {
     </>
   );
 };
+export default SharedLayout;

@@ -5,4 +5,7 @@ export const Box = styled.div`
 
   display: flex;
   gap: 10px;
+
+  position: sticky;
+  top: 0;
 `;
