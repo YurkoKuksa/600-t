@@ -1,7 +1,17 @@
 import styled from "styled-components";
 
-export const MainBox = styled.div`
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  background-color: green;
+export const Box = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  flex-grow: 1;
+  background-color: lightgrey;
+`;
+
+export const Div = styled.div`
   padding: 20px;
 `;

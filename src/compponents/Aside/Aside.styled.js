@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const MainBox = styled.div`
@@ -6,6 +7,8 @@ export const MainBox = styled.div`
   width: 200px;
 
   background-color: yellow;
-  height: 100%;
-  flex-grow: 1;
+`;
+
+export const LinkStyle = styled(Link)`
+  display: block;
 `;

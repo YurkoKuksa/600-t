@@ -1,15 +1,17 @@
-import { MainBox } from "./Aside.styled";
+import { LinkStyle, MainBox } from "./Aside.styled";
 
-export const Aside = () => {
+const Aside = () => {
   return (
     <MainBox>
       <nav>
-        <p>Home</p>
-        <p>Author</p>
-        <p>Interesting facts</p>
+        <LinkStyle to="/">Home</LinkStyle>
+        <LinkStyle to="/biography">Author</LinkStyle>
+        <LinkStyle to="/interesting">Interesting facts</LinkStyle>
 
-        <p>Contacts</p>
+        <LinkStyle to="/contacts">Contacts</LinkStyle>
       </nav>
     </MainBox>
   );
 };
+
+export default Aside;
