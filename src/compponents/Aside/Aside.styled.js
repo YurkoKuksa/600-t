@@ -4,9 +4,9 @@ import styled from "styled-components";
 export const MainBox = styled.div`
   margin: 2px;
   padding: 20px 10px;
-  /* width: 200px; */
-  width: auto; /* Замініть фіксовану ширину на auto */
-  min-width: 200px; /* Якщо потрібно, встановіть максимальну ширину */
+
+  width: auto;
+  min-width: 200px;
 
   background-color: yellow;
 `;
