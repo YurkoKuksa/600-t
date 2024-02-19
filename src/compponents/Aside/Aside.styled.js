@@ -9,8 +9,14 @@ export const MainBox = styled.div`
   min-width: 200px;
 
   background-color: yellow;
+  position: relative;
 `;
 
 export const LinkStyle = styled(Link)`
   display: block;
+`;
+
+export const Navigator = styled.nav`
+  position: sticky;
+  top: 0;
 `;

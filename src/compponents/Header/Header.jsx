@@ -1,11 +1,9 @@
-import { Box } from "./Header.styled";
+import { Box, LogoLink } from "./Header.styled";
 
 const Header = () => {
   return (
     <Box>
-      <p>Header.styled</p>
-      <p>Logo</p>
-      <p>Linkeeee</p>
+      <LogoLink>Logo Chemistry tasks</LogoLink>
     </Box>
   );
 };
