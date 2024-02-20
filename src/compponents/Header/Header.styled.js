@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const Box = styled.div`
   border-bottom: 1px solid gray;
-  background-color: var(--popup-color);
-  color: var(--title-color);
-  padding: 0 16px;
+  background-color: #fcfcfc;
+  color: #2e2f42;
+  /* розкоментувати коли буде svg */
+  /* padding: 0 16px; */
   line-height: 1.2;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -13,6 +14,8 @@ export const Box = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  /* тимчасово */
+  padding: 16px;
 `;
 
 export const LogoLink = styled.p`

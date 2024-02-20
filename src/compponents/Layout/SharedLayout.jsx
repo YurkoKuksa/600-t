@@ -13,7 +13,7 @@ const SharedLayout = () => {
         <Container>
           <Aside />
           <Div>
-            <Suspense fallback={<div>Loading page...</div>}>
+            <Suspense fallback={<div>Loading ...</div>}>
               <Outlet />
             </Suspense>
           </Div>

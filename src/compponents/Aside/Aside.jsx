@@ -4,11 +4,11 @@ const Aside = () => {
   return (
     <MainBox>
       <Navigator>
-        <LinkStyle to="/">Home</LinkStyle>
-        <LinkStyle to="/biography">Author</LinkStyle>
-        <LinkStyle to="/interesting">Interesting facts</LinkStyle>
+        <LinkStyle to="/">Головна</LinkStyle>
+        <LinkStyle to="/biography">Автор</LinkStyle>
+        <LinkStyle to="/interesting">Цікава хімія</LinkStyle>
 
-        <LinkStyle to="/contacts">Contacts</LinkStyle>
+        <LinkStyle to="/contacts">Контакти</LinkStyle>
       </Navigator>
     </MainBox>
   );
