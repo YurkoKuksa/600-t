@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/600-t/static/css/main.e6c13ad2.css",
+    "main.js": "/600-t/static/js/main.ed76a66b.js",
+    "static/js/998.fb939e3c.chunk.js": "/600-t/static/js/998.fb939e3c.chunk.js",
+    "static/js/904.c2f92533.chunk.js": "/600-t/static/js/904.c2f92533.chunk.js",
+    "static/js/436.4294580f.chunk.js": "/600-t/static/js/436.4294580f.chunk.js",
+    "static/js/876.67d4c29c.chunk.js": "/600-t/static/js/876.67d4c29c.chunk.js",
+    "static/js/920.3fdaf966.chunk.js": "/600-t/static/js/920.3fdaf966.chunk.js",
+    "static/js/608.490cb39c.chunk.js": "/600-t/static/js/608.490cb39c.chunk.js",
+    "static/js/712.366767f8.chunk.js": "/600-t/static/js/712.366767f8.chunk.js",
+    "static/media/chemistry90.png": "/600-t/static/media/chemistry90.b45f171f3ea1675d13b2.png",
+    "static/media/chemistry.svg": "/600-t/static/media/chemistry.8c253c66c31f92c8376c5682458c247b.svg",
+    "static/media/chemistrywhite.svg": "/600-t/static/media/chemistrywhite.00dcfc8b9725f939cb3640ff4ef6047d.svg",
+    "index.html": "/600-t/index.html",
+    "main.e6c13ad2.css.map": "/600-t/static/css/main.e6c13ad2.css.map",
+    "main.ed76a66b.js.map": "/600-t/static/js/main.ed76a66b.js.map",
+    "998.fb939e3c.chunk.js.map": "/600-t/static/js/998.fb939e3c.chunk.js.map",
+    "904.c2f92533.chunk.js.map": "/600-t/static/js/904.c2f92533.chunk.js.map",
+    "436.4294580f.chunk.js.map": "/600-t/static/js/436.4294580f.chunk.js.map",
+    "876.67d4c29c.chunk.js.map": "/600-t/static/js/876.67d4c29c.chunk.js.map",
+    "920.3fdaf966.chunk.js.map": "/600-t/static/js/920.3fdaf966.chunk.js.map",
+    "608.490cb39c.chunk.js.map": "/600-t/static/js/608.490cb39c.chunk.js.map",
+    "712.366767f8.chunk.js.map": "/600-t/static/js/712.366767f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ed76a66b.js"
+  ]
+}
