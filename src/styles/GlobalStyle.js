@@ -38,8 +38,7 @@ export const GlobalStyle = createGlobalStyle`
     height: auto;
   }
   
-  
-  // added NEW styles
+
 html {
   box-sizing: border-box;
 }
@@ -52,7 +51,7 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  font-family:'Roboto', sans-serif,  'Segoe UI', -apple-system, BlinkMacSystemFont,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   color: #212121;
   background-color: #fff;

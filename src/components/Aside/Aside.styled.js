@@ -2,14 +2,13 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const MainBox = styled.div`
-  font-family: "Montserrat", sans-serif;
   width: auto;
   min-width: 200px;
 
   position: relative;
   margin: 3px 4px;
   background-color: #808080;
-  padding: 0 16px;
+  padding: 0 24px;
   border: 1px solid cornflowerblue;
   color: #fff;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -22,8 +21,10 @@ export const AsidePic = styled.img`
 `;
 
 export const LinkStyle = styled(NavLink)`
+  /* font-family: "Montserrat", sans-serif; */
   display: block;
   margin-bottom: 16px;
+  font-size: 18px;
 
   &:hover {
     color: #cce4fc;
@@ -31,8 +32,9 @@ export const LinkStyle = styled(NavLink)`
 
   &.active {
     color: #0a2161;
+    font-weight: 600;
     &:hover {
-      color: #041440;
+      color: #1f4fd1;
     }
   }
 `;
@@ -40,5 +42,5 @@ export const LinkStyle = styled(NavLink)`
 export const Navigator = styled.nav`
   position: sticky;
   top: 0;
-  margin: 16px auto;
+  margin: 20px auto;
 `;
