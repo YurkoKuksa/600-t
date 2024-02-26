@@ -1,9 +1,11 @@
 import { useState } from "react";
 
-import AboutBook from "../../compponents/Home/AboutBook/AboutBook";
-import AllPublications from "../../compponents/Home/AllPublications/AllPublications";
+import AboutBook from "../../components/Home/AboutBook/AboutBook";
+import AllPublications from "../../components/Home/AllPublications/AllPublications";
 import { Box } from "./Home.styled";
-import { Hero } from "../../compponents/Hero/Hero";
+import { Hero } from "../../components/Hero/Hero";
+// import { Link } from "react-router-dom";
+import chemistry from "../../assets/svg/chemistry.svg";
 
 const Home = () => {
   const [showAboutBook, setShowAboutBook] = useState(false);
@@ -89,24 +91,7 @@ const Home = () => {
           distinctio ex, pariatur officiis iure alias accusantium illum,
           corrupti impedit minus delectus.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nihil
-          corporis amet dolor! Porro aliquid nulla necessitatibus neque
-          distinctio ex, pariatur officiis iure alias accusantium illum,
-          corrupti impedit minus delectus.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nihil
-          corporis amet dolor! Porro aliquid nulla necessitatibus neque
-          distinctio ex, pariatur officiis iure alias accusantium illum,
-          corrupti impedit minus delectus.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nihil
-          corporis amet dolor! Porro aliquid nulla necessitatibus neque
-          distinctio ex, pariatur officiis iure alias accusantium illum,
-          corrupti impedit minus delectus.
-        </p>
+
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nihil
           corporis amet dolor! Porro aliquid nulla necessitatibus neque
@@ -136,7 +121,7 @@ const Home = () => {
             .getElementById(scrollTarget)
             .scrollIntoView({ behavior: "smooth" })}
       </div>
-
+      <img src={chemistry} alt="main logo" width={40} height={40} />
       {/* <Link to="/book">Get to know more</Link> */}
     </Box>
   );
