@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunk_600=self.webpackChunk_600||[]).push([[712],{712:(s,i,c)=>{c.r(i),c.d(i,{default:()=>e});var l=c(496);const e=()=>(0,l.jsxs)("div",{children:[(0,l.jsx)("h3",{children:"AllPublications"}),(0,l.jsx)("img",{src:"https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtNjAzLWVsZW1lbnQtMTg2LnBuZw.png",alt:"",width:300})]})}}]);
-//# sourceMappingURL=712.366767f8.chunk.js.map
