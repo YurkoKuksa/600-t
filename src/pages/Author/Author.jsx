@@ -10,6 +10,11 @@ const Author = () => {
         laudantium? Similique animi officia quod vitae nihil nisi nam obcaecati
         officiis?
       </p>
+      <img
+        src="https://png.pngtree.com/thumb_back/fw800/background/20230527/pngtree-phoenix-bird-in-flames-wallpapers-wallpapershd-image_2697352.jpg"
+        alt=""
+        width={950}
+      />
     </div>
   );
 };

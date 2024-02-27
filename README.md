@@ -1,6 +1,6 @@
 # **600 CHEMISTRY TASKS**
 
-![tasks](./assets/img/logo-7.png)
+![tasks](./assets/img/logo-8.png)
 **Author:** Serhii Kuksa
 
 **Description:**

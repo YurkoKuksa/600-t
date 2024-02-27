@@ -21,7 +21,6 @@ export const AsidePic = styled.img`
 `;
 
 export const LinkStyle = styled(NavLink)`
-  /* font-family: "Montserrat", sans-serif; */
   display: block;
   margin-bottom: 16px;
   font-size: 18px;
@@ -41,6 +40,6 @@ export const LinkStyle = styled(NavLink)`
 
 export const Navigator = styled.nav`
   position: sticky;
-  top: 0;
+  top: 20px;
   margin: 20px auto;
 `;
