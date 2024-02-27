@@ -12,7 +12,7 @@ export const Box = styled.div`
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
-  padding: 0 16px;
+  padding: 5px 16px;
 `;
 
 export const LogoWrapper = styled.div`
@@ -35,10 +35,10 @@ export const LogoLink = styled.p`
 `;
 
 export const NameStyle = styled.p`
-  font-family: "Caveat";
-  font-size: 30px;
+  font-family: "Marck Script";
+  font-size: 25px;
   color: #e3e3e3;
-  font-weight: 800;
+  font-weight: 500;
   font-style: italic;
   display: flex;
   flex-grow: 1;

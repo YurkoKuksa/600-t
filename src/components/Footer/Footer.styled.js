@@ -79,3 +79,7 @@ export const ListStyled = styled.li`
     color: #dbd7d7;
   }
 `;
+
+export const SpanWrapper = styled.span`
+  color: red;
+`;

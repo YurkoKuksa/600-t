@@ -10,6 +10,7 @@ import {
   MainBox,
   Paragraph,
   Quote,
+  SpanWrapper,
   SvgPicture,
 } from "./Footer.styled";
 import chemistry from "../../assets/svg/chemistrywhite.svg";
@@ -46,12 +47,13 @@ const Footer = () => {
             <ul>
               <ListStyled>
                 <ContactLink href="mailto:kuksasergei@ukr.net">
-                  kuksasergey55@gmail.com
+                  <SpanWrapper>&#9993; &nbsp;</SpanWrapper>
+                  &nbsp; kuksasergey55@gmail.com
                 </ContactLink>
               </ListStyled>
               <ListStyled>
                 <ContactLink href="tel:+380968103053">
-                  +38 (096) 810-30-53
+                  <SpanWrapper> &#128222;</SpanWrapper> +38 (096) 810-30-53
                 </ContactLink>
               </ListStyled>
             </ul>
