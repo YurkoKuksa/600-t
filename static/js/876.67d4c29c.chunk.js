@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunk_600=self.webpackChunk_600||[]).push([[876],{876:(s,e,c)=>{c.r(e),c.d(e,{default:()=>t});var p=c(496);const t=()=>(0,p.jsxs)("div",{children:[(0,p.jsx)("p",{children:"Contacts"}),(0,p.jsx)("img",{src:"https://www.ikea.com/nl/en/images/products/kopparfall-picture-moonscape__0997459_pe822680_s5.jpg",alt:"",width:650})]})}}]);
-//# sourceMappingURL=876.67d4c29c.chunk.js.map
