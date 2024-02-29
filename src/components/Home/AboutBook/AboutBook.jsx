@@ -9,6 +9,7 @@ import {
   ParagDescription,
   Paragraph,
   SmallTitle,
+  SpanName,
   SpanTick,
   Title,
   TitleBox,
@@ -26,7 +27,7 @@ const AboutBook = () => {
           <ul>
             <li>
               <Paragraph>
-                <Bold>Автор: </Bold>Кукса Сергій Петрович
+                <Bold>Автор:</Bold> <SpanName>Кукса Сергій Петрович</SpanName>
               </Paragraph>
             </li>
             <li>

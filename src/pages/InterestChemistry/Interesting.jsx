@@ -1,28 +1,116 @@
-import { LinksFacts } from "./Interesting.styled";
+import { useState } from "react";
+import {
+  ContactBox,
+  Description,
+  LiWrap,
+  LinksFacts,
+  MainBox,
+  MainTitle,
+  UlWrap,
+} from "./Interesting.styled";
 import { Outlet } from "react-router-dom";
 
 const Interesting = () => {
-  return (
-    <div>
-      <h2>Interesting</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi aliquid
-        nulla saepe, dolorem error fugit eum consequatur iusto quae,
-        necessitatibus nobis quisquam soluta dolores repellendus a minima esse.
-        Quia, quidem?
-      </p>
-      <hr />
-      <LinksFacts>Household chemicals</LinksFacts>
-      <LinksFacts>Inorganic chemistry</LinksFacts>
-      <LinksFacts>Organic chemistry</LinksFacts>
-      <LinksFacts>Water chemistry</LinksFacts>
-      <LinksFacts to="brain">Brain chemistry</LinksFacts>
-      <LinksFacts>Space chemistry</LinksFacts>
-      <LinksFacts>Chemical basis for the origin of life</LinksFacts>
-      <hr />
+  const [currentPath, setCurrentPath] = useState(null);
 
-      <Outlet />
-    </div>
+  const handleClick = (to) => {
+    if (currentPath === to) {
+      setCurrentPath(null);
+      // Якщо поточний шлях співпадає з посиланням, то не робимо зміни
+      return;
+    }
+    // В іншому випадку оновлюємо поточний шлях та відкриваємо контент
+    setCurrentPath(to);
+  };
+
+  return (
+    <MainBox>
+      <ContactBox>
+        <MainTitle>Цікаві факти з хімії</MainTitle>
+        <Description>
+          Цей розділ пропонує вам ознайомитись з дивовижними властивостями
+          хімічних речовин. Він розкриє перед вами незвичайні аспекти хімічних
+          явищ, надихнувши на дослідження та поглиблене розуміння основ цієї
+          науки. Дізнайтеся про захоплюючі факти, які лежать в основі нашого
+          світу та щоденного життя, відкриваючи нові грані універсуму хімії.
+        </Description>
+        <Description></Description>
+        {/* <hr /> */}
+        <nav>
+          <UlWrap>
+            <LiWrap>
+              <LinksFacts
+                to="household"
+                onClick={() => handleClick("household")}
+                currentPath={currentPath}
+              >
+                Побутова хімія
+              </LinksFacts>
+            </LiWrap>
+            <LiWrap>
+              <LinksFacts
+                to="inorganic"
+                onClick={() => handleClick("inorganic")}
+                currentPath={currentPath}
+              >
+                Неорганічна хімія
+              </LinksFacts>
+            </LiWrap>
+            <LiWrap>
+              <LinksFacts
+                to="organic"
+                onClick={() => handleClick("organic")}
+                currentPath={currentPath}
+              >
+                Органічна хімія
+              </LinksFacts>
+            </LiWrap>
+            <LiWrap>
+              <LinksFacts
+                to="water"
+                onClick={() => handleClick("water")}
+                currentPath={currentPath}
+              >
+                Xімія води
+              </LinksFacts>
+            </LiWrap>
+            <LiWrap>
+              <LinksFacts
+                to="brain"
+                onClick={() => handleClick("brain")}
+                currentPath={currentPath}
+              >
+                Xімія мозку
+              </LinksFacts>
+            </LiWrap>
+            <LiWrap>
+              <LinksFacts
+                to="space"
+                onClick={() => handleClick("space")}
+                currentPath={currentPath}
+              >
+                Xімія космосу
+              </LinksFacts>
+            </LiWrap>
+            <LiWrap>
+              <LinksFacts
+                to="newlife"
+                onClick={() => handleClick("newlife")}
+                currentPath={currentPath}
+              >
+                Хімічна основа життя
+              </LinksFacts>
+            </LiWrap>
+          </UlWrap>
+        </nav>
+
+        {/* <hr /> */}
+
+        {currentPath && <Outlet />}
+
+        {/* <p> &copy; All rights reserved</p> */}
+      </ContactBox>
+    </MainBox>
   );
 };
 export default Interesting;

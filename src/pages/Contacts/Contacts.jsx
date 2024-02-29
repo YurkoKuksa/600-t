@@ -4,6 +4,7 @@ import {
   ContactBox,
   ContactLink,
   ContentBox,
+  DecorPicture,
   Description,
   JobBox,
   JobTitle,
@@ -17,6 +18,8 @@ import {
 import location from "../../assets/svg/location.svg";
 import phone from "../../assets/svg/call.svg";
 import mail from "../../assets/svg/mail.svg";
+import decor from "../../assets/images/chemistry103.png";
+
 const Contacts = () => {
   return (
     <MainBox>
@@ -83,16 +86,10 @@ const Contacts = () => {
               </ListStyled>
             </ul>
           </JobBox>
+          <DecorPicture src={decor} alt="реактивна хімчіна колба" width={800} />
         </ContentBox>
       </ContactBox>
     </MainBox>
   );
 };
 export default Contacts;
-
-//  <p>Contacts</p>
-//     <img
-//       src="https://www.ikea.com/nl/en/images/products/kopparfall-picture-moonscape__0997459_pe822680_s5.jpg"
-//       alt=""
-//       width={650}
-//     />

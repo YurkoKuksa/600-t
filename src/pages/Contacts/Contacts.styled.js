@@ -104,3 +104,10 @@ export const CollageName = styled.p`
   font-size: 18px;
   margin-bottom: 10px;
 `;
+
+export const DecorPicture = styled.img`
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+`;

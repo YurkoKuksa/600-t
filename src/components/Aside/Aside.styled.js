@@ -24,6 +24,7 @@ export const LinkStyle = styled(NavLink)`
   display: block;
   margin-bottom: 16px;
   font-size: 18px;
+  transition: font-weight 0.3s ease, color 0.3s ease;
 
   &:hover {
     color: #cce4fc;

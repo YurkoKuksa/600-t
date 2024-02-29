@@ -65,6 +65,12 @@ export const SpanTick = styled.span`
   font-weight: 500;
 `;
 
+export const SpanName = styled.span`
+  font-size: 19px;
+  font-weight: 600;
+  color: #525252;
+`;
+
 export const WhyListStyle = styled.ul`
   list-style-type: circle;
   padding-left: 16px;

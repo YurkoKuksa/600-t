@@ -1,8 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import SharedLayout from "./components/Layout/SharedLayout";
 import { lazy } from "react";
+// import NewLife from "./components/Interesting/NewLife/NewLife";
 
-import { Brain } from "./components/Interesting/Brain/Brain";
+// import Inorganic from "./components/Interesting/Inorganic/Inorganic";
+// import Brain from "./components/Interesting/Brain/Brain";
+// import Household from "./components/Interesting/Household/Household";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Author = lazy(() => import("./pages/Author/Author"));
@@ -13,6 +16,17 @@ const AboutBook = lazy(() => import("./components/Home/AboutBook/AboutBook"));
 const AllPublications = lazy(() =>
   import("./components/Home/AllPublications/AllPublications")
 );
+const Brain = lazy(() => import("./components/Interesting/Brain/Brain"));
+const Household = lazy(() =>
+  import("./components/Interesting/Household/Household")
+);
+const Inorganic = lazy(() =>
+  import("./components/Interesting/Inorganic/Inorganic")
+);
+const NewLife = lazy(() => import("./components/Interesting/NewLife/NewLife"));
+const Organic = lazy(() => import("./components/Interesting/Organic/Organic"));
+const Space = lazy(() => import("./components/Interesting/Space/Space"));
+const Water = lazy(() => import("./components/Interesting/Water/Water"));
 
 function App() {
   return (
@@ -26,6 +40,12 @@ function App() {
           <Route path="/biography" element={<Author />} />
           <Route path="/interesting/" element={<Interesting />}>
             <Route path="brain" element={<Brain />} />
+            <Route path="household" element={<Household />} />
+            <Route path="inorganic" element={<Inorganic />} />
+            <Route path="newlife" element={<NewLife />} />
+            <Route path="organic" element={<Organic />} />
+            <Route path="space" element={<Space />} />
+            <Route path="water" element={<Water />} />
           </Route>
           <Route path="/contacts" element={<Contacts />} />
         </Route>
