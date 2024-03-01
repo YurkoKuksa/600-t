@@ -1,6 +1,14 @@
-import { Box, LogoLink, LogoWrapper, NameStyle } from "./Header.styled";
+import {
+  Box,
+  /*  BurgerSvg, */
+  LogoLink,
+  LogoWrapper,
+  NameStyle,
+} from "./Header.styled";
 import chemistry from "../../assets/svg/chemistry.svg";
 import { Link } from "react-router-dom";
+
+// import burger from "../../assets/svg/burger.svg";
 
 const Header = () => {
   return (
@@ -12,6 +20,7 @@ const Header = () => {
         <LogoLink>Chemistry tasks</LogoLink>
       </LogoWrapper>
       <NameStyle>Кукса С.П.</NameStyle>
+      {/* <BurgerSvg src={burger} alt="" width={40} height={40} /> */}
     </Box>
   );
 };

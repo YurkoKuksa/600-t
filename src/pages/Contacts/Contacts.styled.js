@@ -107,7 +107,9 @@ export const CollageName = styled.p`
 
 export const DecorPicture = styled.img`
   position: absolute;
-  top: 50%;
-  left: 35%;
+  top: 58%;
+  left: 38%;
   transform: translate(-50%, -50%);
+  opacity: 0.6;
+  width: 600px;
 `;

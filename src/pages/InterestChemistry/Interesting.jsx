@@ -6,9 +6,12 @@ import {
   LinksFacts,
   MainBox,
   MainTitle,
+  TableImg,
   UlWrap,
 } from "./Interesting.styled";
 import { Outlet } from "react-router-dom";
+
+import tab from "../../assets/images/chemistry103.png";
 
 const Interesting = () => {
   const [currentPath, setCurrentPath] = useState(null);
@@ -107,6 +110,12 @@ const Interesting = () => {
         {/* <hr /> */}
 
         {currentPath && <Outlet />}
+
+        <TableImg
+          src={tab}
+          alt="Таблиця Менделеєва"
+          currentPath={currentPath}
+        />
 
         {/* <p> &copy; All rights reserved</p> */}
       </ContactBox>

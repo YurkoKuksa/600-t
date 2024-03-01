@@ -89,3 +89,13 @@ export const UlWrap = styled.ul`
 export const LiWrap = styled.li`
   width: 190px;
 `;
+
+export const TableImg = styled.img`
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
+  width: 1000px;
+  display: ${({ currentPath }) => (currentPath ? "none" : "block")};
+`;

@@ -18,7 +18,7 @@ import {
 import location from "../../assets/svg/location.svg";
 import phone from "../../assets/svg/call.svg";
 import mail from "../../assets/svg/mail.svg";
-import decor from "../../assets/images/chemistry103.png";
+import decor from "../../assets/images/chemistry5.png";
 
 const Contacts = () => {
   return (
@@ -86,7 +86,7 @@ const Contacts = () => {
               </ListStyled>
             </ul>
           </JobBox>
-          <DecorPicture src={decor} alt="реактивна хімчіна колба" width={800} />
+          <DecorPicture src={decor} alt="реактивна хімчіна колба" />
         </ContentBox>
       </ContactBox>
     </MainBox>
