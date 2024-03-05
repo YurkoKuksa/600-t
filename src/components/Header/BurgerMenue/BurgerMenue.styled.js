@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const MainModalBox = styled.div`
@@ -22,5 +23,29 @@ export const MainModalBox = styled.div`
 
   box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
 `;
-/* transform: ${({ isOpen, modalPosition }) =>
-    isOpen ? " translateX(0)" : `" translateX(${modalPosition}%)"`}; */
+
+export const LinkStyle = styled(NavLink)`
+  display: block;
+  margin-bottom: 16px;
+  font-size: 18px;
+  transition: font-weight 0.3s ease, color 0.3s ease;
+
+  /* &:hover {
+   
+  } */
+
+  &.active {
+    /* color: #0a2161; */
+    color: #cce4fc;
+    font-weight: 600;
+    /* &:hover {
+      color: #1f4fd1;
+    } */
+  }
+`;
+
+export const Navigator = styled.nav`
+  position: sticky;
+  top: 20px;
+  margin: 20px auto;
+`;

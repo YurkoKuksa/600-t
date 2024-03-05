@@ -9,15 +9,15 @@ import chemistry from "../../assets/svg/chemistry.svg";
 import { Link } from "react-router-dom";
 
 import burger from "../../assets/svg/burger.svg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BurgerMenue } from "./BurgerMenue/BurgerMenue";
 import BackDrop from "./BackDrop/BackDrop";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSmallViewport, setIsSmallViewport] = useState(
-    window.innerWidth <= 768
-  );
+  // const [isSmallViewport, setIsSmallViewport] = useState(
+  //   window.innerWidth <= 768
+  // );
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
