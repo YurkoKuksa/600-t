@@ -48,27 +48,24 @@ export const Description = styled.p`
   padding: 0 50px;
   text-indent: 50px;
   line-height: 1.6;
-  /* background-color: rgb(217, 215, 215, 1); */
 `;
 
-export const LinksFacts = styled(NavLink)`
+export const CustomNavLink = styled(NavLink)`
   display: block;
-
   font-size: 18px;
-  transition: font-weight 0.3s ease, color 0.3s ease;
+  transition: font-weight 0.3s ease, color 250ms ease;
 
   &:hover {
     font-weight: 500;
+    color: #1f4fd1;
   }
 
   &.active {
-    font-weight: ${({ currentPath }) => (currentPath ? "700" : "normal")};
-
+    font-weight: ${({ $active }) => ($active ? "700" : "normal")};
+    color: ${({ $active }) => ($active ? "#1f4fd1" : "currentColor")};
     &:hover {
-      font-weight: ${({ to, currentPath }) =>
-        currentPath === to ? "700" : "500"};
-      color: ${({ to, currentPath }) =>
-        currentPath === to ? "#808080" : "#000"};
+      font-weight: ${({ $active }) => ($active ? "700" : "500")};
+      color: ${({ $active }) => ($active ? "#808080" : "#1f4fd1")};
     }
   }
 `;
@@ -84,6 +81,8 @@ export const UlWrap = styled.ul`
   border-top: 2px double gray;
   border-bottom: 2px double gray;
   margin: 10px 0;
+  position: relative;
+  z-index: 990;
 `;
 
 export const LiWrap = styled.li`
@@ -97,5 +96,6 @@ export const TableImg = styled.img`
   transform: translate(-50%, -50%);
   opacity: 0.4;
   width: 1000px;
-  display: ${({ currentPath }) => (currentPath ? "none" : "block")};
+  z-index: 1;
+  display: ${({ $active }) => ($active ? "none" : "block")};
 `;

@@ -16,6 +16,10 @@ export const MainBox = styled.div`
   background-size: cover;
 `;
 
+export const ListWrapper = styled.li`
+  margin-bottom: 25px;
+`;
+
 export const Title = styled.h2`
   font-size: 22px;
   color: #6e6d6d;
@@ -24,8 +28,4 @@ export const Title = styled.h2`
 
 export const Paragraph = styled.p`
   font-size: 18px;
-`;
-
-export const ListWrapper = styled.li`
-  margin-bottom: 25px;
 `;

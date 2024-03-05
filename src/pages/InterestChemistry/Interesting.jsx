@@ -3,7 +3,7 @@ import {
   ContactBox,
   Description,
   LiWrap,
-  LinksFacts,
+  CustomNavLink,
   MainBox,
   MainTitle,
   TableImg,
@@ -42,67 +42,76 @@ const Interesting = () => {
         <nav>
           <UlWrap>
             <LiWrap>
-              <LinksFacts
+              <CustomNavLink
                 to="household"
                 onClick={() => handleClick("household")}
-                currentPath={currentPath}
+                // active={currentPath === "household" ? "active" : ""}
+                // as={LinksFacts}
+                // active={currentPath === "household" ? "true" : "false"}
+                $active={currentPath}
               >
                 Побутова хімія
-              </LinksFacts>
+              </CustomNavLink>
             </LiWrap>
+
             <LiWrap>
-              <LinksFacts
+              <CustomNavLink
                 to="inorganic"
                 onClick={() => handleClick("inorganic")}
-                currentPath={currentPath}
+                $active={currentPath}
               >
                 Неорганічна хімія
-              </LinksFacts>
+              </CustomNavLink>
             </LiWrap>
+
             <LiWrap>
-              <LinksFacts
+              <CustomNavLink
                 to="organic"
                 onClick={() => handleClick("organic")}
-                currentPath={currentPath}
+                $active={currentPath}
               >
                 Органічна хімія
-              </LinksFacts>
+              </CustomNavLink>
             </LiWrap>
+
             <LiWrap>
-              <LinksFacts
+              <CustomNavLink
                 to="water"
                 onClick={() => handleClick("water")}
-                currentPath={currentPath}
+                $active={currentPath}
               >
                 Xімія води
-              </LinksFacts>
+              </CustomNavLink>
             </LiWrap>
+
             <LiWrap>
-              <LinksFacts
+              <CustomNavLink
                 to="brain"
                 onClick={() => handleClick("brain")}
-                currentPath={currentPath}
+                $active={currentPath}
               >
                 Xімія мозку
-              </LinksFacts>
+              </CustomNavLink>
             </LiWrap>
+
             <LiWrap>
-              <LinksFacts
+              <CustomNavLink
                 to="space"
                 onClick={() => handleClick("space")}
-                currentPath={currentPath}
+                $active={currentPath}
               >
                 Xімія космосу
-              </LinksFacts>
+              </CustomNavLink>
             </LiWrap>
+
             <LiWrap>
-              <LinksFacts
+              <CustomNavLink
                 to="newlife"
                 onClick={() => handleClick("newlife")}
-                currentPath={currentPath}
+                $active={currentPath}
               >
                 Хімічна основа життя
-              </LinksFacts>
+              </CustomNavLink>
             </LiWrap>
           </UlWrap>
         </nav>
@@ -111,11 +120,7 @@ const Interesting = () => {
 
         {currentPath && <Outlet />}
 
-        <TableImg
-          src={tab}
-          alt="Таблиця Менделеєва"
-          currentPath={currentPath}
-        />
+        <TableImg src={tab} alt="Таблиця Менделеєва" $active={currentPath} />
 
         {/* <p> &copy; All rights reserved</p> */}
       </ContactBox>

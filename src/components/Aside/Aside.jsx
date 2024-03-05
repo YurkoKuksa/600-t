@@ -1,11 +1,13 @@
-import { AsidePic, LinkStyle, MainBox, Navigator } from "./Aside.styled";
+import { AsidePic, MainBox } from "./Aside.styled";
 import atom from "../../assets/images/chemistry90.png";
+import Navigation from "../Navigation/Navigation";
 
 const Aside = () => {
   return (
     <MainBox>
       <AsidePic src={atom} alt="atom" width={80} height={80} />
-      <Navigator role="navigation">
+      <Navigation />
+      {/* <Navigator role="navigation">
         <ul>
           <li>
             <LinkStyle to="/">Головна</LinkStyle>
@@ -20,7 +22,7 @@ const Aside = () => {
             <LinkStyle to="/contacts">Контакти</LinkStyle>
           </li>
         </ul>
-      </Navigator>
+      </Navigator> */}
     </MainBox>
   );
 };

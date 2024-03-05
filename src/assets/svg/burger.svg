@@ -1,11 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 32" width="40" height="40">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 32" >
   <path
-    fill="#000000"
-    stroke="#000000"
-    strokeLinejoin="round"
-    strokeLinecap="round"
-    strokeMiterlimit="4"
-    strokeWidth="4.3636"
+    fill="none"
+    stroke="#474747"
+    stroke-linejoin="round" 
+    stroke-linecap="round" 
+    stroke-miterlimit="4" 
+    
+    
+    stroke-width="4"
     d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"
   />
 </svg>

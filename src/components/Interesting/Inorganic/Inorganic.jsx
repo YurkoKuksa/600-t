@@ -78,10 +78,10 @@ const Inorganic = () => {
         </ListWrapper>
 
         <ListWrapper>
-          <Paragraph>
+          <div>
             <Title></Title>
             <Paragraph></Paragraph>
-          </Paragraph>
+          </div>
         </ListWrapper>
       </ul>
     </MainBox>

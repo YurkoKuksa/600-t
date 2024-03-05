@@ -46,8 +46,18 @@ export const NameStyle = styled.p`
   padding-right: 30px;
 
   letter-spacing: 0.3em;
+
+  @media screen and (max-width: 577.89px) {
+    font-size: 16px;
+  }
 `;
 
-// export const BurgerSvg = styled.img`
-//   outline: 1px solid red;
-// `;
+export const BurgerSvg = styled.img`
+  /* outline: 1px solid red; */
+  width: 32px;
+  height: 22px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
