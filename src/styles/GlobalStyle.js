@@ -57,7 +57,27 @@ body {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 
 `;
+
+/* html, body {
+ overflow: ${($isopen) => ($isopen ? "hidden" : "visible")};
+
+} */
+// html, body {
+// /* overflow: ${($isopen) => ($isopen ? "hidden" : "visible")}; */
+// overflow: visible;
+// }
+//  body.noScroll {
+//     overflow: hidden;
+//   }
+
+/* body {
+  overflow: ${(open) => (open ? "hidden" : "visible")}
+} */
+/* html, body {
+overflow: ${(isopen) => (isopen ? "hidden" : "scroll")};
+} */

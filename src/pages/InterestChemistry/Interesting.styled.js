@@ -48,6 +48,9 @@ export const Description = styled.p`
   padding: 0 50px;
   text-indent: 50px;
   line-height: 1.6;
+  /* position: relative;
+  z-index: 990;
+  background-color: rgba(241, 241, 241, 0.9); */
 `;
 
 export const CustomNavLink = styled(NavLink)`
