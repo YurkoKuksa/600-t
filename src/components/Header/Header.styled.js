@@ -13,6 +13,13 @@ export const Box = styled.div`
   align-items: center;
   gap: 8px;
   padding: 5px 16px;
+
+  @media only screen and (max-width: 767.98px) {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin: 0;
+  }
 `;
 
 export const LogoWrapper = styled.div`

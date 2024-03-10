@@ -11,6 +11,7 @@ export const MainModalBox = styled.div`
   background-color: #fff;
   z-index: 999;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
 
   transform: ${({ open }) => (open ? " translateX(0)" : " translateX(100%)")};

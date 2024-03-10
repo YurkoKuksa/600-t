@@ -25,27 +25,23 @@ const Header = () => {
   const closeModal = () => {
     setIsMenuOpen(false);
   };
-
+  // { <GlobalStyle $isopen={isMenuOpen} /> }
   return (
-    <>
-      {/* <GlobalStyle $isopen={isMenuOpen} /> */}
+    <Box>
+      <LogoWrapper>
+        <Link to="/">
+          <img src={chemistry} alt="main logo" width={40} height={40} />
+        </Link>
+        <LogoLink>Chemistry tasks</LogoLink>
+      </LogoWrapper>
+      <NameStyle>Кукса С.П.</NameStyle>
+      <button onClick={toggleMenu}>
+        <BurgerSvg src={burger} alt="бургер меню" />
+      </button>
+      {isMenuOpen && <BackDrop close={closeModal} />}
 
-      <Box>
-        <LogoWrapper>
-          <Link to="/">
-            <img src={chemistry} alt="main logo" width={40} height={40} />
-          </Link>
-          <LogoLink>Chemistry tasks</LogoLink>
-        </LogoWrapper>
-        <NameStyle>Кукса С.П.</NameStyle>
-        <button onClick={toggleMenu}>
-          <BurgerSvg src={burger} alt="бургер меню" />
-        </button>
-        {isMenuOpen && <BackDrop close={closeModal} />}
-
-        <BurgerMenue close={closeModal} open={isMenuOpen} />
-      </Box>
-    </>
+      <BurgerMenue close={closeModal} open={isMenuOpen} />
+    </Box>
   );
 };
 

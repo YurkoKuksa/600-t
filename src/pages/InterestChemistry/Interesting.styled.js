@@ -36,21 +36,31 @@ export const MainTitle = styled.h1`
   text-align: center;
   margin-bottom: 16px;
 
-  color: #808080;
+  /* color: #808080; */
 
   justify-content: flex-end;
-  font-size: 40px;
+  /* font-size: 40px; */
+
+  /* екп */
+  font-size: 60px;
+  font-weight: 700;
+  color: #0a2161;
 `;
 
 export const Description = styled.p`
-  font-size: 18px;
+  /* font-size: 18px;
   color: #808080;
   padding: 0 50px;
   text-indent: 50px;
-  line-height: 1.6;
-  /* position: relative;
-  z-index: 990;
-  background-color: rgba(241, 241, 241, 0.9); */
+  line-height: 1.6; */
+
+  /* екп */
+  font-size: 26px;
+  color: #808080;
+  padding: 0 50px;
+  text-indent: 50px;
+  line-height: 1.1;
+  margin-bottom: 20px;
 `;
 
 export const CustomNavLink = styled(NavLink)`
@@ -58,6 +68,12 @@ export const CustomNavLink = styled(NavLink)`
   font-size: 18px;
   transition: font-weight 0.3s ease, color 250ms ease;
 
+  /* експ */
+  color: #0a2161;
+  font-weight: 500;
+  font-size: 30px;
+
+  /* експ */
   &:hover {
     font-weight: 500;
     color: #1f4fd1;
@@ -74,31 +90,59 @@ export const CustomNavLink = styled(NavLink)`
 `;
 
 export const UlWrap = styled.ul`
-  display: flex;
+  /* display: flex;
   row-gap: 10px;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
   background-color: #d4d2d2;
   padding: 7px 0;
   border-top: 2px double gray;
   border-bottom: 2px double gray;
   margin: 10px 0;
   position: relative;
+  z-index: 990; */
+
+  /* екп */
+  display: flex;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: transparent;
+  padding: 7px 0;
+  margin: 30px 0;
+  position: relative;
   z-index: 990;
+  width: 350px;
 `;
 
 export const LiWrap = styled.li`
-  width: 190px;
+  /* width: 190px; */
+
+  /* експ */
+  margin-bottom: 24px;
 `;
 
 export const TableImg = styled.img`
-  position: absolute;
+  /* position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.4;
   width: 1000px;
-  z-index: 1;
+  z-index: 1; */
   display: ${({ $active }) => ($active ? "none" : "block")};
+
+  /* експ */
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
+  width: 1000px;
+  z-index: 1;
+`;
+
+export const WrapBox = styled.div`
+  display: flex;
 `;

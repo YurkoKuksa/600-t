@@ -8,6 +8,7 @@ import {
   MainTitle,
   TableImg,
   UlWrap,
+  WrapBox,
 } from "./Interesting.styled";
 import { Outlet } from "react-router-dom";
 
@@ -38,87 +39,87 @@ const Interesting = () => {
           світу та щоденного життя, відкриваючи нові грані універсуму хімії.
         </Description>
         <Description></Description>
-        {/* <hr /> */}
-        <nav>
-          <UlWrap>
-            <LiWrap>
-              <CustomNavLink
-                to="household"
-                onClick={() => handleClick("household")}
-                // active={currentPath === "household" ? "active" : ""}
-                // as={LinksFacts}
-                // active={currentPath === "household" ? "true" : "false"}
-                $active={currentPath}
-              >
-                Побутова хімія
-              </CustomNavLink>
-            </LiWrap>
 
-            <LiWrap>
-              <CustomNavLink
-                to="inorganic"
-                onClick={() => handleClick("inorganic")}
-                $active={currentPath}
-              >
-                Неорганічна хімія
-              </CustomNavLink>
-            </LiWrap>
+        <WrapBox>
+          <nav>
+            <UlWrap>
+              <LiWrap>
+                <CustomNavLink
+                  to="household"
+                  onClick={() => handleClick("household")}
+                  // active={currentPath === "household" ? "active" : ""}
+                  // as={LinksFacts}
+                  // active={currentPath === "household" ? "true" : "false"}
+                  $active={currentPath}
+                >
+                  Побутова хімія
+                </CustomNavLink>
+              </LiWrap>
 
-            <LiWrap>
-              <CustomNavLink
-                to="organic"
-                onClick={() => handleClick("organic")}
-                $active={currentPath}
-              >
-                Органічна хімія
-              </CustomNavLink>
-            </LiWrap>
+              <LiWrap>
+                <CustomNavLink
+                  to="inorganic"
+                  onClick={() => handleClick("inorganic")}
+                  $active={currentPath}
+                >
+                  Неорганічна хімія
+                </CustomNavLink>
+              </LiWrap>
 
-            <LiWrap>
-              <CustomNavLink
-                to="water"
-                onClick={() => handleClick("water")}
-                $active={currentPath}
-              >
-                Xімія води
-              </CustomNavLink>
-            </LiWrap>
+              <LiWrap>
+                <CustomNavLink
+                  to="organic"
+                  onClick={() => handleClick("organic")}
+                  $active={currentPath}
+                >
+                  Органічна хімія
+                </CustomNavLink>
+              </LiWrap>
 
-            <LiWrap>
-              <CustomNavLink
-                to="brain"
-                onClick={() => handleClick("brain")}
-                $active={currentPath}
-              >
-                Xімія мозку
-              </CustomNavLink>
-            </LiWrap>
+              <LiWrap>
+                <CustomNavLink
+                  to="water"
+                  onClick={() => handleClick("water")}
+                  $active={currentPath}
+                >
+                  Xімія води
+                </CustomNavLink>
+              </LiWrap>
 
-            <LiWrap>
-              <CustomNavLink
-                to="space"
-                onClick={() => handleClick("space")}
-                $active={currentPath}
-              >
-                Xімія космосу
-              </CustomNavLink>
-            </LiWrap>
+              <LiWrap>
+                <CustomNavLink
+                  to="brain"
+                  onClick={() => handleClick("brain")}
+                  $active={currentPath}
+                >
+                  Xімія мозку
+                </CustomNavLink>
+              </LiWrap>
 
-            <LiWrap>
-              <CustomNavLink
-                to="newlife"
-                onClick={() => handleClick("newlife")}
-                $active={currentPath}
-              >
-                Хімічна основа життя
-              </CustomNavLink>
-            </LiWrap>
-          </UlWrap>
-        </nav>
+              <LiWrap>
+                <CustomNavLink
+                  to="space"
+                  onClick={() => handleClick("space")}
+                  $active={currentPath}
+                >
+                  Xімія космосу
+                </CustomNavLink>
+              </LiWrap>
 
-        {/* <hr /> */}
+              <LiWrap>
+                <CustomNavLink
+                  to="newlife"
+                  onClick={() => handleClick("newlife")}
+                  $active={currentPath}
+                >
+                  Хімічна основа життя
+                </CustomNavLink>
+              </LiWrap>
+            </UlWrap>
+          </nav>
 
-        {currentPath && <Outlet />}
+          {currentPath && <Outlet />}
+        </WrapBox>
 
         <TableImg src={tab} alt="Таблиця Менделеєва" $active={currentPath} />
 
