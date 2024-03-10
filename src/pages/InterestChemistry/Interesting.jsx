@@ -13,6 +13,7 @@ import {
 import { Outlet } from "react-router-dom";
 
 import tab from "../../assets/images/chemistry103.png";
+import Loader from "../../components/Loader/Loader";
 
 const Interesting = () => {
   const [currentPath, setCurrentPath] = useState(null);
@@ -118,7 +119,7 @@ const Interesting = () => {
             </UlWrap>
           </nav>
 
-          {currentPath && <Outlet />}
+          {currentPath && <Loader /> && <Outlet />}
         </WrapBox>
 
         <TableImg src={tab} alt="Таблиця Менделеєва" $active={currentPath} />

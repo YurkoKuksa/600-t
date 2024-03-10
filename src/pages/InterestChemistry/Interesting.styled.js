@@ -42,7 +42,7 @@ export const MainTitle = styled.h1`
   /* font-size: 40px; */
 
   /* екп */
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   color: #0a2161;
 `;
@@ -55,11 +55,11 @@ export const Description = styled.p`
   line-height: 1.6; */
 
   /* екп */
-  font-size: 26px;
+  font-size: 18px;
   color: #808080;
   padding: 0 50px;
   text-indent: 50px;
-  line-height: 1.1;
+  line-height: 1.3;
   margin-bottom: 20px;
 `;
 
@@ -71,7 +71,6 @@ export const CustomNavLink = styled(NavLink)`
   /* експ */
   color: #0a2161;
   font-weight: 500;
-  font-size: 30px;
 
   /* експ */
   &:hover {
