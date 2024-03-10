@@ -55,11 +55,14 @@ export const Description = styled.p`
   line-height: 1.6; */
 
   /* екп */
+  /* екп */
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  color: #6b6363;
   font-size: 18px;
-  color: #808080;
-  padding: 0 50px;
   text-indent: 50px;
-  line-height: 1.3;
+  padding: 0 50px;
   margin-bottom: 20px;
 `;
 
@@ -79,8 +82,8 @@ export const CustomNavLink = styled(NavLink)`
   }
 
   &.active {
-    font-weight: ${({ $active }) => ($active ? "700" : "normal")};
-    color: ${({ $active }) => ($active ? "#1f4fd1" : "currentColor")};
+    font-weight: ${({ $active }) => ($active ? "700" : "500")};
+    color: ${({ $active }) => ($active ? "#1f4fd1" : "#0a2161")};
     &:hover {
       font-weight: ${({ $active }) => ($active ? "700" : "500")};
       color: ${({ $active }) => ($active ? "#808080" : "#1f4fd1")};
@@ -112,7 +115,8 @@ export const UlWrap = styled.ul`
   margin: 30px 0;
   position: relative;
   z-index: 990;
-  width: 350px;
+  width: 220px;
+  /* border-top: 2px double gray; */
 `;
 
 export const LiWrap = styled.li`

@@ -35,20 +35,31 @@ export const ContactBox = styled.div`
 export const MainTitle = styled.h1`
   text-align: center;
   margin-bottom: 30px;
-  /* margin-left: 120px; */
-  color: #808080;
-  /* width: 500px; */
+  /* color: #808080; */
   justify-content: flex-end;
   font-size: 40px;
+  /* екп */
+
+  font-weight: 700;
+  color: #0a2161;
 `;
 
 export const Description = styled.p`
-  font-size: 22px;
+  /* font-size: 22px;
   color: #808080;
   padding: 0 50px;
   text-indent: 50px;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
+
+  /* екп */
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  color: #6b6363;
+  font-size: 18px;
+  text-indent: 50px;
+  padding: 0 50px;
 `;
 
 export const ContentBox = styled.div`

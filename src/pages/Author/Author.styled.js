@@ -26,7 +26,7 @@ export const AuthBox = styled.div`
   background-size: cover;
   min-height: 300px;
   flex-grow: 1;
-  padding: 20px;
+  padding: 40px 20px;
   border: 1px solid cornflowerblue;
   display: flex;
   gap: 20px;
@@ -42,11 +42,17 @@ export const PortretPicture = styled.img`
 `;
 
 export const MainTitle = styled.h1`
-  font-family: "Caveat";
+  /* font-family: "Caveat"; */
   margin-bottom: 30px;
-  color: #808080;
-  font-size: 70px;
+  /* color: #808080;
+  font-size: 70px; */
   text-align: center;
+
+  /* екп */
+
+  font-size: 40px;
+  font-weight: 700;
+  color: #0a2161;
 `;
 
 export const Paragraph = styled.p`

@@ -14,7 +14,7 @@ export const Box = styled.div`
   gap: 8px;
   padding: 5px 16px;
 
-  @media only screen and (max-width: 767.98px) {
+  @media all and (max-width: 767.98px) {
     position: sticky;
     top: 0;
     z-index: 999;
