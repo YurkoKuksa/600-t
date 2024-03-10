@@ -134,8 +134,8 @@ export const TableImg = styled.img`
 
   /* експ */
   position: absolute;
-  top: 60%;
-  left: 60%;
+  top: 65%;
+  left: 55%;
   transform: translate(-50%, -50%);
   opacity: 0.4;
   width: 1000px;

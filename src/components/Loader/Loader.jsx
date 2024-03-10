@@ -5,7 +5,6 @@ import { SpinnerCircularFixed } from "spinners-react";
 export const Loader = () => {
   return (
     <LoaderBox>
-      Loding
       <SpinnerCircularFixed
         size={55}
         thickness={180}
