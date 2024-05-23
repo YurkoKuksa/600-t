@@ -23,17 +23,28 @@ const Author = () => {
           <MainTitle>Кукса Сергій Петрович</MainTitle>
 
           <Paragraph>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-            molestias molestiae iste, quod ea eius voluptatem iusto mollitia
-            explicabo dignissimos, facere quis quos quisquam nam similique quasi
-            quo impedit libero? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Porro pariatur asperiores dolores animi ab, neque
-            voluptate atque ullam, fugit, at optio harum quam hic corrupti eius
-            laudantium ex nulla delectus. Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Ex enim ad explicabo excepturi sit
-            dolorum perspiciatis commodi maxime impedit sequi natus deserunt
-            doloremque, aspernatur quae mollitia tempora totam? Itaque,
-            voluptates.
+            Відомий автор посібника «600 задач з хімії», а також «Зошити для
+            практичних робіт та лабораторних дослідів з хімії» з друкованою
+            основою.
+          </Paragraph>
+          <Paragraph>
+            «Спеціаліст вищої категорії» та педагогічне звання
+            «Викладач-методист». У 1998 році став фіналістом обласного етапу
+            Всеукраїнського конкурсу "Учитель року" в номінації «Хімія». В 2008
+            році нагороджений Бердичівською міською Радою нагрудним знаком «За
+            досягнення в освіті». В 2023 році МО України нагороджений знаком
+            «Василь Сухомлинський».
+          </Paragraph>
+          <Paragraph>
+            Викладач хімії Бердичівського фахового коледжу промисловості,
+            економіки та права. Викладач дисциплін «Прикладна хімія», «Фізична
+            хімія та аналітичний контроль», «Хімія». Працював над створенням
+            навчально-методичного комплексу, створював та удосконалював
+            навчальні та робочі програми. Додатково працював з поповнення знань
+            з хімічної термодинаміки, питань хімічної кінетики, теорії розчинів.
+            Неодноразово запрошувався в Житомирський обласний інститут
+            післядипломної освіти читати лекції вчителям загальноосвітніх шкіл з
+            питань методики викладання хімії.
           </Paragraph>
         </div>
         <DecorPicture
