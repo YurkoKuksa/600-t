@@ -110,8 +110,8 @@ export const UlWrap = styled.ul`
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: transparent;
-  padding: 7px 0;
+  background-color: rgb(142, 143, 153, 0.4);
+  padding: 15px;
   margin: 30px 0;
   position: relative;
   z-index: 990;

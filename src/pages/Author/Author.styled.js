@@ -62,6 +62,7 @@ export const Paragraph = styled.p`
   color: #6b6363;
   font-size: 18px;
   text-indent: 50px;
+  margin-bottom: 5px;
 `;
 
 export const DecorPicture = styled.img`

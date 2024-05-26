@@ -16,6 +16,11 @@ export const Hero = ({ handleShowAboutBook, handleShowOther }) => {
       <ListWrapper>
         <li>
           <InfoBtn type="button" onClick={handleShowAboutBook}>
+            Отримати книгу
+          </InfoBtn>
+        </li>
+        <li>
+          <InfoBtn type="button" onClick={handleShowAboutBook}>
             Дізнатись більше
           </InfoBtn>
         </li>

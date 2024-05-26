@@ -66,6 +66,6 @@ export const ListWrapper = styled.ul`
   gap: 5px;
   flex-direction: row;
   left: 50%;
-  bottom: 5px;
+  bottom: 25%;
   transform: translateX(-50%);
 `;
