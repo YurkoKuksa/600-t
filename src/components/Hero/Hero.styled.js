@@ -41,7 +41,7 @@ export const InfoBtn = styled.button`
 
   color: #e7e9fc;
   border: 1px solid #fff;
-  background-color: #808080;
+  background-color: #0a2161;
   padding: 10px 8px;
   border-radius: 8px;
   color: #fff;
@@ -52,20 +52,62 @@ export const InfoBtn = styled.button`
     `${theme.shadows.button}, ${theme.shadows.inner}`};
 
   &:hover {
-    background-color: #6e6d6d;
+    background-color: #1f4fd1;
   }
   &:active {
-    background-color: #949494;
+    background-color: #406ce3;
     box-shadow: ${({ theme }) => theme.shadows.hover};
   }
 `;
+export const InfoBtnMain = styled.button`
+  width: 165px;
 
+  opacity: 0.9;
+
+  color: #e7e9fc;
+  border: 1px solid #fff;
+  background-color: #0a2161;
+  padding: 18px 15px;
+  border-radius: 8px;
+  color: #fff;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s;
+  box-shadow: ${({ theme }) =>
+    `${theme.shadows.button}, ${theme.shadows.inner}`};
+
+  &:hover {
+    background-color: #1f4fd1;
+  }
+  &:active {
+    background-color: #406ce3;
+    box-shadow: ${({ theme }) => theme.shadows.hover};
+  }
+`;
 export const ListWrapper = styled.ul`
-  position: absolute;
   display: flex;
   gap: 5px;
   flex-direction: row;
-  left: 50%;
-  bottom: 25%;
-  transform: translateX(-50%);
+  align-items: flex-end;
 `;
+
+export const MainWrapper = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 85px;
+  flex-direction: column;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  /* outline: 1px solid red; */
+`;
+
+// background-color: #808080;
+// &:hover {
+//   background-color: #6e6d6d;
+// }
+// &:active {
+//   background-color: #949494;
+// }

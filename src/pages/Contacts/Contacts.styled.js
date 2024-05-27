@@ -86,7 +86,7 @@ export const ListStyled = styled.li`
   font-size: 18px;
 
   &:hover {
-    color: #dbd7d7;
+    color: #808080;
   }
 `;
 

@@ -120,10 +120,12 @@ export const UlWrap = styled.ul`
 `;
 
 export const LiWrap = styled.li`
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
   /* width: 190px; */
 
   /* експ */
-  margin-bottom: 24px;
 `;
 
 export const TableImg = styled.img`

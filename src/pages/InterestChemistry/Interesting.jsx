@@ -1,3 +1,5 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useState } from "react";
 import {
   ContactBox,
@@ -14,7 +16,7 @@ import { Outlet } from "react-router-dom";
 
 import tab from "../../assets/images/chemistry103.png";
 import Loader from "../../components/Loader/Loader";
-
+AOS.init();
 const Interesting = () => {
   const [currentPath, setCurrentPath] = useState(null);
 
@@ -43,7 +45,11 @@ const Interesting = () => {
 
         <WrapBox>
           <nav>
-            <UlWrap>
+            <UlWrap
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
               <LiWrap>
                 <CustomNavLink
                   to="household"
@@ -56,7 +62,6 @@ const Interesting = () => {
                   Побутова хімія
                 </CustomNavLink>
               </LiWrap>
-
               <LiWrap>
                 <CustomNavLink
                   to="inorganic"
@@ -66,7 +71,6 @@ const Interesting = () => {
                   Неорганічна хімія
                 </CustomNavLink>
               </LiWrap>
-
               <LiWrap>
                 <CustomNavLink
                   to="organic"
@@ -76,7 +80,6 @@ const Interesting = () => {
                   Органічна хімія
                 </CustomNavLink>
               </LiWrap>
-
               <LiWrap>
                 <CustomNavLink
                   to="water"
@@ -86,7 +89,6 @@ const Interesting = () => {
                   Xімія води
                 </CustomNavLink>
               </LiWrap>
-
               <LiWrap>
                 <CustomNavLink
                   to="brain"
@@ -96,7 +98,6 @@ const Interesting = () => {
                   Xімія мозку
                 </CustomNavLink>
               </LiWrap>
-
               <LiWrap>
                 <CustomNavLink
                   to="space"
@@ -106,7 +107,6 @@ const Interesting = () => {
                   Xімія космосу
                 </CustomNavLink>
               </LiWrap>
-
               <LiWrap>
                 <CustomNavLink
                   to="newlife"
