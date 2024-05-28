@@ -11,19 +11,35 @@ import {
   MainWrapper,
 } from "./Hero.styled";
 import flask from "../../assets/images/chemistry88.png";
+import { useState } from "react";
+import { Modal } from "../Modal/Modal";
+import BackDrop from "../Header/BackDrop/BackDrop";
 AOS.init();
 export const Hero = ({ handleShowAboutBook, handleShowOther }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(() => true);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prevState) => !prevState);
+  };
+
+  const closeModal = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <StyledBox>
-      <MainTitle data-aos="zoom-in">600 Задач з хімії</MainTitle>
+      <MainTitle data-aos="zoom-in" data-aos-duration="800">
+        600 Задач з хімії
+      </MainTitle>
       <Flask src={flask} alt="chemical flask" />
 
       <MainWrapper>
-        <InfoBtnMain type="button" onClick={handleShowAboutBook}>
-          Отримати книгу
-        </InfoBtnMain>
-
         <ListWrapper>
+          <li>
+            <InfoBtnMain type="button" onClick={toggleMenu}>
+              Отримати книгу
+            </InfoBtnMain>
+          </li>
           <li>
             <InfoBtn type="button" onClick={handleShowAboutBook}>
               Дізнатись більше
@@ -37,6 +53,8 @@ export const Hero = ({ handleShowAboutBook, handleShowOther }) => {
           </li>
         </ListWrapper>
       </MainWrapper>
+      {isMenuOpen && <BackDrop close={closeModal} />}
+      {/* <Modal close={closeModal} open={isMenuOpen} /> */}
     </StyledBox>
   );
 };

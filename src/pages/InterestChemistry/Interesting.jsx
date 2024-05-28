@@ -47,8 +47,8 @@ const Interesting = () => {
           <nav>
             <UlWrap
               data-aos="fade-down"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
+              // data-aos-easing="linear"
+              data-aos-duration="800"
             >
               <LiWrap>
                 <CustomNavLink

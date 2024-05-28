@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import {
   AuthBox,
   DecorPicture,
@@ -9,9 +12,9 @@ import {
 } from "./Author.styled";
 
 import Auth from "../../assets/images/portret.png";
-
 import chem from "../../assets/images/chemistry9.png";
 
+AOS.init();
 const Author = () => {
   return (
     <MainBox>

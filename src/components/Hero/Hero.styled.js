@@ -59,11 +59,10 @@ export const InfoBtn = styled.button`
     box-shadow: ${({ theme }) => theme.shadows.hover};
   }
 `;
+
 export const InfoBtnMain = styled.button`
   width: 165px;
-
   opacity: 0.9;
-
   color: #e7e9fc;
   border: 1px solid #fff;
   background-color: #0a2161;
@@ -84,23 +83,25 @@ export const InfoBtnMain = styled.button`
     box-shadow: ${({ theme }) => theme.shadows.hover};
   }
 `;
+
 export const ListWrapper = styled.ul`
   display: flex;
   gap: 5px;
-  flex-direction: row;
-  align-items: flex-end;
-`;
+  /* flex-direction: row;
+  align-items: flex-end; */
 
-export const MainWrapper = styled.div`
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 85px;
+  /* gap: 85px; */
   flex-direction: column;
   left: 50%;
-  bottom: 15px;
+  bottom: 15%;
   transform: translateX(-50%);
+`;
+
+export const MainWrapper = styled.div`
   /* outline: 1px solid red; */
 `;
 
