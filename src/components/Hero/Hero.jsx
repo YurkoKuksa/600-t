@@ -12,11 +12,11 @@ import {
 } from "./Hero.styled";
 import flask from "../../assets/images/chemistry88.png";
 import { useState } from "react";
-import { Modal } from "../Modal/Modal";
+// import { Modal } from "../Modal/Modal";
 import BackDrop from "../Header/BackDrop/BackDrop";
 AOS.init();
 export const Hero = ({ handleShowAboutBook, handleShowOther }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(() => true);
+  const [isMenuOpen, setIsMenuOpen] = useState(() => false);
 
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);

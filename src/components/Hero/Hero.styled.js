@@ -36,7 +36,6 @@ export const InfoBtn = styled.button`
   justify-content: center;
   align-items: center;
   width: 165px;
-
   opacity: 0.8;
 
   color: #e7e9fc;

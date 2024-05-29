@@ -20,9 +20,8 @@ export const MainModalBox = styled.div`
 
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-
-  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
 `;
 
 export const MainTitle = styled.h1``;
@@ -126,6 +125,7 @@ export const PhoneLink = styled.a`
   letter-spacing: 0.02em;
   text-transform: capitalize;
 `;
+
 export const EmailLink = styled.a`
   color: #434455;
   /* font-size: 16px;
