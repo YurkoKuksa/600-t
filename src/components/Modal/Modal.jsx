@@ -36,26 +36,34 @@ export const Modal = ({ close, open }) => {
     };
 
     document.addEventListener("keydown", handleKeyPress);
+    document.body.style.overflow = "hidden";
 
     return () => {
       document.removeEventListener("keydown", handleKeyPress);
+      document.body.style.overflow = "auto";
     };
   }, [open, close]);
 
-  useEffect(() => {
-    if (open) {
-      document.body.classList.add("noScroll");
-    } else {
-      document.body.classList.remove("noScroll");
+  // useEffect(() => {
+  //   if (open) {
+  //     document.body.classList.add("noScroll");
+  //   } else {
+  //     document.body.classList.remove("noScroll");
+  //   }
+  //   return () => {
+  //     document.body.classList.remove("noScroll");
+  //   };
+  // }, [open]);
+
+  const handleClickOnBackdrop = (e) => {
+    if (e.currentTarget === e.target) {
+      close();
     }
-    return () => {
-      document.body.classList.remove("noScroll");
-    };
-  }, [open]);
+  };
 
   return (
     <MainModalBox open={open}>
-      <CloseMenuBtn type="button" onClick={close}>
+      <CloseMenuBtn type="button" onClick={handleClickOnBackdrop}>
         <ImgSvg src={closeBtn} alt="закрити" />
       </CloseMenuBtn>
       <Title>Замовити 600 задач з хімії</Title>

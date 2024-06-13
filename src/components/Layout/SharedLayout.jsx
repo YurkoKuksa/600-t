@@ -5,6 +5,7 @@ import Aside from "../Aside/Aside";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Loader from "../Loader/Loader";
+import { ScrollUpBtn } from "../ScrollUpButton/ScrollUpButton";
 
 const SharedLayout = () => {
   return (
@@ -19,6 +20,7 @@ const SharedLayout = () => {
             </Suspense>
           </Div>
         </Container>
+        <ScrollUpBtn />
       </Box>
 
       <Footer />

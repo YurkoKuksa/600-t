@@ -45,7 +45,6 @@ export const Hero = ({ handleShowAboutBook, handleShowOther }) => {
               Дізнатись більше
             </InfoBtn>
           </li>
-
           <li>
             <InfoBtn type="button" onClick={handleShowOther}>
               Інші публікації
