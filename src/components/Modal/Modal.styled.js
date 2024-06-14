@@ -1,12 +1,31 @@
 import styled from "styled-components";
 
+export const BackGraound = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 998;
+  opacity: 1;
+  pointer-events: initial;
+  visibility: visible;
+
+  backdrop-filter: blur(8px);
+`;
+
 export const MainModalBox = styled.div`
   padding: 30px 40px;
   background-color: #fff;
 
-  position: absolute;
-  right: 50%;
-  top: 25%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
 
   width: 550px;
 

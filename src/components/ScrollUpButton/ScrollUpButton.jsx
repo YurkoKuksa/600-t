@@ -11,9 +11,7 @@ export const ScrollUpBtn = () => {
   useEffect(() => {
     const handleScroll = () => {
       scrollYRef.current = window.scrollY;
-      console.log("scrollY:", scrollYRef.current); // Debug scroll position
       setIsVisible(scrollYRef.current > 300);
-      console.log("isVisible:", scrollYRef.current > 300); // Debug visibility condition
     };
 
     window.addEventListener("scroll", handleScroll);

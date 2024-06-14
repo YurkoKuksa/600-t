@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ScrollUpPic = styled.img`
-  /* fill: white; */
+  fill: white;
 `;
 
 // export const ScrollButton = styled.button`

@@ -12,18 +12,25 @@ import {
 } from "./Hero.styled";
 import flask from "../../assets/images/chemistry88.png";
 import { useState } from "react";
-// import { Modal } from "../Modal/Modal";
-import BackDrop from "../Header/BackDrop/BackDrop";
+
+// import BackDrop from "../Header/BackDrop/BackDrop";
+import Modal from "../Modal/Modal";
 AOS.init();
 export const Hero = ({ handleShowAboutBook, handleShowOther }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(() => false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(() => false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen((prevState) => !prevState);
-  };
+  // const toggleMenu = () => {
+  //   setIsMenuOpen((prevState) => !prevState);
+  // };
 
-  const closeModal = () => {
-    setIsMenuOpen(false);
+  // const closeModal = () => {
+  //   setIsMenuOpen(false);
+  // };
+
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const toggleModal = () => {
+    setIsOpenModal(!isOpenModal);
   };
 
   return (
@@ -36,7 +43,7 @@ export const Hero = ({ handleShowAboutBook, handleShowOther }) => {
       <MainWrapper>
         <ListWrapper>
           <li>
-            <InfoBtnMain type="button" onClick={toggleMenu}>
+            <InfoBtnMain type="button" onClick={toggleModal}>
               Отримати книгу
             </InfoBtnMain>
           </li>
@@ -52,8 +59,7 @@ export const Hero = ({ handleShowAboutBook, handleShowOther }) => {
           </li>
         </ListWrapper>
       </MainWrapper>
-      {isMenuOpen && <BackDrop close={closeModal} />}
-      {/* <Modal close={closeModal} open={isMenuOpen} /> */}
+      {isOpenModal && <Modal toggleModal={toggleModal} />}
     </StyledBox>
   );
 };
