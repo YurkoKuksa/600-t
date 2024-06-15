@@ -18,9 +18,9 @@ import {
 } from "./AboutBook.styled";
 import bookTasks from "../../../assets/images/600.jpg";
 
-const AboutBook = () => {
+const AboutBook = ({ id }) => {
   return (
-    <MainBox>
+    <MainBox id={id}>
       <DescripBox>
         <TitleBox>
           <Title>600 Задач Хімії </Title>

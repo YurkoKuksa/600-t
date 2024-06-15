@@ -7,9 +7,9 @@ import {
 } from "./AllPublications.styled";
 import interestingChemistryBook from "../../../assets/images/exp.jpg";
 
-const AllPublications = () => {
+const AllPublications = ({ id }) => {
   return (
-    <MainBox>
+    <MainBox id={id}>
       <ImgBox>
         <img src={interestingChemistryBook} alt="Цікава хімія" width={300} />
       </ImgBox>

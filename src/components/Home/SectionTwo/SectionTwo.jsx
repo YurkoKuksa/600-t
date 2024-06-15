@@ -2,12 +2,12 @@ import AboutBook from "../AboutBook/AboutBook";
 import AllPublications from "../AllPublications/AllPublications";
 import { MainBox } from "./SectionTwoStyled";
 
-const SectionTwo = ({ showAboutBook, other }) => {
+const SectionTwo = ({ showAboutBook, other, id }) => {
   return (
     <MainBox>
       <div>
-        {showAboutBook && <AboutBook />}
-        {other && <AllPublications />}
+        {showAboutBook && <AboutBook id={id} />}
+        {other && <AllPublications id={id} />}
       </div>
     </MainBox>
   );

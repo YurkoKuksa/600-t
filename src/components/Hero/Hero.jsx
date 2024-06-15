@@ -13,20 +13,9 @@ import {
 import flask from "../../assets/images/chemistry88.png";
 import { useState } from "react";
 
-// import BackDrop from "../Header/BackDrop/BackDrop";
 import Modal from "../Modal/Modal";
 AOS.init();
 export const Hero = ({ handleShowAboutBook, handleShowOther }) => {
-  // const [isMenuOpen, setIsMenuOpen] = useState(() => false);
-
-  // const toggleMenu = () => {
-  //   setIsMenuOpen((prevState) => !prevState);
-  // };
-
-  // const closeModal = () => {
-  //   setIsMenuOpen(false);
-  // };
-
   const [isOpenModal, setIsOpenModal] = useState(false);
 
   const toggleModal = () => {
