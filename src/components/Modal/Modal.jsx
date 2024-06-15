@@ -45,44 +45,6 @@ const Modal = ({ toggleModal }) => {
       toggleModal();
     }
   };
-  // export const Modal = ({ close, open }) => {
-  //   useEffect(() => {
-  //     const handleKeyPress = (event) => {
-  //       if (
-  //         event.key === "Escape" ||
-  //         event.key === " " ||
-  //         event.key === "Enter" ||
-  //         event.key === "+"
-  //       ) {
-  //         close();
-  //       }
-  //     };
-
-  //     document.addEventListener("keydown", handleKeyPress);
-  //     document.body.style.overflow = "hidden";
-
-  //     return () => {
-  //       document.removeEventListener("keydown", handleKeyPress);
-  //       document.body.style.overflow = "auto";
-  //     };
-  //   }, [open, close]);
-
-  // useEffect(() => {
-  //   if (open) {
-  //     document.body.classList.add("noScroll");
-  //   } else {
-  //     document.body.classList.remove("noScroll");
-  //   }
-  //   return () => {
-  //     document.body.classList.remove("noScroll");
-  //   };
-  // }, [open]);
-
-  // const handleClickOnBackdrop = (e) => {
-  //   if (e.currentTarget === e.target) {
-  //     close();
-  //   }
-  // };
 
   return (
     <BackGraound onClick={handleClickOnBackdrop}>

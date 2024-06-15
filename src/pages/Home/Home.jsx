@@ -2,15 +2,7 @@ import { Box } from "./Home.styled";
 import { Hero } from "../../components/Hero/Hero";
 import SectionTwo from "../../components/Home/SectionTwo/SectionTwo";
 import { useEffect, useState } from "react";
-// import { Link } from "react-scroll";
-// import React, { useRef } from "react";
 
-// const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
-// const aboutBookRef = useRef(null);
-
-// const handleScrollToAboutBook = () => {
-//   scrollToRef(aboutBookRef);
-// };
 const Home = () => {
   const [showAboutBook, setShowAboutBook] = useState(false);
   const [other, setOther] = useState(false);
@@ -40,7 +32,7 @@ const Home = () => {
   useEffect(() => {
     if (scrollToSection) {
       handleClickScroll("scroll-section");
-      setScrollToSection(false); // Скинути прапорець після скролінгу
+      setScrollToSection(false);
     }
   }, [scrollToSection]);
 
@@ -55,40 +47,8 @@ const Home = () => {
         other={other}
         id="scroll-section"
       />
-      {/* <Link to="elementID" smooth={true} duration={500}></Link> */}
     </Box>
   );
 };
 
 export default Home;
-
-//   const [showAboutBook, setShowAboutBook] = useState(false);
-//   const [other, setOther] = useState(false);
-//   // const [scrollTarget, setScrollTarget] = useState(null);
-
-//   const handleShowAboutBook = () => {
-//     setShowAboutBook(true);
-//     setOther(false);
-//     //scrollIntoView - для плавної прокрутки
-//     // document.getElementById("yu").scrollIntoView({ behavior: "smooth" });
-//     // setScrollTarget("yu");
-//   };
-
-//   const handleShowOther = () => {
-//     setOther(true);
-//     setShowAboutBook(false);
-//     // document.getElementById("other").scrollIntoView({ behavior: "smooth" });
-//     // setScrollTarget("other");
-// };
-
-//  return (
-// {showAboutBook && <AboutBook />}
-//         {other && <AllPublications />}
-//         <hr />
-//         <span id="other"></span>
-//         <span id="yu"></span>
-//         {scrollTarget &&
-//           document.getElementById(scrollTarget) &&
-//           document
-//             .getElementById(scrollTarget)
-//             .scrollIntoView({ behavior: "smooth" })})

@@ -13,11 +13,3 @@ const SectionTwo = ({ showAboutBook, other, id }) => {
   );
 };
 export default SectionTwo;
-
-// <div id="other"></div>
-// <div id="yu"></div>
-// {scrollTarget &&
-//   document.getElementById(scrollTarget) &&
-//   document
-//     .getElementById(scrollTarget)
-//     .scrollIntoView({ behavior: "smooth" })}
