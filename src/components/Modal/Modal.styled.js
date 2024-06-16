@@ -38,6 +38,12 @@ export const MainModalBox = styled.div`
     top: 53%;
   }
 
+  @media screen and (min-width: 384px) {
+    padding: 32px 10px;
+    width: 355px;
+    top: 52%;
+  }
+
   @media screen and (min-width: 1440px) {
     padding: 30px 40px;
     width: 550px;
@@ -79,6 +85,10 @@ export const Book = styled.img`
 
   @media screen and (min-width: 360px) {
     width: 200px;
+  }
+
+  @media screen and (min-width: 384px) {
+    width: 225px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -188,6 +198,11 @@ export const CloseMenuBtn = styled.button`
     top: 12px;
     right: 12px;
   }
+
+  @media screen and (min-width: 384px) {
+    top: 16px;
+    right: 16px;
+  }
   @media screen and (min-width: 1440px) {
     top: 24px;
     right: 24px;
@@ -217,6 +232,9 @@ export const SvgItem = styled.img`
   display: inline;
   margin: 0;
   width: 14px;
+  @media screen and (min-width: 384px) {
+    width: 16px;
+  }
 `;
 export const SpanWrapper = styled.span``;
 export const ContactLink = styled.a`
@@ -232,6 +250,13 @@ export const ContactLink = styled.a`
 export const List = styled.ul`
   width: 220px;
   margin: 0 auto 15px;
+  @media screen and (min-width: 360px) {
+    margin: 0 auto 25px;
+  }
+
+  @media screen and (min-width: 384px) {
+    margin: 0 auto 30px;
+  }
 `;
 
 export const DownloadFile = styled.img`
