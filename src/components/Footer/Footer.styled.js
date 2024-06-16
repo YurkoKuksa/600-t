@@ -172,6 +172,7 @@ export const Paragraph = styled.p`
     padding: 10px 0;
   }
 `;
+
 export const AddressWrapper = styled.address`
   display: flex;
   justify-content: center;
@@ -219,11 +220,15 @@ export const SpanWrapper = styled.span`
   color: red;
 `;
 
-export const AllRightsBox = styled.div``;
+export const AllRightsBox = styled.div`
+  width: 100%;
+`;
 
 export const CopyRightText = styled.p`
   color: #6e6d6d;
   font-size: 12px;
+
+  text-align: center;
 
   @media screen and (min-width: 576px) {
     font-size: 14px;

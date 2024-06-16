@@ -17,13 +17,13 @@ export const BackGraound = styled.div`
 `;
 
 export const MainModalBox = styled.div`
-  padding: 30px 14px;
+  padding: 5px 14px 10px;
   width: 290px;
 
   background-color: #fff;
   position: fixed;
   left: 50%;
-  top: 50%;
+  top: 54%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
   transition: transform 300ms ease-in-out;
@@ -68,8 +68,8 @@ export const Paragraph = styled.p`
 `;
 
 export const Book = styled.img`
-  margin: 15px auto;
-  width: 180px;
+  margin: 5px auto 15px;
+  width: 160px;
 
   @media screen and (min-width: 1440px) {
     margin: 25px auto;
@@ -77,17 +77,19 @@ export const Book = styled.img`
 `;
 
 export const ModalCloseButton = styled.button`
-  margin: 5px auto 0;
-  width: 125px;
-  padding: 8px 6px;
+  margin: 0 auto 5px;
+  /* width: 125px; */
+  width: 100px;
+  /* padding: 8px 6px; */
+  padding: 5px 4px;
   font-size: 14px;
 
   opacity: 0.8;
   display: block;
   color: #e7e9fc;
-  border: 1px solid #fff;
-  background-color: #0a2161;
 
+  border: 1px solid #fff;
+  background-color: #808080;
   border-radius: 8px;
   color: #fff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -96,10 +98,10 @@ export const ModalCloseButton = styled.button`
     `${theme.shadows.button}, ${theme.shadows.inner}`};
 
   &:hover {
-    background-color: #1f4fd1;
+    background-color: #6f6f6f;
   }
   &:active {
-    background-color: #406ce3;
+    background-color: #919191;
     box-shadow: ${({ theme }) => theme.shadows.hover};
   }
 
@@ -112,11 +114,11 @@ export const ModalCloseButton = styled.button`
 `;
 
 export const GoogleForm = styled.a`
-  margin: 5px auto;
+  margin: 0 auto 15px;
   padding: 5px 0;
   border-radius: 8px;
   width: 145px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
   letter-spacing: 0.04em;
   font-weight: 500;
@@ -158,7 +160,6 @@ export const CloseMenuBtn = styled.button`
 
   position: absolute;
   border-radius: 50%;
-  /* background-color: #2e2f42; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -180,18 +181,8 @@ export const CloseMenuBtn = styled.button`
   }
 `;
 
-/* OUTLINE */
-/* outline: 1px solid green; */
-// @media screen and (min-width: 576px){}
-// @media screen and (min-width: 768px){}
-// @media screen and (min-width: 992px){}
-// @media screen and (min-width: 1200px){}
-// @media screen and (min-width: 1440px){}
-// @media screen and (min-width: 1920px){}
-// @media screen and (min-width: 2560px){}
-
 export const ListStyled = styled.li`
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
   font-size: 14px;
 
@@ -208,9 +199,7 @@ export const SvgItem = styled.img`
   display: inline;
   margin: 0;
 `;
-export const SpanWrapper = styled.span`
-  /* color: red; */
-`;
+export const SpanWrapper = styled.span``;
 export const ContactLink = styled.a`
   cursor: pointer;
   display: flex;
@@ -223,9 +212,29 @@ export const ContactLink = styled.a`
 
 export const List = styled.ul`
   width: 220px;
-  /* margin-bottom: 25px; */
-
-  margin: 0 auto 25px;
-  /* 
-  outline: 1px solid green; */
+  margin: 0 auto 15px;
 `;
+
+export const DownloadFile = styled.img`
+  width: 14px;
+  height: 14px;
+`;
+
+export const SpanDownload = styled.span`
+  font-size: 14px;
+`;
+
+export const DownLoadFile = styled.a`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+`;
+/* OUTLINE */
+/* outline: 1px solid green; */
+// @media screen and (min-width: 576px){}
+// @media screen and (min-width: 768px){}
+// @media screen and (min-width: 992px){}
+// @media screen and (min-width: 1200px){}
+// @media screen and (min-width: 1440px){}
+// @media screen and (min-width: 1920px){}
+// @media screen and (min-width: 2560px){}

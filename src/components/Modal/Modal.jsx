@@ -6,13 +6,16 @@ import {
   GoogleForm,
   MainModalBox,
   ModalCloseButton,
-  Title,
-  Paragraph,
+  // Title,
+  // Paragraph,
   ListStyled,
   SvgItem,
   SpanWrapper,
   ContactLink,
   List,
+  DownloadFile,
+  SpanDownload,
+  DownLoadFile,
 } from "./Modal.styled";
 
 import cover from "../../assets/images/600.jpg";
@@ -20,6 +23,8 @@ import phone from "../../assets/svg/call.svg";
 import mail from "../../assets/svg/mail.svg";
 import closeBtn from "../../assets/svg/close.svg";
 import { ImgSvg } from "../Header/BurgerMenue/BurgerMenue.styled";
+import pdf from "../../assets/pdf/1.pdf";
+import download from "../../assets/svg/download.svg";
 
 const Modal = ({ toggleModal }) => {
   useEffect(() => {
@@ -51,15 +56,20 @@ const Modal = ({ toggleModal }) => {
           <ImgSvg src={closeBtn} alt="закрити" />
         </CloseMenuBtn>
 
-        <Title>Замовити 600 задач з хімії</Title>
+        {/* <Title>Замовити 600 задач з хімії</Title>
         <Paragraph>
           Для замовлення книги, будь ласка, пройдіть нижче за посиланням та
           заповніть форму:
-        </Paragraph>
+        </Paragraph> */}
+        <Book src={cover} alt="600 задач з хімії" />
         <GoogleForm href="https://forms.gle/aoJP4LLRBtXmeS2dA" target="_blank">
           Замовити книгу
         </GoogleForm>
-        <Book src={cover} alt="600 задач з хімії" />
+
+        <DownLoadFile href={pdf} target="_blank" rel="noopener noreferrer">
+          <DownloadFile src={download} alt="завантажити" download="Зракзок" />
+          <SpanDownload>&nbsp; зразок</SpanDownload>
+        </DownLoadFile>
 
         <List>
           <ListStyled>
