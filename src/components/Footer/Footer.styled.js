@@ -246,6 +246,9 @@ export const CopyRightText = styled.p`
 
 /* OUTLINE */
 /* outline: 1px solid green; */
+// @media screen and (min-width: 360px){}
+// @media screen and (min-width: 375px){}
+// @media screen and (min-width: 384px){}
 // @media screen and (min-width: 576px){}
 // @media screen and (min-width: 768px){}
 // @media screen and (min-width: 992px){}

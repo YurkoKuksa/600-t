@@ -17,7 +17,7 @@ export const BackGraound = styled.div`
 `;
 
 export const MainModalBox = styled.div`
-  padding: 5px 14px 10px;
+  padding: 14px 10px;
   width: 290px;
 
   background-color: #fff;
@@ -31,6 +31,12 @@ export const MainModalBox = styled.div`
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+
+  @media screen and (min-width: 360px) {
+    padding: 24px 10px;
+    width: 330px;
+    top: 53%;
+  }
 
   @media screen and (min-width: 1440px) {
     padding: 30px 40px;
@@ -70,6 +76,10 @@ export const Paragraph = styled.p`
 export const Book = styled.img`
   margin: 5px auto 15px;
   width: 160px;
+
+  @media screen and (min-width: 360px) {
+    width: 200px;
+  }
 
   @media screen and (min-width: 1440px) {
     margin: 25px auto;
@@ -173,6 +183,11 @@ export const CloseMenuBtn = styled.button`
     background-color: #d5d5d5;
     transform: scale(1.15);
   }
+
+  @media screen and (min-width: 360px) {
+    top: 12px;
+    right: 12px;
+  }
   @media screen and (min-width: 1440px) {
     top: 24px;
     right: 24px;
@@ -189,6 +204,9 @@ export const ListStyled = styled.li`
   &:hover {
     color: #808080;
   }
+  @media screen and (min-width: 360px) {
+    margin-bottom: 10px;
+  }
   @media screen and (min-width: 1440px) {
     margin-bottom: 10px;
     font-size: 18px;
@@ -198,6 +216,7 @@ export const ListStyled = styled.li`
 export const SvgItem = styled.img`
   display: inline;
   margin: 0;
+  width: 14px;
 `;
 export const SpanWrapper = styled.span``;
 export const ContactLink = styled.a`
@@ -228,9 +247,16 @@ export const DownLoadFile = styled.a`
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 360px) {
+    margin-bottom: 25px;
+  }
 `;
 /* OUTLINE */
 /* outline: 1px solid green; */
+// @media screen and (min-width: 360px){}
+// @media screen and (min-width: 375px){}
+// @media screen and (min-width: 384px){}
 // @media screen and (min-width: 576px){}
 // @media screen and (min-width: 768px){}
 // @media screen and (min-width: 992px){}

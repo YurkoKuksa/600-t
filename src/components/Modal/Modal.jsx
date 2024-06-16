@@ -75,7 +75,7 @@ const Modal = ({ toggleModal }) => {
           <ListStyled>
             <ContactLink href="mailto:kuksasergei@ukr.net">
               <SpanWrapper>
-                <SvgItem src={mail} alt="локація" width={20} /> &nbsp;
+                <SvgItem src={mail} alt="локація" /> &nbsp;
               </SpanWrapper>
               &nbsp; kuksasergey55@gmail.com
             </ContactLink>
@@ -84,7 +84,7 @@ const Modal = ({ toggleModal }) => {
           <ListStyled>
             <ContactLink href="tel:+380968103053">
               <SpanWrapper>
-                <SvgItem src={phone} alt="локація" width={22} /> &nbsp;
+                <SvgItem src={phone} alt="локація" /> &nbsp;
               </SpanWrapper>
               &nbsp; +38 (096) 810-30-53
             </ContactLink>
