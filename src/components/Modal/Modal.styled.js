@@ -43,6 +43,10 @@ export const MainModalBox = styled.div`
     width: 355px;
     top: 52%;
   }
+  @media screen and (min-width: 412px) {
+    width: 390px;
+    top: 52%;
+  }
 
   @media screen and (min-width: 1440px) {
     padding: 30px 40px;
@@ -91,6 +95,10 @@ export const Book = styled.img`
     width: 225px;
   }
 
+  @media screen and (min-width: 412px) {
+    width: 290px;
+  }
+
   @media screen and (min-width: 1440px) {
     margin: 25px auto;
   }
@@ -98,16 +106,14 @@ export const Book = styled.img`
 
 export const ModalCloseButton = styled.button`
   margin: 0 auto 5px;
-  /* width: 125px; */
   width: 100px;
-  /* padding: 8px 6px; */
   padding: 5px 4px;
+  /* width: 125px; */
+  /* padding: 8px 6px; */
   font-size: 14px;
-
   opacity: 0.8;
   display: block;
   color: #e7e9fc;
-
   border: 1px solid #fff;
   background-color: #808080;
   border-radius: 8px;
@@ -116,7 +122,6 @@ export const ModalCloseButton = styled.button`
     box-shadow 0.3s;
   box-shadow: ${({ theme }) =>
     `${theme.shadows.button}, ${theme.shadows.inner}`};
-
   &:hover {
     background-color: #6f6f6f;
   }
@@ -124,7 +129,10 @@ export const ModalCloseButton = styled.button`
     background-color: #919191;
     box-shadow: ${({ theme }) => theme.shadows.hover};
   }
-
+  @media screen and (min-width: 412px) {
+    width: 125px;
+    padding: 8px 6px;
+  }
   @media screen and (min-width: 1440px) {
     margin: 30px auto 0;
     display: block;
@@ -145,19 +153,33 @@ export const GoogleForm = styled.a`
 
   text-align: center;
   display: block;
-  color: #ffa;
-  background-color: #de1956;
+  color: #fff;
+  /* background-color: #de1956; */
+  background-color: #4d5ae5;
+  background-color: #1586ac;
+  opacity: 0.9;
+
+  box-shadow: ${({ theme }) =>
+    `${theme.shadows.button}, ${theme.shadows.inner}`};
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s,
     scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: ${({ theme }) =>
-    `${theme.shadows.button}, ${theme.shadows.inner}`};
 
-  &:hover {
+  /* &:hover {
     color: #ff7;
     background-color: #e8316a;
     transform: scale(1.05);
+  } */
+
+  &:hover {
+    background-color: #116f8e;
+    transform: scale(1.05);
+  }
+  &:active {
+    background-color: #1baad9;
+    transform: scale(1.05);
+    box-shadow: ${({ theme }) => theme.shadows.hover};
   }
 
   @media screen and (min-width: 1440px) {
@@ -222,6 +244,10 @@ export const ListStyled = styled.li`
   @media screen and (min-width: 360px) {
     margin-bottom: 10px;
   }
+  @media screen and (min-width: 412px) {
+    margin-bottom: 15px;
+  }
+
   @media screen and (min-width: 1440px) {
     margin-bottom: 10px;
     font-size: 18px;
@@ -257,6 +283,9 @@ export const List = styled.ul`
   @media screen and (min-width: 384px) {
     margin: 0 auto 30px;
   }
+  @media screen and (min-width: 412px) {
+    margin-bottom: 35px;
+  }
 `;
 
 export const DownloadFile = styled.img`
@@ -276,12 +305,16 @@ export const DownLoadFile = styled.a`
   @media screen and (min-width: 360px) {
     margin-bottom: 25px;
   }
+  @media screen and (min-width: 412px) {
+    margin-bottom: 35px;
+  }
 `;
 /* OUTLINE */
 /* outline: 1px solid green; */
 // @media screen and (min-width: 360px){}
 // @media screen and (min-width: 375px){}
 // @media screen and (min-width: 384px){}
+// @media screen and (min-width: 412px){}
 // @media screen and (min-width: 576px){}
 // @media screen and (min-width: 768px){}
 // @media screen and (min-width: 992px){}
