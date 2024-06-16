@@ -34,9 +34,6 @@ export const MainWrapper = styled.div`
     flex-direction: row;
 
     column-gap: 350px;
-
-    /* OUTLINE */
-    /* outline: 1px solid red; */
   }
 
   @media screen and (min-width: 1920px) {
@@ -69,8 +66,6 @@ export const LogoBox = styled.div`
   @media screen and (min-width: 2560px) {
     margin-left: 150px;
   }
-  /* OUTLINE */
-  /* outline: 1px solid red; */
 `;
 
 export const Box = styled.div`
@@ -112,8 +107,6 @@ export const Quote = styled.p`
     font-size: 30px;
     width: 400px;
   }
-  /* OUTLINE */
-  /* outline: 1px solid green; */
 `;
 
 export const LogoLink = styled.p`
@@ -145,15 +138,9 @@ export const AddressBox = styled.div`
   @media screen and (min-width: 1200px) {
     width: 100%;
   }
-
-  /* OUTLINE */
-  /* outline: 1px solid red; */
 `;
 
-export const ContactList = styled.ul`
-  /* OUTLINE */
-  /* outline: 1px solid green; */
-`;
+export const ContactList = styled.ul``;
 
 export const Paragraph = styled.p`
   margin-bottom: 25px;
@@ -184,9 +171,6 @@ export const Paragraph = styled.p`
     width: 480px;
     padding: 10px 0;
   }
-
-  /* OUTLINE */
-  /* outline: 1px solid green; */
 `;
 export const AddressWrapper = styled.address`
   display: flex;
@@ -204,9 +188,6 @@ export const AddressWrapper = styled.address`
   @media screen and (min-width: 2560px) {
     width: 480px;
   }
-
-  /* OUTLINE */
-  /* outline: 1px solid green; */
 `;
 
 export const ListStyled = styled.li`
@@ -230,8 +211,6 @@ export const ListStyled = styled.li`
   @media screen and (min-width: 2560px) {
     font-size: 22px;
   }
-  /* OUTLINE */
-  /* outline: 1px solid green; */
 `;
 
 export const ContactLink = styled.a``;
@@ -260,6 +239,8 @@ export const CopyRightText = styled.p`
   }
 `;
 
+/* OUTLINE */
+/* outline: 1px solid green; */
 // @media screen and (min-width: 576px){}
 // @media screen and (min-width: 768px){}
 // @media screen and (min-width: 992px){}

@@ -13,53 +13,83 @@ export const BackGraound = styled.div`
   opacity: 1;
   pointer-events: initial;
   visibility: visible;
-
   backdrop-filter: blur(8px);
 `;
 
 export const MainModalBox = styled.div`
-  padding: 30px 40px;
-  background-color: #fff;
+  padding: 30px 14px;
+  width: 290px;
 
+  background-color: #fff;
   position: fixed;
   left: 50%;
   top: 50%;
-
   transform: translate(-50%, -50%);
-
-  width: 550px;
-
   border-radius: 5px;
   transition: transform 300ms ease-in-out;
-
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+
+  @media screen and (min-width: 1440px) {
+    padding: 30px 40px;
+    width: 550px;
+  }
 `;
 
 export const Title = styled.h1`
   text-align: center;
-  margin: 15px 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  @media screen and (min-width: 1440px) {
+    margin: 15px 0;
+  }
+`;
+
+export const Paragraph = styled.p`
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  font-size: 14px;
+  text-indent: 10px;
+  margin: 0 14px 15px;
+
+  color: #6b6363;
+
+  @media screen and (min-width: 1440px) {
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 18px;
+    text-indent: 50px;
+    margin-bottom: 5px;
+  }
 `;
 
 export const Book = styled.img`
-  margin: 25px auto;
+  margin: 15px auto;
+  width: 180px;
+
+  @media screen and (min-width: 1440px) {
+    margin: 25px auto;
+  }
 `;
 
 export const ModalCloseButton = styled.button`
-  margin: 30px auto 0;
-  display: block;
-  width: 165px;
-  opacity: 0.8;
+  margin: 5px auto 0;
+  width: 125px;
+  padding: 8px 6px;
+  font-size: 14px;
 
+  opacity: 0.8;
+  display: block;
   color: #e7e9fc;
   border: 1px solid #fff;
   background-color: #0a2161;
-  padding: 10px 8px;
+
   border-radius: 8px;
   color: #fff;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.3s;
   box-shadow: ${({ theme }) =>
@@ -72,43 +102,61 @@ export const ModalCloseButton = styled.button`
     background-color: #406ce3;
     box-shadow: ${({ theme }) => theme.shadows.hover};
   }
+
+  @media screen and (min-width: 1440px) {
+    margin: 30px auto 0;
+    display: block;
+    width: 165px;
+    padding: 10px 8px;
+  }
 `;
 
 export const GoogleForm = styled.a`
-  text-align: center;
-
-  display: block;
-  margin: 35px auto 40px;
+  margin: 5px auto;
   padding: 5px 0;
   border-radius: 8px;
-
-  width: 200px;
-
-  font-size: 18px;
+  width: 145px;
+  font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.04em;
   font-weight: 500;
+
+  text-align: center;
+  display: block;
   color: #ffa;
   background-color: #de1956;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s,
     scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: ${({ theme }) =>
+    `${theme.shadows.button}, ${theme.shadows.inner}`};
 
   &:hover {
     color: #ff7;
     background-color: #e8316a;
     transform: scale(1.05);
   }
+
+  @media screen and (min-width: 1440px) {
+    margin: 35px auto 40px;
+    padding: 5px 0;
+    border-radius: 8px;
+    width: 200px;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+  }
 `;
 
 export const CloseMenuBtn = styled.button`
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  height: 24px;
-  width: 24px;
+  top: 8px;
+  right: 8px;
+  height: 16px;
+  width: 16px;
 
+  position: absolute;
   border-radius: 50%;
   /* background-color: #2e2f42; */
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -124,4 +172,60 @@ export const CloseMenuBtn = styled.button`
     background-color: #d5d5d5;
     transform: scale(1.15);
   }
+  @media screen and (min-width: 1440px) {
+    top: 24px;
+    right: 24px;
+    height: 24px;
+    width: 24px;
+  }
+`;
+
+/* OUTLINE */
+/* outline: 1px solid green; */
+// @media screen and (min-width: 576px){}
+// @media screen and (min-width: 768px){}
+// @media screen and (min-width: 992px){}
+// @media screen and (min-width: 1200px){}
+// @media screen and (min-width: 1440px){}
+// @media screen and (min-width: 1920px){}
+// @media screen and (min-width: 2560px){}
+
+export const ListStyled = styled.li`
+  margin-bottom: 10px;
+
+  font-size: 14px;
+
+  &:hover {
+    color: #808080;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+`;
+
+export const SvgItem = styled.img`
+  display: inline;
+  margin: 0;
+`;
+export const SpanWrapper = styled.span`
+  /* color: red; */
+`;
+export const ContactLink = styled.a`
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  flex-direction: row;
+  gap: 1px;
+  margin: 0;
+`;
+
+export const List = styled.ul`
+  width: 220px;
+  /* margin-bottom: 25px; */
+
+  margin: 0 auto 25px;
+  /* 
+  outline: 1px solid green; */
 `;

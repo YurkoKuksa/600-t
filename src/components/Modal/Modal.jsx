@@ -7,17 +7,15 @@ import {
   MainModalBox,
   ModalCloseButton,
   Title,
+  Paragraph,
+  ListStyled,
+  SvgItem,
+  SpanWrapper,
+  ContactLink,
+  List,
 } from "./Modal.styled";
-import { Paragraph } from "../../pages/Author/Author.styled";
 
 import cover from "../../assets/images/600.jpg";
-import {
-  ContactLink,
-  ListStyled,
-  SpanWrapper,
-  SvgItem,
-} from "../../pages/Contacts/Contacts.styled";
-
 import phone from "../../assets/svg/call.svg";
 import mail from "../../assets/svg/mail.svg";
 import closeBtn from "../../assets/svg/close.svg";
@@ -62,7 +60,8 @@ const Modal = ({ toggleModal }) => {
           Замовити книгу
         </GoogleForm>
         <Book src={cover} alt="600 задач з хімії" />
-        <ul>
+
+        <List>
           <ListStyled>
             <ContactLink href="mailto:kuksasergei@ukr.net">
               <SpanWrapper>
@@ -80,7 +79,7 @@ const Modal = ({ toggleModal }) => {
               &nbsp; +38 (096) 810-30-53
             </ContactLink>
           </ListStyled>
-        </ul>
+        </List>
 
         <ModalCloseButton type="button" onClick={toggleModal}>
           Закрити

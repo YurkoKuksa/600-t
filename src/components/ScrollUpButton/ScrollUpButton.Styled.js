@@ -20,7 +20,7 @@ export const ScrollButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 1000; /* Ensure it appears above other content */
+  z-index: 990; /* Ensure it appears above other content */
   padding: 10px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5); /* Optional: for better visibility */
