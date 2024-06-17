@@ -284,7 +284,7 @@ export const List = styled.ul`
     margin: 0 auto 30px;
   }
   @media screen and (min-width: 412px) {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 `;
 
@@ -306,7 +306,7 @@ export const DownLoadFile = styled.a`
     margin-bottom: 25px;
   }
   @media screen and (min-width: 412px) {
-    margin-bottom: 35px;
+    margin-bottom: 45px;
   }
 `;
 /* OUTLINE */
