@@ -45,7 +45,8 @@ export const MainModalBox = styled.div`
   }
   @media screen and (min-width: 412px) {
     width: 390px;
-    top: 52%;
+    top: 53%;
+    padding: 24px 10px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -96,7 +97,7 @@ export const Book = styled.img`
   }
 
   @media screen and (min-width: 412px) {
-    width: 290px;
+    width: 260px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -225,6 +226,10 @@ export const CloseMenuBtn = styled.button`
     top: 16px;
     right: 16px;
   }
+  @media screen and (min-width: 412px) {
+    height: 20px;
+    width: 20px;
+  }
   @media screen and (min-width: 1440px) {
     top: 24px;
     right: 24px;
@@ -245,7 +250,7 @@ export const ListStyled = styled.li`
     margin-bottom: 10px;
   }
   @media screen and (min-width: 412px) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -284,7 +289,7 @@ export const List = styled.ul`
     margin: 0 auto 30px;
   }
   @media screen and (min-width: 412px) {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 `;
 
