@@ -6,8 +6,6 @@ import {
   GoogleForm,
   MainModalBox,
   ModalCloseButton,
-  // Title,
-  // Paragraph,
   ListStyled,
   SvgItem,
   SpanWrapper,
@@ -56,11 +54,6 @@ const Modal = ({ toggleModal }) => {
           <ImgSvg src={closeBtn} alt="закрити" />
         </CloseMenuBtn>
 
-        {/* <Title>Замовити 600 задач з хімії</Title>
-        <Paragraph>
-          Для замовлення книги, будь ласка, пройдіть нижче за посиланням та
-          заповніть форму:
-        </Paragraph> */}
         <Book src={cover} alt="600 задач з хімії" />
         <GoogleForm href="https://forms.gle/aoJP4LLRBtXmeS2dA" target="_blank">
           Замовити книгу
@@ -77,7 +70,7 @@ const Modal = ({ toggleModal }) => {
               <SpanWrapper>
                 <SvgItem src={mail} alt="локація" /> &nbsp;
               </SpanWrapper>
-              &nbsp; kuksasergey55@gmail.com
+              kuksasergey55@gmail.com
             </ContactLink>
           </ListStyled>
 
@@ -86,7 +79,7 @@ const Modal = ({ toggleModal }) => {
               <SpanWrapper>
                 <SvgItem src={phone} alt="локація" /> &nbsp;
               </SpanWrapper>
-              &nbsp; +38 (096) 810-30-53
+              +38 (096) 810-30-53
             </ContactLink>
           </ListStyled>
         </List>

@@ -17,8 +17,8 @@ export const BackGraound = styled.div`
 `;
 
 export const MainModalBox = styled.div`
-  padding: 14px 10px;
-  width: 290px;
+  padding: 12px 0;
+  width: 260px;
 
   background-color: #fff;
   position: fixed;
@@ -33,65 +33,71 @@ export const MainModalBox = styled.div`
     inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
 
   @media screen and (min-width: 360px) {
-    padding: 24px 10px;
+    padding: 24px 0;
     width: 330px;
     top: 53%;
   }
 
+  /* для galaxy s7 */
+  @media screen and (min-width: 360px) and (max-height: 638px) {
+    padding: 14px 0;
+    width: 300px;
+    top: 53%;
+  }
+
+  /* для i-phone 8 */
+  @media screen and (min-width: 375px) and (min-height: 526px) {
+    padding: 14px 0 18px;
+    width: 320px;
+    top: 54%;
+  }
+
   @media screen and (min-width: 384px) {
-    padding: 32px 10px;
+    padding: 32px 0;
     width: 355px;
     top: 52%;
   }
   @media screen and (min-width: 412px) {
     width: 390px;
     top: 53%;
-    padding: 24px 10px;
+    padding: 24px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 460px;
+    padding: 32px 0;
+    top: 50%;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 24px 0;
+    width: 440px;
   }
 
   @media screen and (min-width: 1440px) {
-    padding: 30px 40px;
     width: 550px;
   }
-`;
 
-export const Title = styled.h1`
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 20px;
-  @media screen and (min-width: 1440px) {
-    margin: 15px 0;
-  }
-`;
-
-export const Paragraph = styled.p`
-  line-height: 1.1;
-  letter-spacing: 0.04em;
-  font-weight: 400;
-  font-size: 14px;
-  text-indent: 10px;
-  margin: 0 14px 15px;
-
-  color: #6b6363;
-
-  @media screen and (min-width: 1440px) {
-    line-height: 1.6;
-    letter-spacing: 0.04em;
-    font-weight: 500;
-    font-size: 18px;
-    text-indent: 50px;
-    margin-bottom: 5px;
+  @media screen and (min-width: 1920px) {
   }
 `;
 
 export const Book = styled.img`
-  margin: 5px auto 15px;
-  width: 160px;
+  margin: 5px auto 10px;
+  width: 130px;
 
   @media screen and (min-width: 360px) {
     width: 200px;
   }
 
+  /* для galaxy s7 */
+  @media screen and (min-width: 360px) and (max-height: 638px) {
+    width: 130px;
+  }
+
+  @media screen and (min-width: 375px) and (min-height: 526px) {
+    width: 160px;
+  }
   @media screen and (min-width: 384px) {
     width: 225px;
   }
@@ -100,8 +106,25 @@ export const Book = styled.img`
     width: 260px;
   }
 
+  @media screen and (min-width: 576px) {
+    width: 200px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 280px;
+    margin: 5px auto 20px;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 200px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto 15px;
+  }
+
   @media screen and (min-width: 1440px) {
-    margin: 25px auto;
+    width: 270px;
   }
 `;
 
@@ -134,11 +157,26 @@ export const ModalCloseButton = styled.button`
     width: 125px;
     padding: 8px 6px;
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
   @media screen and (min-width: 1440px) {
-    margin: 30px auto 0;
-    display: block;
     width: 165px;
     padding: 10px 8px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    font-size: 22px;
   }
 `;
 
@@ -156,7 +194,7 @@ export const GoogleForm = styled.a`
   display: block;
   color: #fff;
   /* background-color: #de1956; */
-  background-color: #4d5ae5;
+  /* background-color: #4d5ae5; */
   background-color: #1586ac;
   opacity: 0.9;
 
@@ -183,15 +221,27 @@ export const GoogleForm = styled.a`
     box-shadow: ${({ theme }) => theme.shadows.hover};
   }
 
-  @media screen and (min-width: 1440px) {
-    margin: 35px auto 40px;
-    padding: 5px 0;
-    border-radius: 8px;
-    width: 200px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
     font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: 0.04em;
-    font-weight: 500;
+    width: 180px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 5px 0;
+    width: 200px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 2560px) {
+    font-size: 22px;
   }
 `;
 
@@ -231,10 +281,16 @@ export const CloseMenuBtn = styled.button`
     width: 20px;
   }
   @media screen and (min-width: 1440px) {
-    top: 24px;
-    right: 24px;
     height: 24px;
     width: 24px;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 25px;
+    height: 25px;
+  }
+  @media screen and (min-width: 2560px) {
+    width: 26px;
+    height: 26px;
   }
 `;
 
@@ -249,13 +305,25 @@ export const ListStyled = styled.li`
   @media screen and (min-width: 360px) {
     margin-bottom: 10px;
   }
-  @media screen and (min-width: 412px) {
-    margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
   }
 
   @media screen and (min-width: 1440px) {
-    margin-bottom: 10px;
     font-size: 18px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    font-size: 22px;
   }
 `;
 
@@ -266,8 +334,30 @@ export const SvgItem = styled.img`
   @media screen and (min-width: 384px) {
     width: 16px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 17px;
+    height: 17px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 18px;
+    height: 18px;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 19px;
+    height: 19px;
+  }
+  @media screen and (min-width: 2560px) {
+    width: 20px;
+    height: 20px;
+  }
 `;
-export const SpanWrapper = styled.span``;
+export const SpanWrapper = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+`;
 export const ContactLink = styled.a`
   cursor: pointer;
   display: flex;
@@ -281,25 +371,83 @@ export const ContactLink = styled.a`
 export const List = styled.ul`
   width: 220px;
   margin: 0 auto 15px;
+
+  @media screen and (max-width: 359px) {
+    display: none;
+  }
+
   @media screen and (min-width: 360px) {
     margin: 0 auto 25px;
+  }
+
+  @media screen and (min-width: 375px) and (min-height: 526px) {
+    margin: 0 auto 15px;
   }
 
   @media screen and (min-width: 384px) {
     margin: 0 auto 30px;
   }
+
   @media screen and (min-width: 412px) {
     margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 245px;
+  }
+
+  @media screen and (min-width: 992px) {
+    margin-bottom: 15px;
+    width: 260px;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
+
+  @media screen and (min-width: 1920px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 2560px) {
+    width: 320px;
   }
 `;
 
 export const DownloadFile = styled.img`
   width: 14px;
   height: 14px;
+
+  @media screen and (min-width: 768px) {
+    width: 15px;
+    height: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 16px;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 17px;
+    height: 17px;
+  }
+  @media screen and (min-width: 2560px) {
+    width: 18px;
+    height: 18px;
+  }
 `;
 
 export const SpanDownload = styled.span`
   font-size: 14px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1920px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    font-size: 20px;
+  }
 `;
 
 export const DownLoadFile = styled.a`
@@ -317,7 +465,14 @@ export const DownLoadFile = styled.a`
 /* OUTLINE */
 /* outline: 1px solid green; */
 // @media screen and (min-width: 360px){}
+
+// для galaxy s7
+// @media screen and (min-width: 360px) and (max-height: 638px) {}
 // @media screen and (min-width: 375px){}
+
+// iphone8
+// @media screen and (min-width: 375px) and (min-height: 526px) {}
+
 // @media screen and (min-width: 384px){}
 // @media screen and (min-width: 412px){}
 // @media screen and (min-width: 576px){}
