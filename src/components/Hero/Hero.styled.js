@@ -68,7 +68,7 @@ export const MainTitle = styled.h1`
 
   @media screen and (min-width: 412px) {
     font-size: 85px;
-    margin-bottom: 55px;
+    margin-bottom: 120px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -101,6 +101,7 @@ export const ListWrapper = styled.ul`
   }
 
   @media screen and (min-width: 412px) {
+    bottom: 16%;
   }
 
   @media screen and (min-width: 1200px) {
@@ -138,6 +139,10 @@ export const InfoBtn = styled.button`
     box-shadow: ${({ theme }) => theme.shadows.hover};
   }
 
+  @media screen and (min-width: 412px) {
+    padding: 10px 8px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 165px;
     padding: 10px 8px;
@@ -172,7 +177,8 @@ export const InfoBtnMain = styled.button`
     box-shadow: ${({ theme }) => theme.shadows.hover};
   }
 
-  @media screen and (min-width: 360px) {
+  @media screen and (min-width: 412px) {
+    padding: 18px 15px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -211,6 +217,8 @@ export const Flask = styled.img`
   }
 
   @media screen and (min-width: 412px) {
+    bottom: 7%;
+    width: 90px;
   }
 
   @media screen and (min-width: 1200px) {
