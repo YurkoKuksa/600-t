@@ -12,34 +12,85 @@ export const MainBox = styled.div`
   @media screen and (min-width: 360px) {
     padding: 20px;
   }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 50px;
+    gap: 30px;
+    justify-content: center;
+  }
 `;
 
 export const TitleBox = styled.div`
   margin: 0 16px 20px;
+  @media screen and (min-width: 1920px) {
+    max-width: 1100px;
+  }
 `;
 
 export const ImgBox = styled.div`
-  /* flex-shrink: 0; */
   width: 280px;
+
+  margin: 0 auto 15px;
   @media screen and (min-width: 1200px) {
     width: 300px;
+    flex-shrink: 0;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 2560px) {
+    min-width: 400px;
   }
 `;
 
 export const Title = styled.h2`
   margin-bottom: 15px;
   color: #6e6d6d;
-  font-size: 33px;
+  font-size: 20px;
   text-align: center;
+
+  @media screen and (min-width: 576px) {
+    font-size: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    /* margin-bottom: 35px; */
+  }
+  @media screen and (min-width: 1920px) {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    font-size: 38px;
+    /* margin-bottom: 55px; */
+  }
 `;
 
 export const Description = styled.p`
   margin-bottom: 7px;
   font-weight: 500;
   color: #6b6363;
-  font-size: 18px;
+
   text-indent: 40px;
   line-height: 1.6;
+  font-size: 16px;
+
+  @media screen and (min-width: 576px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1920px) {
+    font-size: 20px;
+    /* max-width: 800px; */
+  }
+  @media screen and (min-width: 2560px) {
+    font-size: 24px;
+  }
 `;
 
 /* OUTLINE */
