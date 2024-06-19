@@ -20,7 +20,7 @@ import cover from "../../assets/images/600.jpg";
 import phone from "../../assets/svg/call.svg";
 import mail from "../../assets/svg/mail.svg";
 import closeBtn from "../../assets/svg/close.svg";
-import { ImgSvg } from "../Header/BurgerMenue/BurgerMenue.styled";
+import { ImgSvg } from "../Header/BurgerMenu/BurgerMenu.styled";
 import pdf from "../../assets/pdf/1.pdf";
 import download from "../../assets/svg/download.svg";
 

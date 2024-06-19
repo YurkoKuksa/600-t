@@ -1,4 +1,4 @@
-import { Box } from "./Home.styled";
+import { Box, Section } from "./Home.styled";
 import { Hero } from "../../components/Hero/Hero";
 import SectionTwo from "../../components/Home/SectionTwo/SectionTwo";
 import { useEffect, useState } from "react";
@@ -38,10 +38,12 @@ const Home = () => {
 
   return (
     <Box>
-      <Hero
-        handleShowAboutBook={handleShowAboutBook}
-        handleShowOther={handleShowOther}
-      />
+      <Section>
+        <Hero
+          handleShowAboutBook={handleShowAboutBook}
+          handleShowOther={handleShowOther}
+        />
+      </Section>
       <SectionTwo
         showAboutBook={showAboutBook}
         other={other}

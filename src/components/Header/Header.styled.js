@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Box = styled.div`
@@ -22,6 +23,13 @@ export const Box = styled.div`
   }
 `;
 
+export const LogiImg = styled(Link)`
+  @media screen and (min-width: 2560px) {
+    width: 60px;
+    height: 60px;
+  }
+`;
+
 export const LogoWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -39,11 +47,18 @@ export const LogoLink = styled.p`
   letter-spacing: 0.04em;
   text-transform: capitalize;
   cursor: pointer;
+
+  @media screen and (min-width: 1920px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 2560px) {
+    font-size: 24px;
+  }
 `;
 
 export const NameStyle = styled.p`
   font-family: "Marck Script";
-  font-size: 25px;
+  font-size: 20px;
   color: #e3e3e3;
   font-weight: 500;
   font-style: italic;
@@ -54,13 +69,27 @@ export const NameStyle = styled.p`
 
   letter-spacing: 0.3em;
 
-  @media screen and (max-width: 577.89px) {
+  @media screen and (max-width: 270px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 500px) {
+    color: transparent;
+    font-size: 1px;
+    font-weight: 400;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 767.89px) and (min-width: 499.89px) {
     font-size: 16px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 25px;
   }
 `;
 
 export const BurgerSvg = styled.img`
-  /* outline: 1px solid red; */
   width: 32px;
   height: 22px;
 
@@ -68,3 +97,24 @@ export const BurgerSvg = styled.img`
     display: none;
   }
 `;
+
+/* OUTLINE */
+/* outline: 1px solid green; */
+// @media screen and (min-width: 360px){}
+
+// для galaxy s7
+// @media screen and (min-width: 360px) and (max-height: 638px) {}
+// @media screen and (min-width: 375px){}
+
+// iphone8
+// @media screen and (min-width: 375px) and (min-height: 526px) {}
+
+// @media screen and (min-width: 384px){}
+// @media screen and (min-width: 412px){}
+// @media screen and (min-width: 576px){}
+// @media screen and (min-width: 768px){}
+// @media screen and (min-width: 992px){}
+// @media screen and (min-width: 1200px){}
+// @media screen and (min-width: 1440px){}
+// @media screen and (min-width: 1920px){}
+// @media screen and (min-width: 2560px){}

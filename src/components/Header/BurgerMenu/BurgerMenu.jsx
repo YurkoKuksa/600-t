@@ -13,14 +13,14 @@ import {
   PhoneLink,
   TitleBox,
   UlContacts,
-} from "./BurgerMenue.styled";
+} from "./BurgerMenu.styled";
 import closeBtn from "../../../assets/svg/close.svg";
 import logopic from "../../../assets/svg/chemistry.svg";
 import mainpicture from "../../../assets/images/chemistry44.png";
 import extrapicture from "../../../assets/images/chemistry16.png";
 import { useEffect } from "react";
 
-export const BurgerMenue = ({ close, open }) => {
+export const BurgerMenu = ({ close, open }) => {
   useEffect(() => {
     const handleKeyPress = (event) => {
       if (
@@ -34,22 +34,13 @@ export const BurgerMenue = ({ close, open }) => {
     };
 
     document.addEventListener("keydown", handleKeyPress);
+    document.body.style.overflow = "hidden";
 
     return () => {
       document.removeEventListener("keydown", handleKeyPress);
+      document.body.style.overflow = "auto";
     };
   }, [open, close]);
-
-  useEffect(() => {
-    if (open) {
-      document.body.classList.add("noScroll");
-    } else {
-      document.body.classList.remove("noScroll");
-    }
-    return () => {
-      document.body.classList.remove("noScroll");
-    };
-  }, [open]);
 
   return (
     <MainModalBox open={open}>
@@ -104,14 +95,3 @@ export const BurgerMenue = ({ close, open }) => {
     </MainModalBox>
   );
 };
-
-//   useEffect(() => {
-//     if (open) {
-//       document.body.classList.add(noScroll);
-//     } else {
-//       document.body.classList.remove(noScroll);
-//     }
-//     return () => {
-//       document.body.classList.remove(noScroll);
-//     };
-//   }, [open]);

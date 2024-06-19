@@ -1,18 +1,16 @@
 import {
   Box,
   BurgerSvg,
+  LogiImg,
   LogoLink,
   LogoWrapper,
   NameStyle,
 } from "./Header.styled";
 import chemistry from "../../assets/svg/chemistry.svg";
-import { Link } from "react-router-dom";
-
-// import { GlobalStyle } from "../../styles/GlobalStyle";
 
 import burger from "../../assets/svg/burger.svg";
 import { useState } from "react";
-import { BurgerMenue } from "./BurgerMenue/BurgerMenue";
+import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
 import BackDrop from "./BackDrop/BackDrop";
 
 const Header = () => {
@@ -25,13 +23,13 @@ const Header = () => {
   const closeModal = () => {
     setIsMenuOpen(false);
   };
-  // { <GlobalStyle $isopen={isMenuOpen} /> }
+
   return (
     <Box>
       <LogoWrapper>
-        <Link to="/">
+        <LogiImg to="/">
           <img src={chemistry} alt="main logo" width={40} height={40} />
-        </Link>
+        </LogiImg>
         <LogoLink>Chemistry tasks</LogoLink>
       </LogoWrapper>
       <NameStyle>Кукса С.П.</NameStyle>
@@ -40,28 +38,12 @@ const Header = () => {
       </button>
       {isMenuOpen && <BackDrop close={closeModal} />}
 
-      <BurgerMenue close={closeModal} open={isMenuOpen} />
+      <BurgerMenu close={closeModal} open={isMenuOpen} />
     </Box>
   );
 };
 
 export default Header;
-
-// useEffect(() => {
-//   const handleScroll = () => {
-//     if (isMenuOpen) {
-//       document.body.classList.add("noScroll");
-//     } else {
-//       document.body.classList.remove("noScroll");
-//     }
-//   };
-
-//   handleScroll();
-
-//   return () => {
-//     document.body.classList.remove("noScroll");
-//   };
-// }, [isMenuOpen]);
 
 // const [isSmallViewport, setIsSmallViewport] = useState(
 //   window.innerWidth <= 768
@@ -74,8 +56,3 @@ export default Header;
 //       toggleMenu(false); // закрити меню, якщо вікно стало більше 768px
 //     }
 //   };
-
-//   window.addEventListener("resize", handleResize);
-
-//   return () => window.removeEventListener("resize", handleResize);
-// }, [isMenuOpen, toggleMenu, isSmallViewport]);

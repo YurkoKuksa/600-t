@@ -10,7 +10,7 @@ export const MainBox = styled.div`
     url(${tasks});
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 300px;
+  min-height: 560px;
   border-radius: 10px;
 `;
 

@@ -14,7 +14,12 @@ export const StyledBox = styled.div`
   background-position: left 0 top 50%;
 
   position: relative;
+
+  /* display: flex;
+  height: 93.3vh;
+  flex: 1; */
 `;
+
 export const Flask = styled.img`
   position: absolute;
   bottom: 0;
@@ -24,6 +29,7 @@ export const Flask = styled.img`
 
 export const MainTitle = styled.h1`
   margin-bottom: 5px;
+  /* margin-bottom: 55px; */
   text-transform: capitalize;
   text-align: center;
   color: #1c1d27;
@@ -77,6 +83,7 @@ export const InfoBtnMain = styled.button`
   &:hover {
     background-color: #1f4fd1;
   }
+
   &:active {
     background-color: #406ce3;
     box-shadow: ${({ theme }) => theme.shadows.hover};
@@ -86,22 +93,23 @@ export const InfoBtnMain = styled.button`
 export const ListWrapper = styled.ul`
   display: flex;
   gap: 5px;
-  /* flex-direction: row;
-  align-items: flex-end; */
-
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* gap: 85px; */
   flex-direction: column;
+
+  /* bottom: -15%; */
+
   left: 50%;
   bottom: 15%;
+
   transform: translateX(-50%);
 `;
 
 export const MainWrapper = styled.div`
-  /* outline: 1px solid red; */
+  /* position: relative; */
+  /* outline: 1px dotted red;
+  position: absolute;
+  top: 0;
+  right: 20%; */
 `;
 
 // background-color: #808080;
