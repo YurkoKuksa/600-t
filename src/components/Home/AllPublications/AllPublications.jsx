@@ -11,7 +11,7 @@ const AllPublications = ({ id }) => {
   return (
     <MainBox id={id}>
       <ImgBox>
-        <img src={interestingChemistryBook} alt="Цікава хімія" width={300} />
+        <img src={interestingChemistryBook} alt="Цікава хімія" />
       </ImgBox>
 
       <TitleBox>
