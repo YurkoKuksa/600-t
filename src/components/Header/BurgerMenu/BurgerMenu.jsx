@@ -33,9 +33,17 @@ export const BurgerMenu = ({ close, open }) => {
       }
     };
 
+    // Додавання обробника подій на keydown
     document.addEventListener("keydown", handleKeyPress);
-    document.body.style.overflow = "hidden";
 
+    // Блокування скролінгу, коли меню відкрите
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    // Прибирання обробника подій та відновлення скролінгу
     return () => {
       document.removeEventListener("keydown", handleKeyPress);
       document.body.style.overflow = "auto";
