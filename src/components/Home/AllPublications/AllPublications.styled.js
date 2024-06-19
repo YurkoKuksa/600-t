@@ -59,7 +59,6 @@ export const Title = styled.h2`
     font-size: 32px;
   }
   @media screen and (min-width: 1200px) {
-    /* margin-bottom: 35px; */
   }
   @media screen and (min-width: 1920px) {
     font-size: 34px;
@@ -68,7 +67,6 @@ export const Title = styled.h2`
 
   @media screen and (min-width: 2560px) {
     font-size: 38px;
-    /* margin-bottom: 55px; */
   }
 `;
 
@@ -86,30 +84,8 @@ export const Description = styled.p`
   }
   @media screen and (min-width: 1920px) {
     font-size: 20px;
-    /* max-width: 800px; */
   }
   @media screen and (min-width: 2560px) {
     font-size: 24px;
   }
 `;
-
-/* OUTLINE */
-/* outline: 1px solid green; */
-// @media screen and (min-width: 360px){}
-
-// для galaxy s7
-// @media screen and (min-width: 360px) and (max-height: 638px) {}
-// @media screen and (min-width: 375px){}
-
-// iphone8
-// @media screen and (min-width: 375px) and (min-height: 526px) {}
-
-// @media screen and (min-width: 384px){}
-// @media screen and (min-width: 412px){}
-// @media screen and (min-width: 576px){}
-// @media screen and (min-width: 768px){}
-// @media screen and (min-width: 992px){}
-// @media screen and (min-width: 1200px){}
-// @media screen and (min-width: 1440px){}
-// @media screen and (min-width: 1920px){}
-// @media screen and (min-width: 2560px){}

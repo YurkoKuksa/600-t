@@ -5,7 +5,7 @@ import Navigation from "../Navigation/Navigation";
 const Aside = () => {
   return (
     <MainBox>
-      <AsidePic src={atom} alt="atom" width={80} height={80} />
+      <AsidePic src={atom} alt="atom" />
       <Navigation />
       {/* <Navigator role="navigation">
         <ul>

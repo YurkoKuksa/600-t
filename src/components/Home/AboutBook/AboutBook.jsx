@@ -34,13 +34,12 @@ const AboutBook = ({ id }) => {
             />
           </BookBox>
 
-
-         <div>
+          <div>
             <TitleBox>
               <ul>
                 <li>
                   <Paragraph>
-                    <Bold>Автор:</Bold> <SpanName>Кукса Сергій Петрович</SpanName>
+                    <SpanName>Кукса Сергій Петрович</SpanName>
                   </Paragraph>
                 </li>
                 <li>
@@ -69,14 +68,14 @@ const AboutBook = ({ id }) => {
                     вчителів.
                   </ParagDescription>
                 </li>
-  
+
                 <li>
                   <ParagDescription>
-                    - Завдання систематизовані та подані у логічній послідовності,
-                    що значно спрощує процес навчання.
+                    - Завдання систематизовані та подані у логічній
+                    послідовності, що значно спрощує процес навчання.
                   </ParagDescription>
                 </li>
-  
+
                 <li>
                   <ParagDescription>
                     - Оригінальна методика викладання з простими та зрозумілими
@@ -97,7 +96,7 @@ const AboutBook = ({ id }) => {
                 </li>
               </ListStyle>
             </OtherDescrBox>
-         </div>
+          </div>
         </TextAndBookWrapper>
         <OtherDescrBox>
           <SmallTitle>Для кого ця книга: </SmallTitle>

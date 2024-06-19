@@ -17,10 +17,29 @@ export const MainBox = styled.div`
   @media only screen and (max-width: 767.98px) {
     display: none;
   }
+
+  @media screen and (min-width: 1856px) {
+    min-width: 250px;
+    padding: 0 35px;
+  }
+  @media screen and (min-width: 2560px) {
+    min-width: 280px;
+    padding: 0 42px;
+  }
 `;
 
 export const AsidePic = styled.img`
   margin: 10px auto;
+  width: 80px;
+  height: 80px;
+  @media screen and (min-width: 1920px) {
+    width: 90px;
+    height: 90px;
+  }
+  @media screen and (min-width: 2560px) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 // export const LinkStyle = styled(NavLink)`

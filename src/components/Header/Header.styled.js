@@ -116,5 +116,9 @@ export const BurgerSvg = styled.img`
 // @media screen and (min-width: 992px){}
 // @media screen and (min-width: 1200px){}
 // @media screen and (min-width: 1440px){}
+
+// @media screen and (min-width: 1792px){}
+// @media screen and (min-width: 1856px){}
+
 // @media screen and (min-width: 1920px){}
 // @media screen and (min-width: 2560px){}

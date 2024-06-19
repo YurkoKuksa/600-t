@@ -48,6 +48,11 @@ export const Title = styled.h2`
   @media screen and (min-width: 1200px) {
     margin-bottom: 35px;
   }
+  /* sdgsgsdfghdshd */
+  @media screen and (min-width: 1707px) {
+  }
+  /* dfjghjsdhgjsdfg */
+
   @media screen and (min-width: 1920px) {
     font-size: 34px;
   }
@@ -105,10 +110,12 @@ export const ParagDescription = styled.p`
   @media screen and (min-width: 1920px) {
     font-size: 18px;
   }
+  @media screen and (min-width: 1500px) {
+    max-width: 800px;
+  }
   @media screen and (min-width: 2560px) {
     font-size: 22px;
     margin-bottom: 25px;
-    max-width: 800px;
   }
 `;
 
@@ -226,7 +233,7 @@ export const TextAndBookWrapper = styled.div`
     gap: 20px;
     flex-direction: row-reverse;
   }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1500px) {
     gap: 150px;
   }
 
