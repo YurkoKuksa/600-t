@@ -28,13 +28,23 @@ export const StyledBox = styled.div`
     padding: 150px 0;
   }
 
-  @media screen and (min-width: 412px) {
+  @media screen and (min-width: 992px) {
+    padding: 200px 0;
   }
 
   @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
+  @media screen and (min-width: 1440px) {
     padding: 290px 0;
-    border-radius: 10px;
-    margin-bottom: 5px;
+  }
+
+  @media screen and (min-width: 1792px) {
+    padding: 300px 0;
+  }
+
+  @media screen and (min-width: 2560px) {
+    padding: 350px 0;
   }
 `;
 
@@ -71,9 +81,37 @@ export const MainTitle = styled.h1`
     margin-bottom: 120px;
   }
 
+  @media screen and (min-width: 430px) {
+    font-size: 90px;
+  }
+
+  @media screen and (min-width: 576px) {
+    font-size: 120px;
+    margin-bottom: 165px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 345px;
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: 86px;
+    margin-bottom: 140px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 5px;
     font-size: 96px;
+  }
+
+  @media screen and (min-width: 1792px) {
+    font-size: 140px;
+    margin-bottom: 150px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    font-size: 180px;
+    margin-bottom: 110px;
   }
 `;
 
@@ -104,10 +142,33 @@ export const ListWrapper = styled.ul`
     bottom: 16%;
   }
 
+  @media screen and (min-width: 768px) {
+    bottom: 30%;
+  }
+
+  @media screen and (min-width: 992px) {
+    bottom: 25%;
+  }
+
   @media screen and (min-width: 1200px) {
-    gap: 5px;
-    left: 50%;
+    bottom: 8%;
+  }
+
+  @media screen and (min-width: 1440px) {
     bottom: 15%;
+  }
+
+  @media screen and (min-width: 1792px) {
+    bottom: 20%;
+  }
+
+  @media screen and (min-width: 1920px) {
+    gap: 8px;
+    bottom: 18%;
+  }
+
+  @media screen and (min-width: 2560px) {
+    bottom: 12%;
   }
 `;
 
@@ -143,11 +204,33 @@ export const InfoBtn = styled.button`
     padding: 10px 8px;
   }
 
+  @media screen and (min-width: 576px) {
+    font-size: 16px;
+    width: 165px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 165px;
     padding: 10px 8px;
-    border-radius: 8px;
     font-size: 16px;
+  }
+
+  @media screen and (min-width: 1792px) {
+    width: 200px;
+    padding: 17px 10px;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 22px;
+    width: 230px;
+    padding: 22px 10px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    font-size: 26px;
+    width: 280px;
+    padding: 25px 10px;
   }
 `;
 
@@ -181,11 +264,28 @@ export const InfoBtnMain = styled.button`
     padding: 18px 15px;
   }
 
-  @media screen and (min-width: 1200px) {
-    padding: 18px 15px;
-    border-radius: 8px;
-    width: 165px;
+  @media screen and (min-width: 576px) {
     font-size: 16px;
+    width: 165px;
+  }
+
+  @media screen and (min-width: 1792px) {
+    width: 200px;
+    padding: 24px 15px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 22px;
+    width: 230px;
+    padding: 30px 15px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    font-size: 26px;
+    width: 280px;
+    padding: 34px 15px;
   }
 `;
 
@@ -217,14 +317,47 @@ export const Flask = styled.img`
   }
 
   @media screen and (min-width: 412px) {
-    bottom: 7%;
+    bottom: 6.5%;
+    right: -5px;
     width: 90px;
+  }
+
+  @media screen and (min-width: 430px) {
+    bottom: 4%;
+    right: -10px;
+  }
+
+  @media screen and (min-width: 576px) {
+    right: 0;
+  }
+
+  @media screen and (min-width: 768px) and (max-height: 883px) and (max-width: 991.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: 2%;
+    right: 0;
+  }
+
+  @media screen and (min-width: 992px) {
+    bottom: 14%;
   }
 
   @media screen and (min-width: 1200px) {
     right: 0;
     bottom: 0;
     width: 110px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    right: 0;
+    bottom: 0;
+    width: 110px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    width: 210px;
   }
 `;
 
@@ -241,6 +374,8 @@ export const Flask = styled.img`
 
 // @media screen and (min-width: 384px){}
 // @media screen and (min-width: 412px){}
+// iphone15 Plus
+// @media screen and (min-width: 430px){}
 // @media screen and (min-width: 576px){}
 // @media screen and (min-width: 768px){}
 // @media screen and (min-width: 992px){}

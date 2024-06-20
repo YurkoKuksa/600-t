@@ -198,7 +198,7 @@ export const WhyDescription = styled.p`
     font-size: 18px;
   }
   @media screen and (min-width: 2560px) {
-    font-size: 22px;
+    font-size: 24px;
   }
 `;
 
