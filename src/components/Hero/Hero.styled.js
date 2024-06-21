@@ -361,33 +361,6 @@ export const Flask = styled.img`
   }
 `;
 
-/* OUTLINE */
-/* outline: 1px solid green; */
-// @media screen and (min-width: 360px){}
-
-// для galaxy s22
-// @media screen and (min-width: 360px) and (min-height: 638px) {}
-// @media screen and (min-width: 375px){}
-
-// iphone8
-// @media screen and (min-width: 375px) and (min-height: 526px) {}
-
-// @media screen and (min-width: 384px){}
-// @media screen and (min-width: 412px){}
-// iphone15 Plus
-// @media screen and (min-width: 430px){}
-// @media screen and (min-width: 576px){}
-// @media screen and (min-width: 768px){}
-// @media screen and (min-width: 992px){}
-// @media screen and (min-width: 1200px){}
-// @media screen and (min-width: 1440px){}
-
-// @media screen and (min-width: 1792px){}
-// @media screen and (min-width: 1856px){}
-
-// @media screen and (min-width: 1920px){}
-// @media screen and (min-width: 2560px){}
-
 export const MainWrapper = styled.div`
   /* position: relative; */
   /* outline: 1px dotted red;

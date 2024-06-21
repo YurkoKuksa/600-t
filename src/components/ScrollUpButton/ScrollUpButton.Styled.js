@@ -20,11 +20,13 @@ export const ScrollUpPic = styled.img`
 //   opacity: ${(props) => (props.isVisible ? "1" : "0")};
 //   transition: opacity 0.3s ease, bottom 0.3s ease;
 // `;
-export const ScrollButton = styled.button`
+export const ScrollButton = styled.button.withConfig({
+  shouldForwardProp: (prop) => prop !== "isVisible",
+})`
   position: fixed;
-  bottom: ${(props) => (props.isvisible ? "54px" : "-100px")};
+  bottom: ${(props) => (props.isVisible ? "54px" : "-100px")};
   right: 20px;
-  opacity: ${(props) => (props.isvisible ? "1" : "0")};
+  opacity: ${(props) => (props.isVisible ? "1" : "0")};
   transition: opacity 0.3s ease, bottom 0.3s ease;
   background: none;
   border: none;

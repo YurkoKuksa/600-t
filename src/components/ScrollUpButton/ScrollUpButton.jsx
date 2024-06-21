@@ -29,7 +29,7 @@ export const ScrollUpBtn = () => {
   };
 
   return (
-    <ScrollButton isvisible={isVisible} type="button" onClick={handleClickBtn}>
+    <ScrollButton isVisible={isVisible} type="button" onClick={handleClickBtn}>
       <ScrollUpPic src={arrowup} alt="стрілочка вгору" size={24} />
     </ScrollButton>
   );
