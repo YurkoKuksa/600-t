@@ -35,27 +35,30 @@ export const ContactBox = styled.div`
 export const MainTitle = styled.h1`
   text-align: center;
   margin-bottom: 16px;
-
-  /* color: #808080; */
-
   justify-content: flex-end;
-  /* font-size: 40px; */
-
-  /* екп */
   font-size: 40px;
   font-weight: 700;
   color: #0a2161;
+
+  @media screen and (min-width: 576px) {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1707px) {
+    /* font-size: 100px; */
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 50px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    font-size: 70px;
+  }
 `;
 
 export const Description = styled.p`
-  /* font-size: 18px;
-  color: #808080;
-  padding: 0 50px;
-  text-indent: 50px;
-  line-height: 1.6; */
-
-  /* екп */
-  /* екп */
   line-height: 1.6;
   letter-spacing: 0.04em;
   font-weight: 500;
@@ -64,18 +67,30 @@ export const Description = styled.p`
   text-indent: 50px;
   padding: 0 50px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 576px) {
+    text-indent: 50px;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    font-size: 24px;
+  }
+
+  /* outline: 1px solid green; */
 `;
 
 export const CustomNavLink = styled(NavLink)`
   display: block;
   font-size: 18px;
   transition: font-weight 0.3s ease, color 250ms ease;
-
-  /* експ */
   color: #0a2161;
   font-weight: 500;
 
-  /* експ */
   &:hover {
     font-weight: 500;
     color: #1f4fd1;
@@ -89,22 +104,29 @@ export const CustomNavLink = styled(NavLink)`
       color: ${({ $active }) => ($active ? "#808080" : "#1f4fd1")};
     }
   }
+
+  @media screen and (min-width: 1856px) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 22px;
+  }
+
+  // @media screen and (min-width: 2048px){font-size:24px;}
+
+  @media screen and (min-width: 2560px) {
+    font-size: 26px;
+  }
+`;
+
+export const WrapBox = styled.div`
+  display: flex;
+
+  /* outline: 1px solid green; */
 `;
 
 export const UlWrap = styled.ul`
-  /* display: flex;
-  row-gap: 10px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: #d4d2d2;
-  padding: 7px 0;
-  border-top: 2px double gray;
-  border-bottom: 2px double gray;
-  margin: 10px 0;
-  position: relative;
-  z-index: 990; */
-
-  /* екп */
   display: flex;
   row-gap: 10px;
   flex-wrap: wrap;
@@ -116,29 +138,43 @@ export const UlWrap = styled.ul`
   position: relative;
   z-index: 990;
   width: 220px;
-  /* border-top: 2px double gray; */
+
+  // @media screen and (min-width: 1856px){width: 220px;}
+  //
+  @media screen and (min-width: 1920px) {
+    width: 270px;
+  }
+  //
+  // @media screen and (min-width: 2048px){width: 280px;}
+  //
+  @media screen and (min-width: 2560px) {
+    width: 320px;
+  }
+
+  /* outline: 1px solid green; */
 `;
 
 export const LiWrap = styled.li`
   &:not(:last-child) {
     margin-bottom: 24px;
   }
-  /* width: 190px; */
 
-  /* експ */
+  @media screen and (min-width: 1856px) {
+    margin-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    margin-bottom: 30px;
+  }
 `;
 
 export const TableImg = styled.img`
-  /* position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.4;
-  width: 1000px;
-  z-index: 1; */
   display: ${({ $active }) => ($active ? "none" : "block")};
 
-  /* експ */
   position: absolute;
   top: 65%;
   left: 55%;
@@ -146,8 +182,56 @@ export const TableImg = styled.img`
   opacity: 0.4;
   width: 1000px;
   z-index: 1;
+
+  @media screen and (min-width: 1792px) {
+    top: 55%;
+  }
+
+  @media screen and (min-width: 1856px) {
+    top: 65%;
+  }
+
+  @media screen and (min-width: 1920px) and (min-height: 1030px) {
+    top: 55%;
+  }
+
+  @media screen and (min-width: 1920px) and (min-height: 1200px) {
+    top: 50%;
+  }
+
+  @media screen and (min-width: 2560px) {
+    width: 1400px;
+    top: 55%;
+  }
 `;
 
-export const WrapBox = styled.div`
-  display: flex;
-`;
+/* OUTLINE */
+/* outline: 1px solid green; */
+// @media screen and (min-width: 360px){}
+
+// для galaxy s22
+// @media screen and (min-width: 360px) and (min-height: 638px) {}
+// @media screen and (min-width: 375px){}
+
+// iphone8
+// @media screen and (min-width: 375px) and (min-height: 526px) {}
+
+// @media screen and (min-width: 384px){}
+// @media screen and (min-width: 412px){}
+// iphone15 Plus
+// @media screen and (min-width: 430px){}
+// @media screen and (min-width: 576px){}
+// @media screen and (min-width: 768px){}
+// @media screen and (min-width: 992px){}
+// @media screen and (min-width: 1200px){}
+// @media screen and (min-width: 1440px){}
+//
+// @media screen and (min-width: 1707px){}
+// @media screen and (min-width: 1792px){}
+// @media screen and (min-width: 1856px){}
+//
+// @media screen and (min-width: 1920px){}
+//
+// @media screen and (min-width: 2048px){}
+//
+// @media screen and (min-width: 2560px){}

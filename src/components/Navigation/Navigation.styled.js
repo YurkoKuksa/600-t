@@ -18,14 +18,17 @@ export const LinkStyle = styled(NavLink)`
       color: #1f4fd1;
     }
   }
+
   @media screen and (min-width: 1856px) {
     font-size: 20px;
     margin-bottom: 18px;
   }
+
   @media screen and (min-width: 1920px) {
     font-size: 22px;
     margin-bottom: 20px;
   }
+
   @media screen and (min-width: 2560px) {
     font-size: 26px;
     margin-bottom: 24px;

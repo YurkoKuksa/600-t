@@ -82,7 +82,7 @@ export const PortretPicture = styled.img`
   @media screen and (min-width: 2560px) {
     min-width: 700px;
   }
-  border: 1.3px solid cornflowerblue;
+  /* border: 1.3px solid #0a2161; */
 `;
 
 export const MainTitle = styled.h1`
@@ -91,7 +91,6 @@ export const MainTitle = styled.h1`
   font-size: 70px; */
   text-align: center;
   color: #0a2161;
-  /* екп */
   font-weight: 700;
 
   /* font-size: 28px; */

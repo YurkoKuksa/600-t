@@ -42,17 +42,26 @@ export const MainTitle = styled.h1`
 
   font-weight: 700;
   color: #0a2161;
+
+  @media screen and (min-width: 576px) {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1707px) {
+    /* font-size: 100px; */
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 50px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    font-size: 70px;
+  }
 `;
 
 export const Description = styled.p`
-  /* font-size: 22px;
-  color: #808080;
-  padding: 0 50px;
-  text-indent: 50px;
-  line-height: 1.6;
-  margin-bottom: 20px; */
-
-  /* екп */
   line-height: 1.6;
   letter-spacing: 0.04em;
   font-weight: 500;
@@ -60,6 +69,19 @@ export const Description = styled.p`
   font-size: 18px;
   text-indent: 50px;
   padding: 0 50px;
+
+  @media screen and (min-width: 576px) {
+    text-indent: 50px;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 2560px) {
+    font-size: 24px;
+  }
 `;
 
 export const ContentBox = styled.div`

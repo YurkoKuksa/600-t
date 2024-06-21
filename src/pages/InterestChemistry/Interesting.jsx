@@ -23,10 +23,10 @@ const Interesting = () => {
   const handleClick = (to) => {
     if (currentPath === to) {
       setCurrentPath(null);
-      // Якщо поточний шлях співпадає з посиланням, то не робимо зміни
+
       return;
     }
-    // В іншому випадку оновлюємо поточний шлях та відкриваємо контент
+
     setCurrentPath(to);
   };
 
@@ -45,18 +45,11 @@ const Interesting = () => {
 
         <WrapBox>
           <nav>
-            <UlWrap
-              data-aos="fade-down"
-              // data-aos-easing="linear"
-              data-aos-duration="800"
-            >
+            <UlWrap data-aos="fade-down" data-aos-duration="800">
               <LiWrap>
                 <CustomNavLink
                   to="household"
                   onClick={() => handleClick("household")}
-                  // active={currentPath === "household" ? "active" : ""}
-                  // as={LinksFacts}
-                  // active={currentPath === "household" ? "true" : "false"}
                   $active={currentPath}
                 >
                   Побутова хімія
@@ -123,8 +116,6 @@ const Interesting = () => {
         </WrapBox>
 
         <TableImg src={tab} alt="Таблиця Менделеєва" $active={currentPath} />
-
-        {/* <p> &copy; All rights reserved</p> */}
       </ContactBox>
     </MainBox>
   );
