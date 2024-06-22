@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   BackGraound,
   Book,
@@ -25,6 +25,14 @@ import pdf from "../../assets/pdf/1.pdf";
 import download from "../../assets/svg/download.svg";
 
 const Modal = ({ toggleModal }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 100); // Затримка перед зміною стану (0.1 секунди)
+  }, []);
+
   useEffect(() => {
     const handleEscape = (e) => {
       if (e.code === "Escape") {
@@ -48,8 +56,8 @@ const Modal = ({ toggleModal }) => {
   };
 
   return (
-    <BackGraound onClick={handleClickOnBackdrop}>
-      <MainModalBox>
+    <BackGraound onClick={handleClickOnBackdrop} isVisible={isVisible}>
+      <MainModalBox isVisible={isVisible}>
         <CloseMenuBtn type="button" onClick={toggleModal}>
           <ImgSvg src={closeBtn} alt="закрити" />
         </CloseMenuBtn>

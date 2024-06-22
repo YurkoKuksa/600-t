@@ -50,6 +50,17 @@ export const BurgerMenu = ({ close, open }) => {
     };
   }, [open, close]);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
+  const handleClick = () => {
+    close();
+    scrollToTop();
+  };
+
   return (
     <MainModalBox open={open}>
       <CloseBtn type="button" onClick={close}>
@@ -65,22 +76,22 @@ export const BurgerMenu = ({ close, open }) => {
       <Navigator role="navigation">
         <ul>
           <li>
-            <LinkStyle to="/" onClick={close}>
+            <LinkStyle to="/" onClick={handleClick}>
               Головна
             </LinkStyle>
           </li>
           <li>
-            <LinkStyle to="/biography" onClick={close}>
+            <LinkStyle to="/biography" onClick={handleClick}>
               Автор
             </LinkStyle>
           </li>
           <li>
-            <LinkStyle to="/interesting" onClick={close}>
+            <LinkStyle to="/interesting" onClick={handleClick}>
               Цікава хімія
             </LinkStyle>
           </li>
           <li>
-            <LinkStyle to="/contacts" onClick={close}>
+            <LinkStyle to="/contacts" onClick={handleClick}>
               Контакти
             </LinkStyle>
           </li>

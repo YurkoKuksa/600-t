@@ -1,8 +1,31 @@
-import { ListWrapper, MainBox, Paragraph, Title } from "../Interesting.styled";
+// import { useEffect, useState } from "react";
+import {
+  ListWrapper,
+  Paragraph,
+  ScrollSpot,
+  Title,
+  MainBox,
+} from "../Interesting.styled";
+// import {  } from "./Inorganic.styled";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+AOS.init();
 const Inorganic = () => {
+  // const [isVisible, setIsVisible] = useState(false);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsVisible(true);
+  //   }, 100); // Затримка перед зміною стану (0.1 секунди)
+  // }, []);
+
   return (
-    <MainBox>
+    <MainBox
+      /* isVisible={isVisible} */ data-aos="fade-down"
+      data-aos-duration="800"
+    >
+      <ScrollSpot id="scroll-section"> </ScrollSpot>
       <ul>
         <ListWrapper>
           <div>

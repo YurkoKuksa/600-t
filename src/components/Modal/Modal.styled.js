@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const BackGraound = styled.div`
+export const BackGraound = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== "isVisible",
+})`
   position: fixed;
   top: 0;
   left: 0;
@@ -14,9 +16,14 @@ export const BackGraound = styled.div`
   pointer-events: initial;
   visibility: visible;
   backdrop-filter: blur(8px);
+
+  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+  transition: opacity 0.5s ease-in-out;
 `;
 
-export const MainModalBox = styled.div`
+export const MainModalBox = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== "isVisible",
+})`
   padding: 12px 0;
   width: 260px;
 
@@ -31,6 +38,13 @@ export const MainModalBox = styled.div`
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+
+  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+  transform: ${({ isVisible }) =>
+    isVisible
+      ? "translate(-50%, -50%) scale(1)"
+      : "translate(-50%, -50%) scale(0)"};
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
 
   @media screen and (min-width: 360px) {
     padding: 24px 0;

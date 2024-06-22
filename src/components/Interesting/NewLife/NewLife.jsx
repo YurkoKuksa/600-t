@@ -1,9 +1,20 @@
-import { ListWrapper, MainBox, Paragraph, Title } from "../Interesting.styled";
-import { Description } from "./NewLife.styled";
+import {
+  ListWrapper,
+  MainBox,
+  Paragraph,
+  ScrollSpot,
+  Title,
+  Description,
+} from "../Interesting.styled";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 const NewLife = () => {
   return (
-    <MainBox>
+    <MainBox data-aos="fade-down" data-aos-duration="800">
+      <ScrollSpot id="scroll-section"> </ScrollSpot>
       <Description>
         Теоретично існує кілька концепцій щодо можливих хімічних баз для
         виникнення життя. Ці ідеї висувають гіпотетичні сценарії, які можуть

@@ -139,7 +139,7 @@ export const WrapBox = styled.div`
   row-gap: 20px;
   /* align-items: flex-start; */
   @media screen and (min-width: 1200px) {
-    justify-content: flex-start;
+    align-items: flex-start;
     /* align-items: center; */
     flex-direction: row;
   }
@@ -214,6 +214,14 @@ export const TableImg = styled.img`
 
   @media screen and (min-width: 1200px) {
     left: 55%;
+    width: 600px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 800px;
+  }
+
+  @media screen and (min-width: 1680px) {
     width: 1000px;
   }
 

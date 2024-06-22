@@ -1,8 +1,18 @@
-import { ListWrapper, MainBox, Paragraph, Title } from "../Interesting.styled";
+import {
+  ListWrapper,
+  MainBox,
+  Paragraph,
+  ScrollSpot,
+  Title,
+} from "../Interesting.styled";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+AOS.init();
 const Brain = () => {
   return (
-    <MainBox>
+    <MainBox data-aos="fade-down" data-aos-duration="800">
+      <ScrollSpot id="scroll-section"> </ScrollSpot>
       <ul>
         <ListWrapper>
           <Title>Нейромедіатори</Title>

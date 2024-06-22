@@ -1,13 +1,27 @@
-import { ListWrapper, MainBox, Paragraph, Title } from "../Interesting.styled";
+import {
+  ListWrapper,
+  MainBox,
+  Paragraph,
+  ScrollSpot,
+  Title,
+  WrapperFormula,
+} from "../Interesting.styled";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+AOS.init();
 const Organic = () => {
   return (
-    <MainBox>
+    <MainBox data-aos="fade-down" data-aos-duration="800">
+      <ScrollSpot id="scroll-section"> </ScrollSpot>
       <ul>
         <ListWrapper>
           <div>
             <Title>
-              Тетраоксид дихлору ( Cl<sub>2</sub>O<sub>4</sub>):
+              Тетраоксид дихлору
+              <WrapperFormula>
+                &nbsp;( Cl<sub>2</sub>O<sub>4</sub>):
+              </WrapperFormula>
             </Title>
             <Paragraph>
               Ця хімічна речовина є надзвичайно нестійкою та вибуховою. Її

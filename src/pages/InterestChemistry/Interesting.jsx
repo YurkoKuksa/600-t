@@ -1,6 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ContactBox,
   Description,
@@ -20,6 +20,17 @@ AOS.init();
 const Interesting = () => {
   const [currentPath, setCurrentPath] = useState(null);
 
+  const [scrollToSection, setScrollToSection] = useState(false);
+
+  const handleClickScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   const handleClick = (to) => {
     if (currentPath === to) {
       setCurrentPath(null);
@@ -27,8 +38,19 @@ const Interesting = () => {
       return;
     }
 
+    // встановл скрол
+    setScrollToSection(true);
+    // виконуєм маршрут
     setCurrentPath(to);
   };
+
+  // залежність двох функцій
+  useEffect(() => {
+    if (scrollToSection) {
+      handleClickScroll("scroll-section");
+      setScrollToSection(false);
+    }
+  }, [scrollToSection]);
 
   return (
     <MainBox>
