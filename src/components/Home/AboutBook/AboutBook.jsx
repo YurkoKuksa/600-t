@@ -20,10 +20,12 @@ import {
   WhyListStyle,
 } from "./AboutBook.styled";
 import bookTasks from "../../../assets/images/600.jpg";
+import { ScrollSpotHome } from "../SectionTwo/SectionTwoStyled";
 
-const AboutBook = ({ id }) => {
+const AboutBook = () => {
   return (
-    <MainBox id={id}>
+    <MainBox>
+      <ScrollSpotHome id="scroll-section-two"> </ScrollSpotHome>
       <DescripBox>
         <Title>600 Задач Хімії </Title>
         <TextAndBookWrapper>

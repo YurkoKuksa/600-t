@@ -7,6 +7,8 @@ export const MainBox = styled.div`
   padding: 15px 5px;
   box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
 
+  position: relative;
+
   @media screen and (min-width: 576px) {
     padding: 20px;
   }

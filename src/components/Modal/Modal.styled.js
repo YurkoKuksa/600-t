@@ -9,8 +9,8 @@ export const BackGraound = styled.div.withConfig({
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   z-index: 998;
   opacity: 1;
   pointer-events: initial;
@@ -18,7 +18,8 @@ export const BackGraound = styled.div.withConfig({
   backdrop-filter: blur(8px);
 
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
-  transition: opacity 0.5s ease-in-out;
+  visibility: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 `;
 
 export const MainModalBox = styled.div.withConfig({
@@ -43,7 +44,7 @@ export const MainModalBox = styled.div.withConfig({
   transform: ${({ isVisible }) =>
     isVisible
       ? "translate(-50%, -50%) scale(1)"
-      : "translate(-50%, -50%) scale(0)"};
+      : "translate(-50%, -50%) scale(0.5)"};
   transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
 
   @media screen and (min-width: 360px) {

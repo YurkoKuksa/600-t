@@ -24,3 +24,15 @@ export const MainBox = styled.div`
     min-height: 860px;
   }
 `;
+
+export const ScrollSpotHome = styled.div`
+  position: absolute;
+  top: -52px;
+  right: 50%;
+
+  transform: translateX(50%);
+
+  @media screen and (min-width: 768px) {
+    top: -2px;
+  }
+`;

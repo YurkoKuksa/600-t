@@ -6,10 +6,12 @@ import {
   TitleBox,
 } from "./AllPublications.styled";
 import interestingChemistryBook from "../../../assets/images/exp.jpg";
+import { ScrollSpotHome } from "../SectionTwo/SectionTwoStyled";
 
-const AllPublications = ({ id }) => {
+const AllPublications = () => {
   return (
-    <MainBox id={id}>
+    <MainBox>
+      <ScrollSpotHome id="scroll-section-two"> </ScrollSpotHome>
       <ImgBox>
         <img src={interestingChemistryBook} alt="Цікава хімія" />
       </ImgBox>

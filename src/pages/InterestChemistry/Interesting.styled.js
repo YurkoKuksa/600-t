@@ -187,7 +187,7 @@ export const UlWrap = styled.ul`
   width: 220px;
 
   @media screen and (max-width: 1199.98px) {
-    padding: 15px 0 15px 25px;
+    padding: 15px 0 15px 35px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -209,7 +209,7 @@ export const UlWrap = styled.ul`
     padding: 40px;
   }
 
-  /* outline: 1px solid green; */
+  outline: 1px solid gray;
 `;
 
 export const LiWrap = styled.li`

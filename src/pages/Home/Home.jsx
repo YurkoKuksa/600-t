@@ -31,7 +31,7 @@ const Home = () => {
 
   useEffect(() => {
     if (scrollToSection) {
-      handleClickScroll("scroll-section");
+      handleClickScroll("scroll-section-two");
       setScrollToSection(false);
     }
   }, [scrollToSection]);
@@ -44,11 +44,7 @@ const Home = () => {
           handleShowOther={handleShowOther}
         />
       </Section>
-      <SectionTwo
-        showAboutBook={showAboutBook}
-        other={other}
-        id="scroll-section"
-      />
+      <SectionTwo showAboutBook={showAboutBook} other={other} />
     </Box>
   );
 };
