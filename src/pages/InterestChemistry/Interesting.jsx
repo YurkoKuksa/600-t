@@ -11,6 +11,7 @@ import {
   TableImg,
   UlWrap,
   WrapBox,
+  Navig,
 } from "./Interesting.styled";
 import { Outlet } from "react-router-dom";
 
@@ -66,7 +67,7 @@ const Interesting = () => {
         <Description></Description>
 
         <WrapBox>
-          <nav>
+          <Navig>
             <UlWrap data-aos="fade-down" data-aos-duration="800">
               <LiWrap>
                 <CustomNavLink
@@ -132,7 +133,7 @@ const Interesting = () => {
                 </CustomNavLink>
               </LiWrap>
             </UlWrap>
-          </nav>
+          </Navig>
 
           {currentPath && <Loader /> && <Outlet />}
         </WrapBox>

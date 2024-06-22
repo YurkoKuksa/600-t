@@ -94,6 +94,15 @@ export const Description = styled.p`
   /* outline: 1px solid green; */
 `;
 
+export const Navig = styled.nav`
+  @media screen and (max-width: 1199.98px) {
+    min-width: 100%;
+    background-color: rgb(142, 143, 153, 0.4);
+    display: flex;
+    justify-content: center;
+  }
+`;
+
 export const CustomNavLink = styled(NavLink)`
   display: block;
   font-size: 18px;
@@ -132,12 +141,13 @@ export const CustomNavLink = styled(NavLink)`
 
 export const WrapBox = styled.div`
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 
   flex-direction: column;
 
   row-gap: 20px;
   /* align-items: flex-start; */
+
   @media screen and (min-width: 1200px) {
     align-items: flex-start;
     /* align-items: center; */
@@ -153,15 +163,20 @@ export const UlWrap = styled.ul`
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: rgb(142, 143, 153, 0.4);
-  padding: 15px;
+
   margin: 0;
   position: relative;
   z-index: 990;
   width: 220px;
 
+  @media screen and (max-width: 1199.98px) {
+    padding: 15px 0 15px 25px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin: 30px 0;
+    padding: 15px;
+    background-color: rgb(142, 143, 153, 0.4);
   }
   // @media screen and (min-width: 1856px){width: 220px;}
   //
@@ -195,6 +210,8 @@ export const LiWrap = styled.li`
       margin-bottom: 30px;
     }
   }
+
+  /* outline: 1px solid green; */
 `;
 
 export const TableImg = styled.img`
@@ -210,6 +227,10 @@ export const TableImg = styled.img`
 
   @media screen and (min-width: 576px) {
     width: 500px;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    opacity: 0.2;
   }
 
   @media screen and (min-width: 1200px) {

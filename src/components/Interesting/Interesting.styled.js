@@ -80,6 +80,10 @@ export const ScrollSpot = styled.div`
 
   transform: translateX(50%);
 
+  @media screen and (min-width: 768px) {
+    top: 105px;
+  }
+
   @media screen and (min-width: 1200px) {
     top: 100px;
   }
