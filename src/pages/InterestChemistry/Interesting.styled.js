@@ -26,17 +26,22 @@ export const ContactBox = styled.div`
   background-size: cover;
   min-height: 300px;
   flex-grow: 1;
-  padding: 40px 20px;
+  padding: 20px;
   border: 1px solid cornflowerblue;
 
   position: relative;
+
+  @media screen and (min-width: 576px) {
+    padding: 40px 20px;
+  }
+  /* outline: 1px solid green; */
 `;
 
 export const MainTitle = styled.h1`
   text-align: center;
   margin-bottom: 16px;
   justify-content: flex-end;
-  font-size: 40px;
+
   font-weight: 700;
   color: #0a2161;
 
@@ -63,14 +68,19 @@ export const Description = styled.p`
   letter-spacing: 0.04em;
   font-weight: 500;
   color: #6b6363;
-  font-size: 18px;
+
   text-indent: 50px;
-  padding: 0 50px;
+  padding: 0;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 359.98px) {
+    display: none;
+  }
 
   @media screen and (min-width: 576px) {
     text-indent: 50px;
     font-size: 18px;
+    padding: 0 50px;
   }
 
   @media screen and (min-width: 1920px) {
@@ -122,6 +132,17 @@ export const CustomNavLink = styled(NavLink)`
 
 export const WrapBox = styled.div`
   display: flex;
+  align-items: center;
+
+  flex-direction: column;
+
+  row-gap: 20px;
+  /* align-items: flex-start; */
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+    /* align-items: center; */
+    flex-direction: row;
+  }
 
   /* outline: 1px solid green; */
 `;
@@ -134,21 +155,26 @@ export const UlWrap = styled.ul`
   justify-content: flex-start;
   background-color: rgb(142, 143, 153, 0.4);
   padding: 15px;
-  margin: 30px 0;
+  margin: 0;
   position: relative;
   z-index: 990;
   width: 220px;
 
+  @media screen and (min-width: 1200px) {
+    margin: 30px 0;
+  }
   // @media screen and (min-width: 1856px){width: 220px;}
   //
   @media screen and (min-width: 1920px) {
-    width: 270px;
+    width: 300px;
+    padding: 30px;
   }
   //
   // @media screen and (min-width: 2048px){width: 280px;}
   //
   @media screen and (min-width: 2560px) {
-    width: 320px;
+    width: 350px;
+    padding: 40px;
   }
 
   /* outline: 1px solid green; */
@@ -157,18 +183,17 @@ export const UlWrap = styled.ul`
 export const LiWrap = styled.li`
   &:not(:last-child) {
     margin-bottom: 24px;
-  }
+    @media screen and (min-width: 1856px) {
+      margin-bottom: 26px;
+    }
 
-  @media screen and (min-width: 1856px) {
-    margin-bottom: 26px;
-  }
+    @media screen and (min-width: 1920px) {
+      margin-bottom: 28px;
+    }
 
-  @media screen and (min-width: 1920px) {
-    margin-bottom: 28px;
-  }
-
-  @media screen and (min-width: 2560px) {
-    margin-bottom: 30px;
+    @media screen and (min-width: 2560px) {
+      margin-bottom: 30px;
+    }
   }
 `;
 
@@ -177,11 +202,20 @@ export const TableImg = styled.img`
 
   position: absolute;
   top: 65%;
-  left: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.4;
-  width: 1000px;
+  width: 300px;
   z-index: 1;
+
+  @media screen and (min-width: 576px) {
+    width: 500px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 55%;
+    width: 1000px;
+  }
 
   @media screen and (min-width: 1792px) {
     top: 55%;

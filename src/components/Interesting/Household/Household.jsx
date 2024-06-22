@@ -1,8 +1,11 @@
 import { ListWrapper, MainBox, Paragraph, Title } from "../Interesting.styled";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+AOS.init();
 const Household = () => {
   return (
-    <MainBox>
+    <MainBox data-aos="fade-down" data-aos-duration="800">
       <ul>
         <ListWrapper>
           <Title>

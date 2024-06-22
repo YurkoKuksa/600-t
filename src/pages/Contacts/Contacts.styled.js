@@ -26,10 +26,15 @@ export const ContactBox = styled.div`
   background-size: cover;
   min-height: 300px;
   flex-grow: 1;
-  padding: 40px 20px;
+  padding: 20px;
   border: 1px solid cornflowerblue;
 
   position: relative;
+
+  @media screen and (min-width: 576px) {
+    padding: 40px 20px;
+  }
+  /* outline: 1px solid green; */
 `;
 
 export const MainTitle = styled.h1`
