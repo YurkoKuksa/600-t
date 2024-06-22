@@ -108,19 +108,36 @@ export const CustomNavLink = styled(NavLink)`
   font-size: 18px;
   transition: font-weight 0.3s ease, color 250ms ease;
   color: #0a2161;
-  font-weight: 500;
+  font-weight: 600;
 
   &:hover {
-    font-weight: 500;
+    font-weight: 600;
     color: #1f4fd1;
   }
 
   &.active {
-    font-weight: ${({ $active }) => ($active ? "700" : "500")};
+    font-weight: ${({ $active }) => ($active ? "700" : "600")};
     color: ${({ $active }) => ($active ? "#1f4fd1" : "#0a2161")};
     &:hover {
-      font-weight: ${({ $active }) => ($active ? "700" : "500")};
+      font-weight: ${({ $active }) => ($active ? "700" : "600")};
       color: ${({ $active }) => ($active ? "#808080" : "#1f4fd1")};
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    &:hover {
+      font-weight: 500;
+      color: #1f4fd1;
+    }
+
+    &.active {
+      font-weight: ${({ $active }) => ($active ? "700" : "500")};
+      color: ${({ $active }) => ($active ? "#1f4fd1" : "#0a2161")};
+      &:hover {
+        font-weight: ${({ $active }) => ($active ? "700" : "500")};
+        color: ${({ $active }) => ($active ? "#808080" : "#1f4fd1")};
+      }
     }
   }
 
