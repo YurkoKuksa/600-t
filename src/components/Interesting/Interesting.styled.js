@@ -30,25 +30,20 @@ export const Title = styled.h2`
   color: #6e6d6d;
   margin-bottom: 7px;
 
-  font-size: 20px;
+  font-size: 22px;
 
   @media screen and (min-width: 576px) {
-    font-size: 22px;
-  }
-
-  /* @media screen and (min-width: 576px) {
-    font-size: 32px;
+    font-size: 24px;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 35px;
+    font-size: 26px;
   }
   @media screen and (min-width: 1920px) {
-    font-size: 34px;
+    font-size: 28px;
   }
   @media screen and (min-width: 2560px) {
-    font-size: 38px;
-    margin-bottom: 55px;
-  } */
+    font-size: 32px;
+  }
 
   /* outline: 1px solid green; */
 `;
