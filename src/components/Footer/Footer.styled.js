@@ -80,32 +80,28 @@ export const Box = styled.div`
 
 export const Quote = styled.p`
   font-family: "Caveat";
-  font-size: 18px;
+  font-size: 22px;
 
   @media screen and (min-width: 576px) {
-    font-size: 20px;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 21px;
+    font-size: 26px;
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 22px;
-    width: 360px;
+    /* width: 360px; */
   }
 
-  @media screen and (min-width: 1440px) {
-    width: 340px;
+  @media screen and (min-width: 1680px) {
+    font-size: 28px;
+    /* width: 100%; */
   }
 
   @media screen and (min-width: 1920px) {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   @media screen and (min-width: 2560px) {
-    font-size: 30px;
-    width: 400px;
+    font-size: 36px;
+    /* width: 400px; */
   }
 `;
 
@@ -144,18 +140,14 @@ export const ContactList = styled.ul``;
 
 export const Paragraph = styled.p`
   margin-bottom: 25px;
-  font-size: 14px;
+
   color: #e0e0e0;
 
   @media screen and (min-width: 576px) {
-    font-size: 16px;
-  }
-  @media screen and (min-width: 768px) {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 18px;
     width: 360px;
     margin-left: auto;
     margin-right: auto;
@@ -193,24 +185,21 @@ export const AddressWrapper = styled.address`
 
 export const ListStyled = styled.li`
   margin-bottom: 10px;
-  font-size: 14px;
+
   &:hover {
     color: #dbd7d7;
   }
 
   @media screen and (min-width: 576px) {
-    font-size: 16px;
-  }
-
-  @media screen and (min-width: 1200px) {
-  }
-
-  @media screen and (min-width: 1920px) {
     font-size: 18px;
   }
 
+  @media screen and (min-width: 1920px) {
+    font-size: 20px;
+  }
+
   @media screen and (min-width: 2560px) {
-    font-size: 22px;
+    font-size: 24px;
   }
 `;
 
@@ -226,20 +215,20 @@ export const AllRightsBox = styled.div`
 
 export const CopyRightText = styled.p`
   color: #6e6d6d;
-  font-size: 12px;
+  font-size: 14px;
 
   text-align: center;
 
   @media screen and (min-width: 576px) {
-    font-size: 14px;
+    font-size: 16px;
   }
-  @media screen and (min-width: 768px) {
-    font-size: 15px;
-  }
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1680px) {
     font-size: 18px;
   }
-  @media screen and (min-width: 2560px) {
+  @media screen and (min-width: 1920px) {
     font-size: 20px;
+  }
+  @media screen and (min-width: 2560px) {
+    font-size: 22px;
   }
 `;
