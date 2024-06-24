@@ -33,10 +33,10 @@ export const Title = styled.h2`
   font-size: 22px;
 
   @media screen and (min-width: 576px) {
-    font-size: 24px;
+    /* font-size: 24px; */
   }
   @media screen and (min-width: 1200px) {
-    font-size: 26px;
+    /* font-size: 26px; */
   }
   @media screen and (min-width: 1920px) {
     font-size: 28px;

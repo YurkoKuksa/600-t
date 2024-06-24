@@ -20,7 +20,7 @@ const Organic = () => {
             <Title>
               Тетраоксид дихлору
               <WrapperFormula>
-                &nbsp;( Cl<sub>2</sub>O<sub>4</sub>):
+                &nbsp;(Cl<sub>2</sub>O<sub>4</sub>):
               </WrapperFormula>
             </Title>
             <Paragraph>
@@ -63,7 +63,7 @@ const Organic = () => {
         <ListWrapper>
           <div>
             <Title>
-              Бензол ( C<sub>6</sub>H<sub>6</sub>)
+              Бензол (C<sub>6</sub>H<sub>6</sub>)
             </Title>
             <Paragraph>
               Бензол є ароматичною речовиною з круговою системою сполучень між

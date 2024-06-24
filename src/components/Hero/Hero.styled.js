@@ -19,113 +19,135 @@ export const StyledBox = styled.div`
   height: calc(100vh - 61.8px);
   flex: 1;
 
-  @media screen and (min-width: 360px) and (max-height: 629.98px) {
+  @media screen and (min-width: 360px) and (max-height: 574.98px) {
+    padding: 100px 0;
+  }
+
+  @media screen and (min-width: 360px) and (min-height: 575px) {
+    padding: 180px 0;
+  }
+
+  /* з орієнтацією екрану мініму 600 висоти */
+  @media screen and (min-width: 384px) and (max-height: 629.98px) {
+    padding: 35px 0;
+  }
+  /* з орієнтацією екрану 683 висоти, S22 */
+  @media screen and (min-width: 384px) and (min-height: 630px) and (max-height: 685.98px) {
+    padding: 65px 0;
+  }
+
+  @media screen and (min-width: 384px) and (min-height: 686px) {
+    padding: 115px 0;
+  }
+
+  /* 412 */
+
+  /* з орієнтацією екрану мініму 650 висоти */
+  @media screen and (min-width: 412px) and (max-height: 649.98px) {
+    padding: 30px 0;
+  }
+  /* з орієнтацією екрану 728 висоти, S10+ */
+  @media screen and (min-width: 412px) and (min-height: 650px) and (max-height: 709.98px) {
+    padding: 60px 0;
+  }
+
+  @media screen and (min-width: 412px) and (min-height: 710px) {
+    padding: 110px 0;
+  }
+
+  /* 576 */
+
+  /* з орієнтацією екрану мініму 600 висоти */
+  @media screen and (min-width: 576px) and (max-height: 649.98px) {
+    padding: 30px 0;
+  }
+  /* з орієнтацією екрану 728 висоти, S10+ */
+  @media screen and (min-width: 576px) and (min-height: 650px) and (max-height: 709.98px) {
     padding: 140px 0;
   }
 
-  @media screen and (min-width: 360px) and (min-height: 630px) {
+  @media screen and (min-width: 576px) and (min-height: 710px) {
     padding: 180px 0;
   }
 
-  @media screen and (min-width: 375px) and (max-height: 549.98px) {
-    padding: 150px 0;
-  }
-
-  @media screen and (min-width: 375px) and (min-height: 550px) {
-    padding: 180px 0;
-  }
-
-  @media screen and (min-width: 412px) {
-    padding: 140px 0;
-  }
-
-  @media screen and (min-width: 576px) {
-    padding: 180px 0;
-  }
-
-  @media screen and (min-width: 992px) {
-    /* padding: 200px 0; */
-  }
-
-  @media screen and (min-width: 1200px) {
+  /* 992 */
+  @media screen and (min-width: 992px) and (min-height: 710px) {
     padding: 200px 0;
   }
-  @media screen and (min-width: 1440px) {
+
+  /* 1200 */
+
+  @media screen and (min-width: 1200px) and (max-height: 429.98px) {
+    padding: 30px 0;
+  }
+
+  @media screen and (min-width: 1200px) and (min-height: 430px) and (max-height: 499.98px) {
+    padding: 45px 0;
+  }
+
+  @media screen and (min-width: 1200px) and (min-height: 500px) and (max-height: 596.98px) {
+    padding: 100px 0;
+  }
+
+  @media screen and (min-width: 1200px) and (min-height: 597px) and (max-height: 629.98px) {
+    padding: 140px 0;
+  }
+
+  @media screen and (min-width: 1200px) and (min-height: 630px) and (max-height: 699.98px) {
+    padding: 180px 0;
+  }
+
+  @media screen and (min-width: 1200px) and (min-height: 700px) and (max-height: 789.98px) {
+    padding: 220px 0;
+  }
+
+  @media screen and (min-width: 1200px) and (min-height: 790px) and (max-height: 853.98px) {
+    padding: 250px 0;
+  }
+
+  @media screen and (min-width: 1200px) and (min-height: 854px) {
     padding: 290px 0;
   }
 
-  @media screen and (min-width: 1792px) {
+  /* 1400 */
+
+  @media screen and (min-width: 1440px) {
+    /* padding: 290px 0; */
+  }
+
+  @media screen and (min-width: 1792px) and (min-height: 900px) {
     padding: 300px 0;
   }
 
-  @media screen and (min-width: 2560px) {
+  @media screen and (min-width: 2560px) and (min-height: 1000px) {
     padding: 350px 0;
   }
 `;
 
 export const MainTitle = styled.h1`
-  /* margin-bottom: 145px; */
   font-size: 50px;
-
   text-transform: capitalize;
   text-align: center;
   color: #1c1d27;
   background-color: rgb(142, 143, 153, 0.5);
-
-  @media screen and (min-width: 360px) {
-    /* margin-bottom: 175px; */
-  }
-
-  // для galaxy s22
-  @media screen and (min-width: 360px) and (min-height: 630px) {
-    /* margin-bottom: 110px; */
-  }
-
-  @media screen and (min-width: 375px) {
-    /* margin-bottom: 70px; */
-  }
-
   @media screen and (min-width: 384px) {
     font-size: 80px;
-    /* margin-bottom: 55px; */
   }
 
   @media screen and (min-width: 412px) {
     font-size: 85px;
-    /* margin-bottom: 120px; */
-  }
-
-  @media screen and (min-width: 430px) {
-    /* font-size: 90px; */
-  }
-
-  @media screen and (min-width: 576px) {
-    /* font-size: 120px; */
-    /* margin-bottom: 165px; */
-  }
-
-  @media screen and (min-width: 768px) {
-    /* margin-bottom: 345px; */
-  }
-
-  @media screen and (min-width: 992px) {
-    /* font-size: 86px; */
-    /* margin-bottom: 140px; */
   }
 
   @media screen and (min-width: 1200px) {
-    /* margin-bottom: 5px; */
     font-size: 95px;
   }
 
   @media screen and (min-width: 1792px) {
     font-size: 140px;
-    /* margin-bottom: 150px; */
   }
 
   @media screen and (min-width: 2560px) {
     font-size: 180px;
-    /* margin-bottom: 110px; */
   }
 `;
 
@@ -138,15 +160,12 @@ export const ListWrapper = styled.ul`
   flex-direction: column;
   transform: translateX(-50%);
 
-  @media screen and (min-width: 384px) {
-    bottom: 2%;
-  }
-
-  @media screen and (min-width: 412px) {
-    bottom: 3%;
+  @media screen and (min-width: 360px) {
+    bottom: calc(5% + 50px);
   }
 
   @media screen and (min-width: 768px) {
+    /* bottom: 5%; */
   }
 
   @media screen and (min-width: 992px) {
@@ -306,59 +325,62 @@ export const Flask = styled.img`
   }
 
   @media screen and (min-width: 360px) {
-    /* bottom: 10%; */
+    bottom: 50px;
+    width: 70px;
+  }
+
+  /* @media screen and (min-width: 360px) and (max-height: 532.98px) {
+    bottom: 0;
+    width: 70px;
+  }
+
+  @media screen and (min-width: 360px) and (min-height: 533px) {
+    bottom: 50px;
     width: 70px;
   }
 
   @media screen and (min-width: 360px) and (min-height: 630px) {
-    /* bottom: 4%; */
   }
 
   @media screen and (min-width: 375px) {
-    /* bottom: 3.5%; */
   }
 
+  @media screen and (min-width: 384px) and (max-height: 754.98px) {
+    bottom: 0;
+  }
+
+  @media screen and (min-width: 384px) and (min-height: 755px) {
+    bottom: 50px;
+  } */
+
   @media screen and (min-width: 384px) {
-    /* bottom: 4%; */
   }
 
   @media screen and (min-width: 412px) {
-    /* bottom: 6.5%;
-    right: -5px; */
     width: 90px;
   }
 
   @media screen and (min-width: 430px) {
-    /* bottom: 4%;
-    right: -10px; */
   }
 
   @media screen and (min-width: 576px) {
-    /* right: 0; */
+    bottom: 0;
   }
 
   @media screen and (min-width: 768px) and (max-height: 883px) and (max-width: 991.98px) {
-    /* display: none; */
   }
 
   @media screen and (min-width: 768px) {
-    /* bottom: 2%;
-    right: 0; */
   }
 
   @media screen and (min-width: 992px) {
-    /* bottom: 14%; */
   }
 
   @media screen and (min-width: 1200px) {
-    /* right: 0;
-    bottom: 0; */
     width: 110px;
   }
 
   @media screen and (min-width: 1440px) {
-    /* right: 0;
-    bottom: 0; */
     width: 110px;
   }
 
@@ -367,13 +389,7 @@ export const Flask = styled.img`
   }
 `;
 
-export const MainWrapper = styled.div`
-  /* position: relative; */
-  /* outline: 1px dotted red;
-  position: absolute;
-  top: 0;
-  right: 20%; */
-`;
+export const MainWrapper = styled.div``;
 
 // background-color: #808080;
 // &:hover {
