@@ -1,20 +1,34 @@
 import { LinkStyle, Navigator } from "./Navigation.styled";
 
 const Navigation = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
   return (
     <Navigator role="navigation">
       <ul>
         <li>
-          <LinkStyle to="/">Головна</LinkStyle>
+          <LinkStyle to="/" onClick={scrollToTop}>
+            Головна
+          </LinkStyle>
         </li>
         <li>
-          <LinkStyle to="/biography">Автор</LinkStyle>
+          <LinkStyle to="/biography" onClick={scrollToTop}>
+            Автор
+          </LinkStyle>
         </li>
         <li>
-          <LinkStyle to="/interesting">Цікава хімія</LinkStyle>
+          <LinkStyle to="/interesting" onClick={scrollToTop}>
+            Цікава хімія
+          </LinkStyle>
         </li>
         <li>
-          <LinkStyle to="/contacts">Контакти</LinkStyle>
+          <LinkStyle to="/contacts" onClick={scrollToTop}>
+            Контакти
+          </LinkStyle>
         </li>
       </ul>
     </Navigator>

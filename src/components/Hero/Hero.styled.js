@@ -16,20 +16,35 @@ export const StyledBox = styled.div`
 
   position: relative;
 
-  /* display: flex;
-  height: 93.3vh;
-  flex: 1; */
+  height: calc(100vh - 61.8px);
+  flex: 1;
+
+  @media screen and (min-width: 360px) and (max-height: 629.98px) {
+    padding: 140px 0;
+  }
 
   @media screen and (min-width: 360px) and (min-height: 630px) {
     padding: 180px 0;
   }
 
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 375px) and (max-height: 549.98px) {
     padding: 150px 0;
   }
 
+  @media screen and (min-width: 375px) and (min-height: 550px) {
+    padding: 180px 0;
+  }
+
+  @media screen and (min-width: 412px) {
+    padding: 140px 0;
+  }
+
+  @media screen and (min-width: 576px) {
+    padding: 180px 0;
+  }
+
   @media screen and (min-width: 992px) {
-    padding: 200px 0;
+    /* padding: 200px 0; */
   }
 
   @media screen and (min-width: 1200px) {
@@ -49,101 +64,89 @@ export const StyledBox = styled.div`
 `;
 
 export const MainTitle = styled.h1`
-  margin-bottom: 145px;
+  /* margin-bottom: 145px; */
   font-size: 50px;
 
-  /* margin-bottom: 55px; */
   text-transform: capitalize;
   text-align: center;
   color: #1c1d27;
   background-color: rgb(142, 143, 153, 0.5);
 
   @media screen and (min-width: 360px) {
-    margin-bottom: 175px;
+    /* margin-bottom: 175px; */
   }
 
   // для galaxy s22
   @media screen and (min-width: 360px) and (min-height: 630px) {
-    margin-bottom: 110px;
+    /* margin-bottom: 110px; */
   }
 
   @media screen and (min-width: 375px) {
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
   }
 
   @media screen and (min-width: 384px) {
     font-size: 80px;
-    margin-bottom: 55px;
+    /* margin-bottom: 55px; */
   }
 
   @media screen and (min-width: 412px) {
     font-size: 85px;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
   }
 
   @media screen and (min-width: 430px) {
-    font-size: 90px;
+    /* font-size: 90px; */
   }
 
   @media screen and (min-width: 576px) {
-    font-size: 120px;
-    margin-bottom: 165px;
+    /* font-size: 120px; */
+    /* margin-bottom: 165px; */
   }
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 345px;
+    /* margin-bottom: 345px; */
   }
 
   @media screen and (min-width: 992px) {
-    font-size: 86px;
-    margin-bottom: 140px;
+    /* font-size: 86px; */
+    /* margin-bottom: 140px; */
   }
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 5px;
-    font-size: 96px;
+    /* margin-bottom: 5px; */
+    font-size: 95px;
   }
 
   @media screen and (min-width: 1792px) {
     font-size: 140px;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
   }
 
   @media screen and (min-width: 2560px) {
     font-size: 180px;
-    margin-bottom: 110px;
+    /* margin-bottom: 110px; */
   }
 `;
 
 export const ListWrapper = styled.ul`
-  bottom: 19%;
-
   gap: 5px;
   left: 50%;
+  bottom: 5%;
   display: flex;
   position: absolute;
   flex-direction: column;
-  /* bottom: -15%; */
   transform: translateX(-50%);
 
-  @media screen and (min-width: 360px) {
-    bottom: 24%;
-  }
-
-  @media screen and (min-width: 375px) {
-    bottom: 16%;
-  }
-
   @media screen and (min-width: 384px) {
-    bottom: 10%;
+    bottom: 2%;
   }
 
   @media screen and (min-width: 412px) {
-    bottom: 16%;
+    bottom: 3%;
   }
 
   @media screen and (min-width: 768px) {
-    bottom: 30%;
   }
 
   @media screen and (min-width: 992px) {
@@ -151,11 +154,14 @@ export const ListWrapper = styled.ul`
   }
 
   @media screen and (min-width: 1200px) {
-    bottom: 8%;
+    bottom: 15%;
   }
 
   @media screen and (min-width: 1440px) {
-    bottom: 15%;
+    bottom: 10%;
+  }
+  @media screen and (min-width: 1600px) {
+    bottom: 30%;
   }
 
   @media screen and (min-width: 1792px) {
@@ -291,7 +297,7 @@ export const InfoBtnMain = styled.button`
 
 export const Flask = styled.img`
   position: absolute;
-  bottom: 15%;
+  bottom: 0;
   right: 0;
   width: 50px;
 
@@ -300,59 +306,59 @@ export const Flask = styled.img`
   }
 
   @media screen and (min-width: 360px) {
-    bottom: 10%;
+    /* bottom: 10%; */
     width: 70px;
   }
 
   @media screen and (min-width: 360px) and (min-height: 630px) {
-    bottom: 4%;
+    /* bottom: 4%; */
   }
 
   @media screen and (min-width: 375px) {
-    bottom: 3.5%;
+    /* bottom: 3.5%; */
   }
 
   @media screen and (min-width: 384px) {
-    bottom: 4%;
+    /* bottom: 4%; */
   }
 
   @media screen and (min-width: 412px) {
-    bottom: 6.5%;
-    right: -5px;
+    /* bottom: 6.5%;
+    right: -5px; */
     width: 90px;
   }
 
   @media screen and (min-width: 430px) {
-    bottom: 4%;
-    right: -10px;
+    /* bottom: 4%;
+    right: -10px; */
   }
 
   @media screen and (min-width: 576px) {
-    right: 0;
+    /* right: 0; */
   }
 
   @media screen and (min-width: 768px) and (max-height: 883px) and (max-width: 991.98px) {
-    display: none;
+    /* display: none; */
   }
 
   @media screen and (min-width: 768px) {
-    bottom: 2%;
-    right: 0;
+    /* bottom: 2%;
+    right: 0; */
   }
 
   @media screen and (min-width: 992px) {
-    bottom: 14%;
+    /* bottom: 14%; */
   }
 
   @media screen and (min-width: 1200px) {
-    right: 0;
-    bottom: 0;
+    /* right: 0;
+    bottom: 0; */
     width: 110px;
   }
 
   @media screen and (min-width: 1440px) {
-    right: 0;
-    bottom: 0;
+    /* right: 0;
+    bottom: 0; */
     width: 110px;
   }
 

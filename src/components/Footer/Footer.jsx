@@ -70,7 +70,7 @@ const Footer = () => {
 
       <AllRightsBox>
         <CopyRightText>
-          &copy; 2024 "600 Chemistry Tasks". All rights reserved.
+          &copy; 2024 "600 Chemistry Problems". All rights reserved.
         </CopyRightText>
       </AllRightsBox>
     </MainBox>

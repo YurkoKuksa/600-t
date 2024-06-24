@@ -86,13 +86,8 @@ export const Quote = styled.p`
     font-size: 26px;
   }
 
-  @media screen and (min-width: 1200px) {
-    /* width: 360px; */
-  }
-
   @media screen and (min-width: 1680px) {
-    font-size: 28px;
-    /* width: 100%; */
+    font-size: 27px;
   }
 
   @media screen and (min-width: 1920px) {
@@ -215,9 +210,16 @@ export const AllRightsBox = styled.div`
 
 export const CopyRightText = styled.p`
   color: #6e6d6d;
-  font-size: 14px;
 
   text-align: center;
+  @media screen and (max-width: 340px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 341px) and (max-width: 362px) {
+    font-size: 13px;
+  }
+
+  font-size: 14px;
 
   @media screen and (min-width: 576px) {
     font-size: 16px;
