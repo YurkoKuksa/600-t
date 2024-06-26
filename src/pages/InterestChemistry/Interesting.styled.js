@@ -50,7 +50,6 @@ export const MainTitle = styled.h1`
   }
 
   @media screen and (min-width: 1707px) {
-    /* font-size: 100px; */
   }
 
   @media screen and (min-width: 1920px) {

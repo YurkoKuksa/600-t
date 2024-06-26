@@ -9,8 +9,7 @@ export const BackGraound = styled.div.withConfig({
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
   z-index: 998;
   opacity: 1;
   pointer-events: initial;
@@ -53,14 +52,12 @@ export const MainModalBox = styled.div.withConfig({
     top: 53%;
   }
 
-  /* для galaxy s7 */
   @media screen and (min-width: 360px) and (max-height: 638px) {
     padding: 14px 0;
     width: 300px;
     top: 53%;
   }
 
-  /* для i-phone 8 */
   @media screen and (min-width: 375px) and (min-height: 526px) {
     padding: 14px 0 18px;
     width: 320px;
@@ -105,7 +102,6 @@ export const Book = styled.img`
     width: 200px;
   }
 
-  /* для galaxy s7 */
   @media screen and (min-width: 360px) and (max-height: 638px) {
     width: 130px;
   }
@@ -147,8 +143,6 @@ export const ModalCloseButton = styled.button`
   margin: 0 auto 5px;
   width: 100px;
   padding: 5px 4px;
-  /* width: 125px; */
-  /* padding: 8px 6px; */
   font-size: 14px;
   opacity: 0.8;
   display: block;
@@ -208,8 +202,6 @@ export const GoogleForm = styled.a`
   text-align: center;
   display: block;
   color: #fff;
-  /* background-color: #de1956; */
-  /* background-color: #4d5ae5; */
   background-color: #1586ac;
   opacity: 0.9;
 
@@ -219,12 +211,6 @@ export const GoogleForm = styled.a`
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s,
     scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* &:hover {
-    color: #ff7;
-    background-color: #e8316a;
-    transform: scale(1.05);
-  } */
 
   &:hover {
     background-color: #116f8e;

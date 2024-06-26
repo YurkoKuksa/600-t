@@ -39,13 +39,13 @@ const Interesting = () => {
       return;
     }
 
-    // встановл скрол
+   
     setScrollToSection(true);
-    // виконуєм маршрут
+    
     setCurrentPath(to);
   };
 
-  // залежність двох функцій
+ 
   useEffect(() => {
     if (scrollToSection) {
       handleClickScroll("scroll-section");

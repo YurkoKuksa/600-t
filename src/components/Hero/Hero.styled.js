@@ -27,11 +27,10 @@ export const StyledBox = styled.div`
     padding: 180px 0;
   }
 
-  /* з орієнтацією екрану мініму 600 висоти */
   @media screen and (min-width: 384px) and (max-height: 629.98px) {
     padding: 35px 0;
   }
-  /* з орієнтацією екрану 683 висоти, S22 */
+
   @media screen and (min-width: 384px) and (min-height: 630px) and (max-height: 685.98px) {
     padding: 65px 0;
   }
@@ -40,13 +39,10 @@ export const StyledBox = styled.div`
     padding: 115px 0;
   }
 
-  /* 412 */
-
-  /* з орієнтацією екрану мініму 650 висоти */
   @media screen and (min-width: 412px) and (max-height: 649.98px) {
     padding: 30px 0;
   }
-  /* з орієнтацією екрану 728 висоти, S10+ */
+
   @media screen and (min-width: 412px) and (min-height: 650px) and (max-height: 709.98px) {
     padding: 60px 0;
   }
@@ -55,13 +51,10 @@ export const StyledBox = styled.div`
     padding: 110px 0;
   }
 
-  /* 576 */
-
-  /* з орієнтацією екрану мініму 600 висоти */
   @media screen and (min-width: 576px) and (max-height: 649.98px) {
     padding: 30px 0;
   }
-  /* з орієнтацією екрану 728 висоти, S10+ */
+
   @media screen and (min-width: 576px) and (min-height: 650px) and (max-height: 709.98px) {
     padding: 140px 0;
   }
@@ -70,12 +63,9 @@ export const StyledBox = styled.div`
     padding: 180px 0;
   }
 
-  /* 992 */
   @media screen and (min-width: 992px) and (min-height: 710px) {
     padding: 200px 0;
   }
-
-  /* 1200 */
 
   @media screen and (min-width: 1200px) and (max-height: 429.98px) {
     padding: 30px 0;
@@ -109,18 +99,12 @@ export const StyledBox = styled.div`
     padding: 290px 0;
   }
 
-  /* 1400 */
-
-  @media screen and (min-width: 1440px) {
-    /* padding: 290px 0; */
-  }
-
   @media screen and (min-width: 1792px) and (min-height: 900px) {
     padding: 300px 0;
   }
 
   @media screen and (min-width: 2560px) and (min-height: 1000px) {
-    padding: 350px 0;
+    padding: 350px 0 0;
   }
 `;
 
@@ -162,10 +146,6 @@ export const ListWrapper = styled.ul`
 
   @media screen and (min-width: 360px) {
     bottom: calc(5% + 50px);
-  }
-
-  @media screen and (min-width: 768px) {
-    /* bottom: 5%; */
   }
 
   @media screen and (min-width: 992px) {
@@ -329,51 +309,12 @@ export const Flask = styled.img`
     width: 70px;
   }
 
-  /* @media screen and (min-width: 360px) and (max-height: 532.98px) {
-    bottom: 0;
-    width: 70px;
-  }
-
-  @media screen and (min-width: 360px) and (min-height: 533px) {
-    bottom: 50px;
-    width: 70px;
-  }
-
-  @media screen and (min-width: 360px) and (min-height: 630px) {
-  }
-
-  @media screen and (min-width: 375px) {
-  }
-
-  @media screen and (min-width: 384px) and (max-height: 754.98px) {
-    bottom: 0;
-  }
-
-  @media screen and (min-width: 384px) and (min-height: 755px) {
-    bottom: 50px;
-  } */
-
-  @media screen and (min-width: 384px) {
-  }
-
   @media screen and (min-width: 412px) {
     width: 90px;
   }
 
-  @media screen and (min-width: 430px) {
-  }
-
-  @media screen and (min-width: 576px) {
-    bottom: 0;
-  }
-
-  @media screen and (min-width: 768px) and (max-height: 883px) and (max-width: 991.98px) {
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
   @media screen and (min-width: 992px) {
+    bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -390,11 +331,3 @@ export const Flask = styled.img`
 `;
 
 export const MainWrapper = styled.div``;
-
-// background-color: #808080;
-// &:hover {
-//   background-color: #6e6d6d;
-// }
-// &:active {
-//   background-color: #949494;
-// }

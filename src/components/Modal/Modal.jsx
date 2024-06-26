@@ -31,7 +31,8 @@ const Modal = ({ toggleModal }) => {
   useEffect(() => {
     setTimeout(() => {
       setIsVisible(true);
-    }, 100); // Затримка перед зміною стану (0.1 секунди)
+    }, 100); 
+    
   }, []);
 
   const closeModal = useCallback(() => {
@@ -39,7 +40,8 @@ const Modal = ({ toggleModal }) => {
     setTimeout(() => {
       setIsOpen(false);
       toggleModal();
-    }, 500); // Затримка для плавного закриття
+    }, 500);
+    
   }, [toggleModal]);
 
   useEffect(() => {

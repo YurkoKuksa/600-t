@@ -1,11 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import SharedLayout from "./components/Layout/SharedLayout";
 import { lazy } from "react";
-// import NewLife from "./components/Interesting/NewLife/NewLife";
 
-// import Inorganic from "./components/Interesting/Inorganic/Inorganic";
-// import Brain from "./components/Interesting/Brain/Brain";
-// import Household from "./components/Interesting/Household/Household";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Author = lazy(() => import("./pages/Author/Author"));

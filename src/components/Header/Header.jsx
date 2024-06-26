@@ -44,15 +44,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// const [isSmallViewport, setIsSmallViewport] = useState(
-//   window.innerWidth <= 768
-// );
-
-// useEffect(() => {
-//   const handleResize = () => {
-//     setIsSmallViewport(window.innerWidth <= 768);
-//     if (!isSmallViewport && isMenuOpen) {
-//       toggleMenu(false); // закрити меню, якщо вікно стало більше 768px
-//     }
-//   };

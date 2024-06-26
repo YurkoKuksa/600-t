@@ -108,26 +108,8 @@ const Water = () => {
           </div>
         </ListWrapper>
 
-        <ListWrapper>
-          <div>
-            <Title></Title>
-            <Paragraph></Paragraph>
-          </div>
-        </ListWrapper>
-
-        <ListWrapper>
-          <div>
-            <Title></Title>
-            <Paragraph></Paragraph>
-          </div>
-        </ListWrapper>
-
-        <ListWrapper>
-          <div>
-            <Title></Title>
-            <Paragraph></Paragraph>
-          </div>
-        </ListWrapper>
+    
+        
       </ul>
     </MainBox>
   );

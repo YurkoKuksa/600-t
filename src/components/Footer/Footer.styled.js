@@ -96,7 +96,6 @@ export const Quote = styled.p`
 
   @media screen and (min-width: 2560px) {
     font-size: 36px;
-    /* width: 400px; */
   }
 `;
 
