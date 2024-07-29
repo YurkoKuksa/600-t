@@ -2,13 +2,14 @@ import { Route, Routes } from "react-router-dom";
 import SharedLayout from "./components/Layout/SharedLayout";
 import { lazy } from "react";
 
-
 const Home = lazy(() => import("./pages/Home/Home"));
 const Author = lazy(() => import("./pages/Author/Author"));
 const Interesting = lazy(() => import("./pages/InterestChemistry/Interesting"));
 const Contacts = lazy(() => import("./pages/Contacts/Contacts"));
 const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
 const AboutBook = lazy(() => import("./components/Home/AboutBook/AboutBook"));
+const Sources = lazy(() => import("./pages/SourcesPage/Sources"));
+
 const AllPublications = lazy(() =>
   import("./components/Home/AllPublications/AllPublications")
 );
@@ -32,7 +33,6 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/book" element={<AboutBook />} />
           <Route path="/allpublication" element={<AllPublications />} />
-
           <Route path="/biography" element={<Author />} />
           <Route path="/interesting/" element={<Interesting />}>
             <Route path="brain" element={<Brain />} />
@@ -43,6 +43,7 @@ function App() {
             <Route path="space" element={<Space />} />
             <Route path="water" element={<Water />} />
           </Route>
+          <Route path="sources" element={<Sources />} />
           <Route path="/contacts" element={<Contacts />} />
         </Route>
         <Route path="*" element={<NotFound />} />

@@ -26,6 +26,11 @@ const Navigation = () => {
           </LinkStyle>
         </li>
         <li>
+          <LinkStyle to="/sources" onClick={scrollToTop}>
+            Ресурси
+          </LinkStyle>
+        </li>
+        <li>
           <LinkStyle to="/contacts" onClick={scrollToTop}>
             Контакти
           </LinkStyle>

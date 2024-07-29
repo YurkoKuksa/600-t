@@ -88,6 +88,11 @@ export const BurgerMenu = ({ close, open }) => {
             </LinkStyle>
           </li>
           <li>
+            <LinkStyle to="/sources" onClick={handleClick}>
+              Ресурси
+            </LinkStyle>
+          </li>
+          <li>
             <LinkStyle to="/contacts" onClick={handleClick}>
               Контакти
             </LinkStyle>
