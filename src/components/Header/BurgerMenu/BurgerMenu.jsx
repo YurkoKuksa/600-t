@@ -33,17 +33,14 @@ export const BurgerMenu = ({ close, open }) => {
       }
     };
 
-
     document.addEventListener("keydown", handleKeyPress);
 
-  
     if (open) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
 
-    
     return () => {
       document.removeEventListener("keydown", handleKeyPress);
       document.body.style.overflow = "auto";
@@ -106,8 +103,8 @@ export const BurgerMenu = ({ close, open }) => {
         </LiContacts>
 
         <LiContacts>
-          <EmailLink href="mailto:kuksasergey55@gmail.com">
-            kuksasergey55@gmail.com
+          <EmailLink href="mailto:chemi2836@gmail.com">
+            chemi2836@gmail.com
           </EmailLink>
         </LiContacts>
       </UlContacts>

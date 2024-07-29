@@ -34,11 +34,11 @@ const Contacts = () => {
           <AddressWrapper>
             <ul>
               <ListStyled>
-                <ContactLink href="mailto:kuksasergei@ukr.net">
+                <ContactLink href="mailto:chemi2836@gmail.com">
                   <SpanWrapper>
                     <SvgItem src={mail} alt="локація" width={20} /> &nbsp;
                   </SpanWrapper>
-                  &nbsp; kuksasergey55@gmail.com
+                  chemi2836@gmail.com
                 </ContactLink>
               </ListStyled>
 
@@ -52,13 +52,13 @@ const Contacts = () => {
               </ListStyled>
 
               <ListStyled>
-                <SpanWrapper>
-                  <SvgItem src={location} alt="локація" width={24} /> &nbsp;
-                </SpanWrapper>
                 <ContactLink
                   href="https://www.google.com/maps/d/viewer?mid=1G6etACP-7wEXQcc5rTqkMA9uE-U&hl=en_US&ll=49.90016367377482%2C28.591063499999994&z=15"
                   target="_blank"
                 >
+                  <SpanWrapper>
+                    <SvgItem src={location} alt="локація" width={24} /> &nbsp;
+                  </SpanWrapper>
                   Місто Бердичів, Україна
                 </ContactLink>
               </ListStyled>

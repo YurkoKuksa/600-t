@@ -51,9 +51,9 @@ const Footer = () => {
             <AddressWrapper>
               <ContactList>
                 <ListStyled>
-                  <ContactLink href="mailto:kuksasergei@ukr.net">
+                  <ContactLink href="mailto:chemi2836@gmail.com">
                     <SpanWrapper>&#9993; &nbsp;</SpanWrapper>
-                    &nbsp; kuksasergey55@gmail.com
+                    &nbsp; chemi2836@gmail.com
                   </ContactLink>
                 </ListStyled>
                 <ListStyled>

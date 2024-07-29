@@ -171,6 +171,8 @@ export const AddressWrapper = styled.address`
 
 export const ContactLink = styled.a`
   cursor: pointer;
+  display: flex;
+  gap: 5px;
 `;
 
 export const ListStyled = styled.li`
@@ -195,9 +197,7 @@ export const ListStyled = styled.li`
   }
 `;
 
-export const SpanWrapper = styled.span`
-  /* color: red; */
-`;
+export const SpanWrapper = styled.span``;
 
 export const SvgItem = styled.img`
   display: inline-block;
