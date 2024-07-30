@@ -87,6 +87,7 @@ export const ContentBox = styled.div`
 export const ParagraphList = styled.ul`
   margin-bottom: 60px;
   min-width: 100%;
+
   @media screen and (min-width: 2560px) {
     margin-bottom: 120px;
   }
@@ -95,9 +96,9 @@ export const ParagraphList = styled.ul`
 export const ListSources = styled.li`
   background-color: rgb(142, 143, 153, 0.4);
   border-radius: 5px;
-  padding: 5px 25px;
+  padding: 5px 15px;
   display: flex;
-  gap: 25px;
+  column-gap: 15px;
   justify-content: flex-start;
   align-items: center;
 
@@ -110,18 +111,63 @@ export const ListSources = styled.li`
   }
 
   @media screen and (min-width: 576px) {
-    padding: 5px 50px;
+    padding: 5px 25px;
+    column-gap: 20px;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 5px 35px;
+    column-gap: 35px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 35px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 10px 50px;
   }
 `;
 
-export const Paragraph = styled.p`
+export const TitleWrapper = styled.div`
+  display: flex;
+  column-gap: 35px;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+`;
+
+export const Paragraph = styled.a`
   line-height: 1.6;
   letter-spacing: 0.04em;
   font-weight: 500;
-  color: #6b6363;
+  color: #0a2161;
+
+  max-width: 800px;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 
   @media screen and (min-width: 576px) {
     font-size: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 540px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 750px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    max-width: 960px;
   }
 
   @media screen and (min-width: 1920px) {
@@ -134,6 +180,7 @@ export const Paragraph = styled.p`
 `;
 
 export const DownloadFile = styled.img`
+  flex-shrink: 0;
   width: 18px;
   height: 18px;
 
@@ -161,12 +208,26 @@ export const DownloadFile = styled.img`
 export const LinkDownload = styled.a`
   outline: grey dotted 1px;
 
-  padding: 5px 15px;
+  min-width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     background-color: #999999;
+  }
+
+  @media screen and (min-width: 576px) {
+    min-width: 35px;
+    height: 35px;
+  }
+
+  @media screen and (min-width: 992px) {
+    min-width: 40px;
+    height: 40px;
   }
 `;
 

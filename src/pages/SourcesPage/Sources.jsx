@@ -10,6 +10,7 @@ import {
   Paragraph,
   ParagraphList,
   ParagraphName,
+  TitleWrapper,
 } from "./Sources.styled";
 
 import pdf from "../../assets/pdf/corrosion_mettals.pdf";
@@ -26,29 +27,60 @@ const Sources = () => {
             <ListSources>
               <LinkDownload
                 href={pdf}
+                // target="_blank"
+                // rel="noopener noreferrer"
+                download="Корозія Металів"
+              >
+                <DownloadFile src={download} alt="завантажити" />
+              </LinkDownload>
+
+              <TitleWrapper>
+                <Paragraph href={pdf} target="_blank" rel="noopener noreferrer">
+                  Корозія металів та способи її запобігання
+                </Paragraph>
+                <DescripGroup>
+                  <li>
+                    <ParagraphName>2008 рік</ParagraphName>
+                  </li>
+                  <li>
+                    <ParagraphName>Кукса С.П.</ParagraphName>
+                  </li>
+                </DescripGroup>
+              </TitleWrapper>
+            </ListSources>
+
+            {/* <ListSources>
+              <LinkDownload
+                href={pdf}
                 target="_blank"
                 rel="noopener noreferrer"
+                download="Корозія Металів"
               >
-                <DownloadFile
-                  src={download}
-                  alt="завантажити"
-                  download="Корозія Металів"
-                />
+                <DownloadFile src={download} alt="завантажити" />
               </LinkDownload>
-              <DescripGroup>
-                <li>
-                  <Paragraph>
-                    Корозія металів та способи її запобігання
-                  </Paragraph>
-                </li>
-                <li>
-                  <ParagraphName>2008 рік</ParagraphName>
-                </li>
-                <li>
-                  <ParagraphName>Кукса С.П.</ParagraphName>
-                </li>
-              </DescripGroup>
-            </ListSources>
+
+              <TitleWrapper>
+                <Paragraph
+                  href={pdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Корозія Металів"
+                >
+                  Корозія металів та способи її запобігання приклад, зарзок,
+                  зразооооок зарзок, зарзок, зарзок, зарзок, зарзок,
+                  зарзок,зарзок, зарзок,
+                </Paragraph>
+
+                <DescripGroup>
+                  <li>
+                    <ParagraphName>2024 рік</ParagraphName>
+                  </li>
+                  <li>
+                    <ParagraphName>Кукса С.П.</ParagraphName>
+                  </li>
+                </DescripGroup>
+              </TitleWrapper>
+            </ListSources> */}
           </ParagraphList>
         </ContentBox>
       </ContactBox>

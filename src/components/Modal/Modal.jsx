@@ -31,8 +31,7 @@ const Modal = ({ toggleModal }) => {
   useEffect(() => {
     setTimeout(() => {
       setIsVisible(true);
-    }, 100); 
-    
+    }, 100);
   }, []);
 
   const closeModal = useCallback(() => {
@@ -41,7 +40,6 @@ const Modal = ({ toggleModal }) => {
       setIsOpen(false);
       toggleModal();
     }, 500);
-    
   }, [toggleModal]);
 
   useEffect(() => {
@@ -83,17 +81,17 @@ const Modal = ({ toggleModal }) => {
           </GoogleForm>
 
           <DownLoadFile href={pdf} target="_blank" rel="noopener noreferrer">
-            <DownloadFile src={download} alt="завантажити" download="Зракзок" />
+            <DownloadFile src={download} alt="завантажити" />
             <SpanDownload>&nbsp; зразок</SpanDownload>
           </DownLoadFile>
 
           <List>
             <ListStyled>
-              <ContactLink href="mailto:kuksasergei@ukr.net">
+              <ContactLink href="mailto:chemi2836@gmail.com">
                 <SpanWrapper>
                   <SvgItem src={mail} alt="локація" /> &nbsp;
                 </SpanWrapper>
-                kuksasergey55@gmail.com
+                chemi2836@gmail.com
               </ContactLink>
             </ListStyled>
 
