@@ -6,7 +6,7 @@ const NotFound = () => {
     <Wrapper>
       <MainTitle>404</MainTitle>
 
-      <TextInfo>Сторінку незнайдено</TextInfo>
+      <TextInfo>Сторінку не знайдено</TextInfo>
       <BackLink to="/">На головну</BackLink>
 
       <img src={flask} alt="хімічимо" />

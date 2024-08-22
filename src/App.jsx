@@ -25,6 +25,8 @@ const Organic = lazy(() => import("./components/Interesting/Organic/Organic"));
 const Space = lazy(() => import("./components/Interesting/Space/Space"));
 const Water = lazy(() => import("./components/Interesting/Water/Water"));
 
+const Admin = lazy(() => import("./pages/AdminPage/Admin"));
+
 function App() {
   return (
     <>
@@ -43,9 +45,10 @@ function App() {
             <Route path="space" element={<Space />} />
             <Route path="water" element={<Water />} />
           </Route>
-          <Route path="sources" element={<Sources />} />
+          <Route path="/sources" element={<Sources />} />
           <Route path="/contacts" element={<Contacts />} />
         </Route>
+        <Route path="/admin" element={<Admin />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

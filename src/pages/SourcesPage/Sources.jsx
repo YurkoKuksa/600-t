@@ -25,12 +25,7 @@ const Sources = () => {
         <ContentBox>
           <ParagraphList>
             <ListSources>
-              <LinkDownload
-                href={pdf}
-                // target="_blank"
-                // rel="noopener noreferrer"
-                download="Корозія Металів"
-              >
+              <LinkDownload href={pdf} download="Корозія Металів">
                 <DownloadFile src={download} alt="завантажити" />
               </LinkDownload>
 
@@ -48,39 +43,6 @@ const Sources = () => {
                 </DescripGroup>
               </TitleWrapper>
             </ListSources>
-
-            {/* <ListSources>
-              <LinkDownload
-                href={pdf}
-                target="_blank"
-                rel="noopener noreferrer"
-                download="Корозія Металів"
-              >
-                <DownloadFile src={download} alt="завантажити" />
-              </LinkDownload>
-
-              <TitleWrapper>
-                <Paragraph
-                  href={pdf}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  download="Корозія Металів"
-                >
-                  Корозія металів та способи її запобігання приклад, зарзок,
-                  зразооооок зарзок, зарзок, зарзок, зарзок, зарзок,
-                  зарзок,зарзок, зарзок,
-                </Paragraph>
-
-                <DescripGroup>
-                  <li>
-                    <ParagraphName>2024 рік</ParagraphName>
-                  </li>
-                  <li>
-                    <ParagraphName>Кукса С.П.</ParagraphName>
-                  </li>
-                </DescripGroup>
-              </TitleWrapper>
-            </ListSources> */}
           </ParagraphList>
         </ContentBox>
       </ContactBox>
