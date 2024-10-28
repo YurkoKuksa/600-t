@@ -49,6 +49,16 @@ const Admin = () => {
           </InputWrapper>
 
           <InputWrapper>
+            <LabelInput htmlFor="course">Рік Курсу Xімія</LabelInput>
+            <InputStyledDetail
+              type="text"
+              name="course"
+              placeholder="1-й рік"
+              id="course"
+            />
+          </InputWrapper>
+
+          <InputWrapper>
             <LabelInput htmlFor="year">Рік видання</LabelInput>
             <InputStyledDetail
               type="text"

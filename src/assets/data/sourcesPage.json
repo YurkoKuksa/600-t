@@ -1,0 +1,54 @@
+[
+  {
+    "fileName": "Корозія металів та способи її запобігання",
+    "grade": "1-й рік",
+    "year": "2008 рік",
+    "author": "Кукса С.П.",
+    "status": "published",
+    "file": [
+      {
+        "url": "../pdf/corrosion_mettals.pdf",
+        "type": "application/pdf"
+      }
+    ]
+  },
+  {
+    "fileName": "600 задач",
+    "grade": "1-4 рік",
+    "year": "2024 рік",
+    "author": "Кукса С.П.",
+    "status": "published",
+    "file": [
+      {
+        "url": "../pdf/1.pdf",
+        "type": "application/pdf"
+      }
+    ]
+  },
+  {
+    "fileName": "",
+    "grade": "",
+    "year": "",
+    "author": "",
+    "status": "",
+    "file": []
+  },
+  {
+    "fileName": "",
+    "grade": "",
+    "year": "",
+    "author": "",
+    "status": "",
+    "file": []
+  },
+  {
+    "fileName": "",
+    "grade": "",
+    "year": "",
+    "author": "",
+    "status": "",
+    "file": []
+  },
+  {},
+  {}
+]
