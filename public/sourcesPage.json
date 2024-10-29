@@ -7,7 +7,7 @@
     "status": "published",
     "file": [
       {
-        "url": "../pdf/corrosion_mettals.pdf",
+        "url": "/600-t/pdf/corrosion_mettals.pdf",
         "type": "application/pdf"
       }
     ]
@@ -20,18 +20,23 @@
     "status": "published",
     "file": [
       {
-        "url": "../pdf/1.pdf",
+        "url": "/600-t/pdf/corrosion_mettals.pdf",
         "type": "application/pdf"
       }
     ]
   },
   {
-    "fileName": "",
-    "grade": "",
-    "year": "",
-    "author": "",
-    "status": "",
-    "file": []
+    "fileName": "600 задач ВДОСКОНАЛЕНИЙ",
+    "grade": "5рік",
+    "year": "2024 рік",
+    "author": "Кукса Л.Г.",
+    "status": "published",
+    "file": [
+      {
+        "url": "/600-t/pdf/1.pdf",
+        "type": "application/pdf"
+      }
+    ]
   },
   {
     "fileName": "",

@@ -13,34 +13,56 @@ import {
   TitleWrapper,
 } from "./Sources.styled";
 
-// import pdf from "../../assets/pdf/corrosion_mettals.pdf";
 import download from "../../assets/svg/download1.svg";
 
-import sourseItems from "../../assets/data/sourcesPage.json";
+import { useEffect, useState } from "react";
 
 const Sources = () => {
+  const [sourceItems, setSourceItems] = useState([]);
+
+  useEffect(() => {
+    fetch(`${process.env.PUBLIC_URL}/sourcesPage.json`)
+      .then((response) => response.json())
+      .then((data) => {
+        setSourceItems(data);
+      })
+      .catch((error) => console.error("Помилка при завантаженні JSON:", error));
+  }, []);
+
   return (
     <MainBox>
       <ContactBox>
         <MainTitle>Ресурси</MainTitle>
-
         <ContentBox>
           <ParagraphList>
-            {sourseItems.map(
+            {sourceItems.map(
               ({ fileName, grade, year, author, file }, index) => (
                 <ListSources key={index}>
-                  <LinkDownload href={file} download="Корозія Металів">
-                    <DownloadFile src={download} alt="завантажити" />
-                  </LinkDownload>
-
+                  {file && file.length > 0 ? (
+                    file.map((f, fileIndex) => (
+                      <LinkDownload
+                        key={fileIndex}
+                        href={f.url}
+                        download={fileName}
+                      >
+                        <DownloadFile src={download} alt="завантажити" />
+                      </LinkDownload>
+                    ))
+                  ) : (
+                    <p>Немає доступних файлів.</p>
+                  )}
                   <TitleWrapper>
-                    <Paragraph
-                      href={file}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {fileName}
-                    </Paragraph>
+                    {file && file.length > 0 && file[0]?.url ? (
+                      <Paragraph
+                        href={file[0].url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {fileName}
+                      </Paragraph>
+                    ) : (
+                      <Paragraph>Файл недоступний для завантаження</Paragraph>
+                    )}
                     <DescripGroup>
                       <li>
                         <ParagraphName>{grade}</ParagraphName>
@@ -56,29 +78,6 @@ const Sources = () => {
                 </ListSources>
               )
             )}
-
-            {/* <ListSources>
-              <LinkDownload href={pdf} download="Корозія Металів">
-                <DownloadFile src={download} alt="завантажити" />
-              </LinkDownload>
-
-              <TitleWrapper>
-                <Paragraph href={pdf} target="_blank" rel="noopener noreferrer">
-                  Корозія металів та способи її запобігання
-                </Paragraph>
-                <DescripGroup>
-                  <li>
-                    <ParagraphName>1-й рік</ParagraphName>
-                  </li>
-                  <li>
-                    <ParagraphName>2008 рік</ParagraphName>
-                  </li>
-                  <li>
-                    <ParagraphName>Кукса С.П.</ParagraphName>
-                  </li>
-                </DescripGroup>
-              </TitleWrapper>
-            </ListSources> */}
           </ParagraphList>
         </ContentBox>
       </ContactBox>
@@ -88,6 +87,8 @@ const Sources = () => {
 
 export default Sources;
 
+// <p>No files available.</p>
+// <Paragraph>No download link available</Paragraph>
 // const y = 2;
 
 // console.log(x * y, `\n`, "множення");
